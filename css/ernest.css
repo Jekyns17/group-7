@@ -1,11 +1,10 @@
 /* ==========================================================================
-   KAYONDO ERNEST - PERSONAL WEBPAGE STYLESHEET
-   Style Concept: DevOps Engineer Terminal & Tech Dashboard
-   Colors: Dark Slate (#0f172a), Cyan Neon (#00f0ff), Terminal Green (#22c55e)
-   Font: Monospace Tech Font ('Consolas', 'Courier New', monospace)
+   Kayondo Ernest - Personal Webpage Stylesheet
+   Makerere University - Group 7
+   Simple, clean, and human-friendly design
    ========================================================================== */
 
-/* 1. Global Reset & Tech Theme */
+/* 1. Global Reset & Theme */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,23 +12,23 @@
 }
 
 body {
-  background-color: #0b1120;
+  background-color: #0f172a;
   color: #e2e8f0;
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   padding-bottom: 2rem;
 }
 
-/* Monospace text for code and terminal accents */
-.mono {
-  font-family: 'Consolas', 'Courier New', Monaco, monospace;
+/* 2. Navigation Bar */
+header {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  padding: 0.9rem 1.2rem;
 }
 
-/* 2. Top Navigation Bar (Connects Ernest to Group 7) */
-.group-nav {
-  background: #020617;
-  border-bottom: 1px solid #1e293b;
-  padding: 0.75rem 1.25rem;
+.nav-container {
+  max-width: 860px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,326 +36,285 @@ body {
   gap: 1rem;
 }
 
-.nav-brand {
-  font-family: 'Consolas', 'Courier New', monospace;
-  font-size: 1.1rem;
+.logo {
+  font-size: 1.15rem;
   font-weight: bold;
   color: #38bdf8;
   text-decoration: none;
 }
 
-.nav-brand span {
-  color: #f43f5e;
-}
-
-.nav-links {
+nav {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.nav-links a {
+nav a {
   text-decoration: none;
-  font-family: 'Consolas', monospace;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: #94a3b8;
-  padding: 0.35rem 0.75rem;
+  padding: 0.35rem 0.8rem;
   border-radius: 4px;
   background: #0f172a;
-  border: 1px solid #1e293b;
+  border: 1px solid #334155;
   transition: all 0.2s ease;
 }
 
-.nav-links a:hover {
+nav a:hover {
   color: #38bdf8;
   border-color: #38bdf8;
 }
 
-.nav-links a.active {
+nav a.active {
   background: #0284c7;
   color: #ffffff;
-  border-color: #38bdf8;
-  font-weight: bold;
+  border-color: #0284c7;
+  font-weight: 600;
 }
 
-/* 3. Main Dashboard Layout Container */
+/* 3. Main Container */
 .container {
-  max-width: 880px;
+  max-width: 860px;
   margin: 1.5rem auto;
   padding: 0 1rem;
 }
 
-/* 4. Terminal Window Frame */
-.terminal-window {
-  background: #0f172a;
+/* 4. Content Cards (Clean uniform border all around, no highlighted single edges) */
+.card {
+  background: #1e293b;
   border: 1px solid #334155;
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-}
-
-.terminal-topbar {
-  background: #1e293b;
-  padding: 0.6rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #334155;
-}
-
-.terminal-dots {
-  display: flex;
-  gap: 6px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot-red { background: #ef4444; }
-.dot-yellow { background: #eab308; }
-.dot-green { background: #22c55e; }
-
-.terminal-title {
-  font-family: 'Consolas', monospace;
-  font-size: 0.82rem;
-  color: #94a3b8;
-}
-
-.terminal-body {
   padding: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-/* 5. Ernest's Profile Section */
-.profile-flex {
+/* 5. Profile Section */
+.profile-header {
   display: flex;
-  gap: 1.5rem;
   align-items: center;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.avatar-terminal {
-  width: 90px;
-  height: 90px;
-  background: #1e293b;
-  border: 2px solid #0284c7;
-  border-radius: 8px;
+.profile-icon {
+  width: 80px;
+  height: 80px;
+  background: #0f172a;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.8rem;
-  box-shadow: 0 0 15px rgba(2, 132, 199, 0.3);
-}
-
-.profile-meta h1 {
-  font-size: 1.7rem;
-  color: #f8fafc;
-  font-family: 'Consolas', monospace;
-}
-
-.profile-meta .cmd-line {
+  font-size: 2rem;
   color: #38bdf8;
-  font-size: 0.92rem;
+}
+
+.profile-info h1 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+.profile-subtitle {
+  color: #38bdf8;
+  font-size: 0.95rem;
   margin-bottom: 0.6rem;
 }
 
-.system-badges {
+.info-list {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  list-style: none;
-  margin-top: 0.4rem;
 }
 
-.system-badges li {
-  background: #1e293b;
+.info-list li {
+  background: #0f172a;
   border: 1px solid #334155;
   color: #cbd5e1;
-  padding: 0.25rem 0.65rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 4px;
-  font-size: 0.82rem;
-  font-family: 'Consolas', monospace;
+  font-size: 0.84rem;
 }
 
-.system-badges li span.status-green {
-  color: #22c55e;
-  font-weight: bold;
-}
-
-/* 6. Hobbies & Hardware Grid */
-.section-heading {
-  font-family: 'Consolas', monospace;
-  font-size: 1.15rem;
-  color: #38bdf8;
+/* 6. Section Headings */
+h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.section-heading::before {
-  content: ">";
-  color: #22c55e;
-  font-weight: bold;
+h2 i {
+  color: #38bdf8;
 }
 
-.tech-grid {
+/* 7. Hobbies Grid (Clean uniform boxes, no highlighted edge strip) */
+.hobbies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
 }
 
-.tech-card {
-  background: #1e293b;
+.hobby-card {
+  background: #0f172a;
   border: 1px solid #334155;
-  border-left: 3px solid #0284c7;
   border-radius: 6px;
-  padding: 1.1rem;
+  padding: 1.2rem;
+  text-align: center;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.tech-card:hover {
-  transform: translateY(-3px);
+.hobby-card:hover {
+  transform: translateY(-2px);
   border-color: #38bdf8;
 }
 
-.tech-icon {
-  font-size: 2rem;
-  margin-bottom: 0.4rem;
+.hobby-card i {
+  font-size: 1.8rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
-.tech-card h3 {
-  font-family: 'Consolas', monospace;
+.hobby-card h3 {
   font-size: 1rem;
-  color: #f8fafc;
+  color: #ffffff;
   margin-bottom: 0.3rem;
 }
 
-.tech-card p {
+.hobby-card p {
   font-size: 0.85rem;
   color: #94a3b8;
 }
 
-/* 7. Journal / Log Post */
-.log-box {
-  background: #020617;
-  border: 1px solid #1e293b;
+/* 8. Blog Section (Clean uniform card) */
+.blog-box {
+  background: #0f172a;
+  border: 1px solid #334155;
   border-radius: 6px;
   padding: 1.25rem;
-  font-size: 0.92rem;
-  color: #cbd5e1;
 }
 
-.log-box .log-tag {
-  color: #22c55e;
-  font-family: 'Consolas', monospace;
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.log-box h3 {
+.blog-box h3 {
   font-size: 1.1rem;
-  color: #f8fafc;
-  margin-bottom: 0.5rem;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
 }
 
-.log-box p {
-  margin-bottom: 0.7rem;
+.blog-box p {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  margin-bottom: 0.8rem;
   line-height: 1.6;
 }
 
-/* 8. Interactive Console (Likes & Messages) */
-.console-interactive {
+/* 9. Interactive Like & Message Form */
+.interactive-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  background: #1e293b;
+  background: #0f172a;
   border: 1px solid #334155;
   padding: 1rem 1.25rem;
   border-radius: 6px;
+  margin-bottom: 1.25rem;
 }
 
-.btn-terminal {
+.like-btn {
   background: #0284c7;
   color: #ffffff;
-  border: 1px solid #38bdf8;
-  font-family: 'Consolas', monospace;
+  border: none;
+  padding: 0.55rem 1.25rem;
   font-size: 0.9rem;
-  font-weight: bold;
-  padding: 0.6rem 1.25rem;
+  font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.2s ease;
 }
 
-.btn-terminal:hover {
+.like-btn:hover {
   background: #0369a1;
-  box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
 }
 
-.console-form {
+.comment-form {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin-top: 1rem;
 }
 
-.console-form input,
-.console-form textarea {
-  background: #020617;
+.comment-form input,
+.comment-form textarea {
+  background: #0f172a;
   border: 1px solid #334155;
-  color: #f8fafc;
-  font-family: 'Consolas', monospace;
-  font-size: 0.9rem;
+  color: #ffffff;
   padding: 0.65rem 0.9rem;
   border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.9rem;
 }
 
-.console-form input:focus,
-.console-form textarea:focus {
+.comment-form input:focus,
+.comment-form textarea:focus {
   outline: none;
   border-color: #38bdf8;
 }
 
-.console-form textarea {
+.comment-form textarea {
   resize: vertical;
-  min-height: 60px;
+  min-height: 65px;
 }
 
-.messages-stream {
+.comment-form button {
+  align-self: flex-start;
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background: #0369a1;
+}
+
+.comments-list {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
 
-.stream-item,
 .comment-item {
-  background: #1e293b;
+  background: #0f172a;
   border: 1px solid #334155;
-  border-left: 3px solid #22c55e;
   border-radius: 4px;
-  padding: 0.7rem 0.9rem;
-  font-size: 0.86rem;
-  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
 }
 
-.stream-author,
 .comment-author {
-  font-family: 'Consolas', monospace;
-  color: #38bdf8;
   font-weight: bold;
+  color: #38bdf8;
   margin-bottom: 0.2rem;
 }
 
-/* 9. Bottom Pager */
-.pager {
+.comment-item p {
+  color: #cbd5e1;
+}
+
+/* 10. Footer Navigation */
+.footer-nav {
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
@@ -364,27 +322,25 @@ body {
   gap: 0.8rem;
 }
 
-.pager-btn {
+.footer-nav a {
   text-decoration: none;
-  font-family: 'Consolas', monospace;
   font-size: 0.85rem;
   color: #94a3b8;
-  background: #0f172a;
+  background: #1e293b;
   border: 1px solid #334155;
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 1rem;
   border-radius: 4px;
   transition: all 0.2s ease;
 }
 
-.pager-btn:hover {
+.footer-nav a:hover {
   color: #38bdf8;
   border-color: #38bdf8;
 }
 
 footer {
   text-align: center;
-  font-family: 'Consolas', monospace;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: #64748b;
   margin-top: 2rem;
 }

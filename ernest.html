@@ -3,169 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayondo Ernest | DevOps Dashboard | Group 7</title>
+  <title>Kayondo Ernest - Group 7</title>
+  <!-- Font Awesome CDN for icons instead of emojis -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/ernest.css">
 </head>
 <body data-student="ernest">
 
   <!-- ======================================================================
-       HEADER: Group 7 Shared Navigation Bar
-       Links all six individual pages into one combined project
+       1. NAVIGATION BAR
+       Links all 6 group members into one website
        ====================================================================== -->
-  <header class="group-nav">
-    <a href="index.html" class="nav-brand">GROUP_07 <span>//</span> MAKERERE</a>
-    <nav class="nav-links">
-      <a href="index.html">01.Bakhita</a>
-      <a href="daniella.html">02.Daniella</a>
-      <a href="ernest.html" class="active">03.Ernest</a>
-      <a href="ntwari.html">04.Joseph</a>
-      <a href="ibrahim.html">05.Ibrahim</a>
-      <a href="matthew.html">06.Matthew</a>
-    </nav>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Group 7 &bull; Makerere</a>
+      <nav>
+        <a href="index.html">Bakhita</a>
+        <a href="daniella.html">Daniella</a>
+        <a href="ernest.html" class="active">Ernest</a>
+        <a href="ntwari.html">Joseph</a>
+        <a href="ibrahim.html">Ibrahim</a>
+        <a href="matthew.html">Matthew</a>
+      </nav>
+    </div>
   </header>
 
   <!-- ======================================================================
-       MAIN CONTENT: Ernest's Developer & Fitness Dashboard
+       2. MAIN CONTENT
        ====================================================================== -->
   <main class="container">
 
-    <!-- Terminal Window 1: Profile & Bio -->
-    <div class="terminal-window">
-      <div class="terminal-topbar">
-        <div class="terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
+    <!-- Section 1: About Ernest -->
+    <section class="card">
+      <div class="profile-header">
+        <div class="profile-icon">
+          <i class="fa-solid fa-code"></i>
         </div>
-        <div class="terminal-title">ernest@makerere-srv: ~/profile</div>
-        <div class="mono" style="font-size:0.75rem; color:#22c55e;">● SYSTEM ACTIVE</div>
-      </div>
-      <div class="terminal-body">
-        <div class="profile-flex">
-          <div class="avatar-terminal">⚡</div>
-          <div class="profile-meta">
-            <h1>Kayondo Ernest</h1>
-            <div class="cmd-line mono">$ role --target="DevOps Engineer"</div>
-            <ul class="system-badges">
-              <li>Institution: Makerere University</li>
-              <li>Status: <span class="status-green">Online</span></li>
-              <li>Target: Cloud & CI/CD Pipelines</li>
-            </ul>
-          </div>
+        <div class="profile-info">
+          <h1>Kayondo Ernest</h1>
+          <p class="profile-subtitle">Student at Makerere University &bull; Aspiring DevOps Engineer</p>
+          <ul class="info-list">
+            <li>Institution: Makerere University</li>
+            <li>Career Goal: DevOps Engineer</li>
+            <li>Role: Group 7 Member</li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Terminal Window 2: Hobbies & Passions -->
-    <div class="terminal-window">
-      <div class="terminal-topbar">
-        <div class="terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
+    <!-- Section 2: Hobbies & Interests -->
+    <section class="card">
+      <h2><i class="fa-solid fa-heart"></i> My Hobbies & Interests</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <i class="fa-solid fa-person-swimming"></i>
+          <h3>Swimming</h3>
+          <p>I enjoy swimming to stay in shape, improve lung capacity, and clear my head after long classes.</p>
         </div>
-        <div class="terminal-title">ernest@makerere-srv: ~/hobbies-and-sports</div>
-        <div></div>
-      </div>
-      <div class="terminal-body">
-        <h2 class="section-heading">Active Routines & Hobbies</h2>
-        <div class="tech-grid">
-          <div class="tech-card">
-            <div class="tech-icon">🏊‍♂️</div>
-            <h3>Swimming</h3>
-            <p>Doing pool laps to maintain cardiovascular fitness and refresh my mind.</p>
-          </div>
-          <div class="tech-card">
-            <div class="tech-icon">🏃‍♂️</div>
-            <h3>Running</h3>
-            <p>Early morning and evening campus jogs for stamina and clear thinking.</p>
-          </div>
-          <div class="tech-card">
-            <div class="tech-icon">🏋️‍♂️</div>
-            <h3>Gyming</h3>
-            <p>Regular strength and resistance training sessions to stay energized.</p>
-          </div>
-          <div class="tech-card">
-            <div class="tech-icon">🎮</div>
-            <h3>Gaming</h3>
-            <p>Playing multiplayer and tactical video games to unwind with friends.</p>
-          </div>
+        <div class="hobby-card">
+          <i class="fa-solid fa-person-running"></i>
+          <h3>Running</h3>
+          <p>Regular morning or evening jogs around campus keep my stamina up and help me start the day fresh.</p>
+        </div>
+        <div class="hobby-card">
+          <i class="fa-solid fa-dumbbell"></i>
+          <h3>Gyming</h3>
+          <p>Working out at the gym is a regular habit of mine to build strength and maintain physical fitness.</p>
+        </div>
+        <div class="hobby-card">
+          <i class="fa-solid fa-gamepad"></i>
+          <h3>Gaming</h3>
+          <p>Playing video games with friends in the evening is my favorite way to relax and have some fun.</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Terminal Window 3: Journal Log -->
-    <div class="terminal-window">
-      <div class="terminal-topbar">
-        <div class="terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <div class="terminal-title">ernest@makerere-srv: ~/logs/student_journal.md</div>
-        <div></div>
+    <!-- Section 3: Student Blog / Campus Experience -->
+    <section class="card">
+      <h2><i class="fa-solid fa-book-open"></i> Student Blog</h2>
+      <div class="blog-box">
+        <h3>Balancing Academics and an Active Lifestyle</h3>
+        <p>
+          Being an undergraduate student at Makerere University is both challenging and rewarding. My main career aspiration is to become a DevOps engineer, which means I spend a good amount of time learning how servers work, exploring cloud technologies, and understanding automated pipelines.
+        </p>
+        <p>
+          At the same time, I make sure not to spend the whole day glued to a screen. Hitting the gym, going for a run, or swimming gives me a productive break, releases study stress, and leaves me energized for group coursework with my team.
+        </p>
       </div>
-      <div class="terminal-body">
-        <h2 class="section-heading">Daily Engineering Log</h2>
-        <div class="log-box">
-          <div class="log-tag">[LOG_ENTRY: MAKERERE_CAMPUS_LIFE]</div>
-          <h3>Balancing Terminal Code & Gym Workouts</h3>
-          <p>
-            As a student at Makerere University working toward becoming a DevOps engineer, my days revolve around exploring systems, servers, and deployment pipelines. I enjoy figuring out how software gets automated, packaged, and tested smoothly.
-          </p>
-          <p>
-            To keep my mind sharp during intense coursework, I treat fitness as an essential pipeline. Heading to the gym, running laps around campus, or swimming relieves stress and keeps my drive high for group assignments and coding labs.
-          </p>
-        </div>
+    </section>
+
+    <!-- Section 4: Interactive Like and Comment Form -->
+    <section class="card">
+      <h2><i class="fa-solid fa-comments"></i> Leave a Message for Ernest</h2>
+      
+      <!-- Like Button -->
+      <div class="interactive-row">
+        <span>Support Ernest's page:</span>
+        <button id="like-btn" class="like-btn">
+          <i class="fa-solid fa-thumbs-up"></i> Like (<span id="like-count">0</span>)
+        </button>
       </div>
-    </div>
 
-    <!-- Terminal Window 4: Interactive Cheer & Messages -->
-    <div class="terminal-window">
-      <div class="terminal-topbar">
-        <div class="terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <div class="terminal-title">ernest@makerere-srv: ~/console/interact</div>
-        <div></div>
-      </div>
-      <div class="terminal-body">
-        <h2 class="section-heading">Console Ping & Guest Messages</h2>
-        
-        <!-- Like Counter Button -->
-        <div class="console-interactive">
-          <span class="mono">Transmit cheer packet to Ernest:</span>
-          <button id="like-btn" class="btn-terminal">
-            🔥 Send Cheer (<span id="like-count">0</span>)
-          </button>
-        </div>
+      <!-- Comment Form -->
+      <form id="comment-form" class="comment-form">
+        <input type="text" id="comment-author" placeholder="Your Name" required>
+        <textarea id="comment-message" placeholder="Write a message or feedback here..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
 
-        <!-- Message Form -->
-        <form id="comment-form" class="console-form">
-          <input type="text" id="comment-author" placeholder="User Handle / Name" required>
-          <textarea id="comment-message" placeholder="Type a message into the console..." required></textarea>
-          <button type="submit" class="btn-terminal" style="align-self:flex-start;">Commit Message</button>
-        </form>
+      <!-- Message List -->
+      <div id="comments-list" class="comments-list"></div>
+    </section>
 
-        <!-- Message List Container -->
-        <div id="comments-list" class="messages-stream"></div>
-      </div>
-    </div>
-
-    <!-- Bottom Page Navigation -->
-    <div class="pager">
-      <a href="daniella.html" class="pager-btn">&larr; [02. Daniella]</a>
-      <a href="ntwari.html" class="pager-btn">[04. Joseph] &rarr;</a>
+    <!-- Footer Navigation (Next & Previous) -->
+    <div class="footer-nav">
+      <a href="daniella.html">&larr; Previous: Daniella</a>
+      <a href="ntwari.html">Next: Joseph &rarr;</a>
     </div>
 
     <footer>
-      <p>&lt;/&gt; Group 7 &bull; Kayondo Ernest &bull; Makerere University</p>
+      <p>&copy; 2026 Group 7 &bull; Makerere University</p>
     </footer>
 
   </main>
 
+  <!-- Interactive JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>

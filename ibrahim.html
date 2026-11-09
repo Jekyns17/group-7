@@ -3,116 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lubega Ibrahim | Fairway Profile | Group 7</title>
+  <title>Lubega Ibrahim - Group 7</title>
+  <!-- Font Awesome CDN for icons instead of emojis -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/ibrahim.css">
 </head>
 <body data-student="ibrahim">
 
   <!-- ======================================================================
-       HEADER: Group 7 Shared Clubhouse Navigation
+       1. NAVIGATION BAR
        ====================================================================== -->
-  <header class="clubhouse-nav">
-    <a href="index.html" class="clubhouse-logo">⛳ GROUP 7 &bull; MAKERERE</a>
-    <nav class="clubhouse-links">
-      <a href="index.html">01. Bakhita</a>
-      <a href="daniella.html">02. Daniella</a>
-      <a href="ernest.html">03. Ernest</a>
-      <a href="ntwari.html">04. Joseph</a>
-      <a href="ibrahim.html" class="active">05. Ibrahim</a>
-      <a href="matthew.html">06. Matthew</a>
-    </nav>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Group 7 &bull; Makerere</a>
+      <nav>
+        <a href="index.html">Bakhita</a>
+        <a href="daniella.html">Daniella</a>
+        <a href="ernest.html">Ernest</a>
+        <a href="ntwari.html">Joseph</a>
+        <a href="ibrahim.html" class="active">Ibrahim</a>
+        <a href="matthew.html">Matthew</a>
+      </nav>
+    </div>
   </header>
 
   <!-- ======================================================================
-       MAIN CONTENT: Ibrahim's Golf & Academics Profile
+       2. MAIN CONTENT
        ====================================================================== -->
-  <main class="clubhouse-container">
+  <main class="container">
 
-    <!-- Card 1: Dossier Profile -->
-    <section class="clubhouse-card">
-      <div class="clubhouse-flex">
-        <div class="crest-frame">⛳</div>
-        <div class="clubhouse-info">
+    <!-- Section 1: About Ibrahim -->
+    <section class="card">
+      <div class="profile-header">
+        <div class="profile-icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="profile-info">
           <h1>Lubega Ibrahim</h1>
-          <p class="clubhouse-role">Makerere University Undergraduate &bull; Sportsman</p>
-          <ul class="roster-tags">
+          <p class="profile-subtitle">Undergraduate Student at Makerere University</p>
+          <ul class="info-list">
             <li>DOB: 01 / 01 / 2005</li>
             <li>Email: lubegaibra24@gmail.com</li>
             <li>Institution: Makerere University</li>
-            <li>Roster: Group 7</li>
+            <li>Role: Group 7 Member</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Card 2: Hobbies & Fairway Passions -->
-    <section class="clubhouse-card">
-      <h2 class="clubhouse-heading">Pursuits & Sporting Disciplines</h2>
-      <div class="fairway-grid">
-        <div class="fairway-box">
-          <div class="fairway-icon">⛳</div>
+    <!-- Section 2: Hobbies & Interests -->
+    <section class="card">
+      <h2><i class="fa-solid fa-heart"></i> My Hobbies & Interests</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <i class="fa-solid fa-golf-ball-tee"></i>
           <h3>Playing Golf</h3>
-          <p>Practicing precision, body balance, and thoughtful strategy on the green.</p>
+          <p>I enjoy playing golf because it teaches focus, patience, body alignment, and mental calmness.</p>
         </div>
-        <div class="fairway-box">
-          <div class="fairway-icon">⚽</div>
+        <div class="hobby-card">
+          <i class="fa-solid fa-futbol"></i>
           <h3>Playing Football</h3>
-          <p>Active competitive football matches that maintain physical endurance.</p>
+          <p>Playing football with coursemates keeps energy and fitness high and builds great team spirit.</p>
         </div>
-        <div class="fairway-box">
-          <div class="fairway-icon">📚</div>
+        <div class="hobby-card">
+          <i class="fa-solid fa-graduation-cap"></i>
           <h3>University Academics</h3>
-          <p>Engaging in lectures, discussions, and coursework projects at Makerere.</p>
+          <p>Engaging in lectures, discussions, and coursework projects at Makerere University.</p>
         </div>
       </div>
     </section>
 
-    <!-- Card 3: Course Log / Journal -->
-    <section class="clubhouse-card">
-      <h2 class="clubhouse-heading">Course Log & Reflections</h2>
-      <div class="course-log">
-        <h3>Patience on the Green & Energy on the Pitch</h3>
+    <!-- Section 3: Student Blog / Campus Experience -->
+    <section class="card">
+      <h2><i class="fa-solid fa-pen-nib"></i> Student Blog</h2>
+      <div class="blog-box">
+        <h3>The Focus of Golf and the Energy of Football</h3>
         <p>
-          University life requires steady focus and mental clarity—qualities that golf teaches with every swing. On the golf course, there is no rushing; each shot demands patience, calculation, and composed nerves.
+          Being a university student requires focus, patience, and consistency—qualities that golf reinforces every time I practice. On the course, there is no need to rush; each swing demands careful thought, balance, and composure.
         </p>
         <p>
-          Football provides the perfect complement: fast-paced teamwork, physical stamina, and camaraderie with coursemates. Balancing both sports after classes helps me approach university challenges with a calm and determined mindset.
+          Football provides an awesome contrast: fast-paced movement, social teamwork, and active competition. Enjoying both sports alongside my academic workload gives me a balanced routine that keeps me motivated throughout the semester.
         </p>
       </div>
     </section>
 
-    <!-- Card 4: Interactive Register -->
-    <section class="clubhouse-card">
-      <h2 class="clubhouse-heading">Clubhouse Register & Greetings</h2>
+    <!-- Section 4: Interactive Like and Comment Form -->
+    <section class="card">
+      <h2><i class="fa-solid fa-comments"></i> Leave a Message for Ibrahim</h2>
       
-      <div class="register-zone">
-        <span>Commend Ibrahim's sporting and academic efforts:</span>
-        <button id="like-btn" class="btn-fairway">
-          ⛳ Commend Player (<span id="like-count">0</span>)
+      <!-- Like Button -->
+      <div class="interactive-row">
+        <span>Support Ibrahim's page:</span>
+        <button id="like-btn" class="like-btn">
+          <i class="fa-solid fa-thumbs-up"></i> Like (<span id="like-count">0</span>)
         </button>
       </div>
 
-      <form id="comment-form" class="register-form">
-        <input type="text" id="comment-author" placeholder="Guest / Colleague Name" required>
-        <textarea id="comment-message" placeholder="Sign your entry in the register..." required></textarea>
-        <button type="submit">Sign Register</button>
+      <!-- Comment Form -->
+      <form id="comment-form" class="comment-form">
+        <input type="text" id="comment-author" placeholder="Your Name" required>
+        <textarea id="comment-message" placeholder="Write a message or feedback here..." required></textarea>
+        <button type="submit">Post Comment</button>
       </form>
 
-      <div id="comments-list" class="register-entries"></div>
+      <!-- Message List -->
+      <div id="comments-list" class="comments-list"></div>
     </section>
 
-    <!-- Pager -->
-    <div class="clubhouse-pager">
-      <a href="ntwari.html" class="clubhouse-btn">&larr; Previous: Joseph</a>
-      <a href="matthew.html" class="clubhouse-btn">Next: Matthew &rarr;</a>
+    <!-- Footer Navigation (Next & Previous) -->
+    <div class="footer-nav">
+      <a href="ntwari.html">&larr; Previous: Joseph</a>
+      <a href="matthew.html">Next: Matthew &rarr;</a>
     </div>
 
     <footer>
-      <p>&copy; 2026 Group 7 &bull; Lubega Ibrahim &bull; Makerere University</p>
+      <p>&copy; 2026 Group 7 &bull; Makerere University</p>
     </footer>
 
   </main>
 
+  <!-- Interactive JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>

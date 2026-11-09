@@ -1,8 +1,7 @@
 /* ==========================================================================
-   KAGODA DANIELLA EVELYN - PERSONAL WEBPAGE STYLESHEET
-   Style Concept: Purple Aesthetic & Creative Scrapbook Space
-   Colors: Royal Purple (#7e22ce), Lavender Pastel (#ede9fe), Violet (#a855f7)
-   Font: Rounded Modern Sans ('Century Gothic', 'Trebuchet MS', sans-serif)
+   Kagoda Daniella Evelyn - Personal Webpage Stylesheet
+   Makerere University - Group 7
+   Theme: Purple & Creative Reading Space
    ========================================================================== */
 
 * {
@@ -19,11 +18,15 @@ body {
   padding-bottom: 2.5rem;
 }
 
-/* Scrapbook Purple Navigation */
-.purple-nav {
+header {
   background: #ffffff;
-  border-bottom: 3px solid #ede9fe;
-  padding: 0.85rem 1.5rem;
+  border-bottom: 1px solid #ddd6fe;
+  padding: 0.9rem 1.2rem;
+}
+
+.nav-container {
+  max-width: 860px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,257 +34,283 @@ body {
   gap: 1rem;
 }
 
-.brand-scrapbook {
-  font-size: 1.2rem;
-  font-weight: 800;
+.logo {
+  font-size: 1.15rem;
+  font-weight: bold;
   color: #7e22ce;
   text-decoration: none;
 }
 
-.scrapbook-links {
+nav {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.scrapbook-links a {
+nav a {
   text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.88rem;
   color: #6b21a8;
-  padding: 0.4rem 0.85rem;
-  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
   background: #f5f3ff;
   border: 1px solid #ddd6fe;
   transition: all 0.2s ease;
 }
 
-.scrapbook-links a:hover {
-  background: #ede9fe;
-  transform: translateY(-2px);
+nav a:hover {
+  color: #7e22ce;
+  border-color: #7e22ce;
 }
 
-.scrapbook-links a.active {
+nav a.active {
   background: #7e22ce;
   color: #ffffff;
   border-color: #7e22ce;
 }
 
-.scrapbook-container {
-  max-width: 840px;
-  margin: 1.75rem auto;
+.container {
+  max-width: 860px;
+  margin: 1.5rem auto;
   padding: 0 1rem;
 }
 
-/* Polaroid & Sticker Style Cards */
-.purple-card {
+/* Content Cards (Uniform clean border, no highlighted single-edge strip) */
+.card {
   background: #ffffff;
-  border: 2px dashed #d8b4fe;
-  border-radius: 18px;
-  padding: 1.8rem;
+  border: 1px solid #e9d5ff;
+  border-radius: 8px;
+  padding: 1.6rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 14px rgba(126, 34, 206, 0.05);
 }
 
-/* Profile Scrapbook */
-.polaroid-flex {
+/* Profile Section */
+.profile-header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.polaroid-frame {
-  width: 95px;
-  height: 95px;
-  background: #ffffff;
-  border: 3px solid #7e22ce;
-  border-radius: 16px;
+.profile-icon {
+  width: 80px;
+  height: 80px;
+  background: #f3e8ff;
+  border: 2px solid #7e22ce;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.8rem;
-  box-shadow: 3px 4px 0px #c084fc;
-}
-
-.polaroid-info h1 {
-  font-size: 1.7rem;
-  color: #581c87;
-  margin-bottom: 0.25rem;
-}
-
-.purple-subtitle {
+  font-size: 2rem;
   color: #7e22ce;
-  font-weight: 600;
+}
+
+.profile-info h1 {
+  font-size: 1.6rem;
+  color: #581c87;
+  margin-bottom: 0.3rem;
+}
+
+.profile-subtitle {
+  color: #7e22ce;
   font-size: 0.95rem;
   margin-bottom: 0.6rem;
 }
 
-.sticker-tags {
+.info-list {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  list-style: none;
 }
 
-.sticker-tags li {
+.info-list li {
   background: #f3e8ff;
-  border: 1px solid #c084fc;
+  border: 1px solid #d8b4fe;
   color: #6b21a8;
-  padding: 0.3rem 0.8rem;
-  border-radius: 999px;
-  font-size: 0.82rem;
-  font-weight: bold;
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.84rem;
 }
 
-/* Hobbies & Favorites Section */
-h2.purple-heading {
+h2 {
   font-size: 1.2rem;
   color: #6b21a8;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.favorites-grid {
+h2 i {
+  color: #7e22ce;
+}
+
+/* Hobbies Grid (Clean uniform boxes, no highlighted edge strip) */
+.hobbies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
-.favorite-box {
-  background: #fdf4ff;
-  border: 1px solid #f0abfc;
-  border-radius: 14px;
-  padding: 1.3rem;
+.hobby-card {
+  background: #faf5ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 6px;
+  padding: 1.2rem;
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.favorite-box:hover {
-  transform: translateY(-4px);
+.hobby-card:hover {
+  transform: translateY(-2px);
+  border-color: #7e22ce;
 }
 
-.favorite-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.4rem;
-}
-
-.favorite-box h3 {
-  font-size: 1.05rem;
+.hobby-card i {
+  font-size: 1.8rem;
   color: #7e22ce;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.hobby-card h3 {
+  font-size: 1rem;
+  color: #6b21a8;
   margin-bottom: 0.3rem;
 }
 
-.favorite-box p {
-  font-size: 0.86rem;
+.hobby-card p {
+  font-size: 0.85rem;
   color: #4a044e;
 }
 
-/* Student Journal */
-.purple-note {
+/* Blog Box (Clean uniform border) */
+.blog-box {
   background: #faf5ff;
-  border-left: 5px solid #a855f7;
-  border-radius: 10px;
-  padding: 1.3rem;
+  border: 1px solid #e9d5ff;
+  border-radius: 6px;
+  padding: 1.25rem;
 }
 
-.purple-note h3 {
+.blog-box h3 {
+  font-size: 1.1rem;
   color: #6b21a8;
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
-}
-
-.purple-note p {
-  color: #3b0764;
-  font-size: 0.92rem;
   margin-bottom: 0.6rem;
 }
 
-/* Interactive Purple Board */
-.purple-interact {
+.blog-box p {
+  color: #3b0764;
+  font-size: 0.92rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Interactive Like & Comment Form */
+.interactive-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   background: #f3e8ff;
   border: 1px solid #d8b4fe;
-  padding: 1rem 1.4rem;
-  border-radius: 12px;
-  flex-wrap: wrap;
-  gap: 0.8rem;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
 }
 
-.btn-purple {
+.like-btn {
   background: #7e22ce;
   color: #ffffff;
   border: none;
-  font-weight: bold;
-  font-size: 0.92rem;
-  padding: 0.6rem 1.4rem;
-  border-radius: 999px;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0 3px 8px rgba(126, 34, 206, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: inherit;
+  transition: background 0.2s ease;
 }
 
-.btn-purple:hover {
+.like-btn:hover {
   background: #6b21a8;
 }
 
-.purple-form {
+.comment-form {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
-  margin-top: 1rem;
+  gap: 0.75rem;
 }
 
-.purple-form input,
-.purple-form textarea {
-  border: 1px solid #d8b4fe;
-  background: #ffffff;
+.comment-form input,
+.comment-form textarea {
+  background: #faf5ff;
+  border: 1px solid #ddd6fe;
+  color: #3b0764;
   padding: 0.65rem 0.9rem;
-  border-radius: 8px;
+  border-radius: 4px;
   font-family: inherit;
   font-size: 0.9rem;
 }
 
-.purple-form button {
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: none;
+  border-color: #7e22ce;
+}
+
+.comment-form textarea {
+  resize: vertical;
+  min-height: 65px;
+}
+
+.comment-form button {
   align-self: flex-start;
-  background: #9333ea;
+  background: #7e22ce;
   color: #ffffff;
   border: none;
   padding: 0.55rem 1.3rem;
-  border-radius: 8px;
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 4px;
   cursor: pointer;
+  font-family: inherit;
 }
 
-.notes-stream {
+.comment-form button:hover {
+  background: #6b21a8;
+}
+
+.comments-list {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
 
-.stream-card,
 .comment-item {
-  background: #fdf4ff;
-  border: 1px solid #f0abfc;
-  border-radius: 10px;
+  background: #faf5ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 4px;
   padding: 0.75rem 1rem;
   font-size: 0.88rem;
-  margin-top: 0.5rem;
 }
 
-.stream-card .author,
 .comment-author {
   font-weight: bold;
   color: #7e22ce;
   margin-bottom: 0.2rem;
 }
 
-/* Pager */
-.purple-pager {
+.comment-item p {
+  color: #4a044e;
+}
+
+.footer-nav {
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
@@ -289,24 +318,25 @@ h2.purple-heading {
   gap: 0.8rem;
 }
 
-.purple-btn-nav {
+.footer-nav a {
   text-decoration: none;
+  font-size: 0.85rem;
   color: #6b21a8;
-  font-weight: bold;
-  font-size: 0.88rem;
   background: #ffffff;
-  border: 1px solid #d8b4fe;
+  border: 1px solid #ddd6fe;
   padding: 0.45rem 1rem;
-  border-radius: 999px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
-.purple-btn-nav:hover {
-  background: #f3e8ff;
+.footer-nav a:hover {
+  color: #7e22ce;
+  border-color: #7e22ce;
 }
 
 footer {
   text-align: center;
   font-size: 0.82rem;
-  color: #8952b8;
+  color: #6b21a8;
   margin-top: 2rem;
 }

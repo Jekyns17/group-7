@@ -3,121 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nantume Bakhita Grace | Reading Chronicles | Group 7</title>
+  <title>Nantume Bakhita Grace - Group 7</title>
+  <!-- Font Awesome CDN for icons instead of emojis -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/bakhita.css">
 </head>
 <body data-student="bakhita">
 
   <!-- ======================================================================
-       HEADER: Group 7 Shared Literary Navigation
+       1. NAVIGATION BAR
        ====================================================================== -->
-  <header class="literary-nav">
-    <a href="index.html" class="brand-title">Group 7 &bull; Chronicles</a>
-    <nav class="nav-chapters">
-      <a href="index.html" class="active">I. Bakhita</a>
-      <a href="daniella.html">II. Daniella</a>
-      <a href="ernest.html">III. Ernest</a>
-      <a href="ntwari.html">IV. Joseph</a>
-      <a href="ibrahim.html">V. Ibrahim</a>
-      <a href="matthew.html">VI. Matthew</a>
-    </nav>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Group 7 &bull; Makerere</a>
+      <nav>
+        <a href="index.html" class="active">Bakhita</a>
+        <a href="daniella.html">Daniella</a>
+        <a href="ernest.html">Ernest</a>
+        <a href="ntwari.html">Joseph</a>
+        <a href="ibrahim.html">Ibrahim</a>
+        <a href="matthew.html">Matthew</a>
+      </nav>
+    </div>
   </header>
 
   <!-- ======================================================================
-       MAIN CONTENT: Bakhita's Reading Journal & Profile
+       2. MAIN CONTENT
        ====================================================================== -->
-  <main class="book-container">
+  <main class="container">
 
-    <!-- Card 1: Reader's Profile -->
-    <article class="book-card">
-      <div class="reader-profile">
-        <div class="reader-portrait">🌸</div>
-        <div class="reader-info">
+    <!-- Section 1: About Bakhita -->
+    <section class="card">
+      <div class="profile-header">
+        <div class="profile-icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="profile-info">
           <h1>Nantume Bakhita Grace</h1>
-          <p class="reader-tagline">Scholar at Makerere University &bull; Aspiring Software Engineer</p>
-          <ul class="meta-tags">
-            <li>Age: 21 Years</li>
-            <li>Makerere University</li>
-            <li>Ambition: Software Engineering</li>
-            <li>Folio: Group 7</li>
+          <p class="profile-subtitle">Student at Makerere University &bull; Aspiring Software Engineer</p>
+          <ul class="info-list">
+            <li>Age: 21 Years Old</li>
+            <li>Institution: Makerere University</li>
+            <li>Career Goal: Software Engineering</li>
+            <li>Role: Group 7 Member</li>
           </ul>
         </div>
       </div>
-    </article>
+    </section>
 
-    <!-- Card 2: Hobbies & Literary Passions -->
-    <article class="book-card">
-      <h2 class="chapter-heading">Chapter 1: Pastimes & Free Hours</h2>
-      <div class="hobbies-shelf">
-        <div class="hobby-volume">
-          <div class="hobby-icon">📖</div>
+    <!-- Section 2: Hobbies & Interests -->
+    <section class="card">
+      <h2><i class="fa-solid fa-heart"></i> My Hobbies & Interests</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <i class="fa-solid fa-book-open"></i>
           <h3>Reading Novels</h3>
-          <p>Getting immersed in compelling fiction and storytelling during quiet hours.</p>
+          <p>I enjoy reading engaging novels and exploring good books whenever I have quiet free time.</p>
         </div>
-        <div class="hobby-volume">
-          <div class="hobby-icon">🎬</div>
+        <div class="hobby-card">
+          <i class="fa-solid fa-film"></i>
           <h3>Watching Movies</h3>
-          <p>Relaxing with captivating cinema on weekends when coursework allows.</p>
+          <p>Watching films on weekends is one of my favorite ways to relax after busy study days.</p>
         </div>
-        <div class="hobby-volume">
-          <div class="hobby-icon">📺</div>
+        <div class="hobby-card">
+          <i class="fa-solid fa-tv"></i>
           <h3>Watching Series</h3>
-          <p>Following engaging drama series during evening study intermissions.</p>
+          <p>I follow drama and interesting series episodes during study breaks and in the evenings.</p>
         </div>
-        <div class="hobby-volume">
-          <div class="hobby-icon">😴</div>
-          <h3>Peaceful Sleep</h3>
-          <p>Restful restoration to refresh the mind after intensive academic lectures.</p>
+        <div class="hobby-card">
+          <i class="fa-solid fa-bed"></i>
+          <h3>Rest & Sleeping</h3>
+          <p>Getting peaceful, restful sleep helps me recharge and stay focused for upcoming lectures.</p>
         </div>
       </div>
-    </article>
+    </section>
 
-    <!-- Card 3: Reading Journal -->
-    <article class="book-card">
-      <h2 class="chapter-heading">Chapter 2: Reflections from Makerere</h2>
-      <div class="journal-entry">
-        <h3>Balancing Academics and Solitude</h3>
+    <!-- Section 3: Student Blog / Campus Experience -->
+    <section class="card">
+      <h2><i class="fa-solid fa-pen-nib"></i> Student Blog</h2>
+      <div class="blog-box">
+        <h3>Balancing Books, Code, and Free Time</h3>
         <p>
-          At 21 years old, studying at Makerere University requires diligence, logic, and hours dedicated to understanding software engineering principles. Building reliable software is my future aspiration.
+          Being a 21-year-old student at Makerere University means my schedule is filled with lectures, coursework assignments, and practicing programming fundamentals. My main goal is to build a career in software engineering, so I dedicate time every week to understanding development concepts.
         </p>
         <p>
-          Yet, equilibrium is everything. When my programming practice concludes, there is genuine joy in turning off the laptop, opening a novel, or resting quietly. These quiet pursuits provide the peace necessary to excel in group work and university life.
+          Whenever lectures wrap up, my favorite way to recharge is simply sitting down with a great novel, catching up on an episode of a series, or resting. Keeping a natural balance helps me stay refreshed and ready for university group work.
         </p>
       </div>
-    </article>
+    </section>
 
-    <!-- Card 4: Interactive Guestbook & Stamp -->
-    <article class="book-card">
-      <h2 class="chapter-heading">Chapter 3: Reader's Guestbook</h2>
+    <!-- Section 4: Interactive Like and Comment Form -->
+    <section class="card">
+      <h2><i class="fa-solid fa-comments"></i> Leave a Message for Bakhita</h2>
       
-      <div class="stamp-bar">
-        <span>Affix a reader's stamp of encouragement:</span>
-        <button id="like-btn" class="btn-stamp">
-          📖 Stamp Appreciation (<span id="like-count">0</span>)
+      <!-- Like Button -->
+      <div class="interactive-row">
+        <span>Support Bakhita's page:</span>
+        <button id="like-btn" class="like-btn">
+          <i class="fa-solid fa-thumbs-up"></i> Like (<span id="like-count">0</span>)
         </button>
       </div>
 
-      <form id="comment-form" class="guestbook-form">
-        <input type="text" id="comment-author" placeholder="Your Name or Initial" required>
-        <textarea id="comment-message" placeholder="Inscribe a pleasant remark..." required></textarea>
-        <button type="submit">Inscribe Note</button>
+      <!-- Comment Form -->
+      <form id="comment-form" class="comment-form">
+        <input type="text" id="comment-author" placeholder="Your Name" required>
+        <textarea id="comment-message" placeholder="Write a message or feedback here..." required></textarea>
+        <button type="submit">Post Comment</button>
       </form>
 
-      <div id="comments-list" class="guestbook-list"></div>
-    </article>
+      <!-- Message List -->
+      <div id="comments-list" class="comments-list"></div>
+    </section>
 
-    <!-- Chapter Navigation -->
-    <div class="chapter-nav">
-      <a href="matthew.html" class="chapter-btn">&larr; Return to Matthew</a>
-      <a href="daniella.html" class="chapter-btn">Proceed to Daniella &rarr;</a>
+    <!-- Footer Navigation (Next & Previous) -->
+    <div class="footer-nav">
+      <a href="matthew.html">&larr; Previous: Matthew</a>
+      <a href="daniella.html">Next: Daniella &rarr;</a>
     </div>
 
     <footer>
-      <p>&copy; 2026 Group 7 &bull; Makerere University Chronicles</p>
+      <p>&copy; 2026 Group 7 &bull; Makerere University</p>
     </footer>
 
   </main>
 
+  <!-- Interactive JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>

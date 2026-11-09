@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kayondo Ernest - Webpage Code Explanation Guide</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 15mm;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      font-size: 13pt;
+      margin: 0;
+      padding: 20px;
+      background: #ffffff;
+    }
+    h1 {
+      color: #0284c7;
+      font-size: 22pt;
+      border-bottom: 3px solid #0284c7;
+      padding-bottom: 8px;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 13pt;
+      color: #64748b;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+    h2 {
+      color: #0369a1;
+      font-size: 16pt;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 5px;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      page-break-after: avoid;
+    }
+    h3 {
+      color: #0f172a;
+      font-size: 13pt;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      page-break-after: avoid;
+    }
+    p, li {
+      font-size: 11pt;
+      color: #334155;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+    .tip-box {
+      background: #f0f9ff;
+      border-left: 4px solid #0284c7;
+      padding: 10px 14px;
+      border-radius: 4px;
+      margin: 12px 0;
+      font-size: 10.5pt;
+    }
+    .tip-box strong {
+      color: #0369a1;
+    }
+    pre {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 9.5pt;
+      line-height: 1.45;
+      overflow-x: auto;
+      margin: 8px 0 12px 0;
+      page-break-inside: avoid;
+    }
+    code {
+      font-family: 'Consolas', 'Courier New', monospace;
+      background: #f1f5f9;
+      color: #0369a1;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-size: 10pt;
+    }
+    pre code {
+      background: transparent;
+      color: inherit;
+      padding: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 10.5pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 8px 10px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 600;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kayondo Ernest & Group 7</h1>
+  <div class="subtitle">Complete Code Explanation & Presentation Guide &bull; Makerere University</div>
+
+  <div class="tip-box">
+    <strong>How to use this guide:</strong> Keep this PDF open on your phone during your presentation or defense. It gives you plain, direct answers to explain every single file, tag, CSS rule, and JavaScript function to your lecturer with confidence.
+  </div>
+
+  <h2>1. Overview of the Website Project</h2>
+  <p>
+    Our website represents six Makerere University students in Group 7. Each student has their own webpage built with their own personal style and hobbies. The pages are united into one website through a shared top navigation bar and footer buttons.
+  </p>
+  <ul>
+    <li><strong>index.html</strong> &bull; Nantume Bakhita Grace (Literary journal theme, novel reading)</li>
+    <li><strong>daniella.html</strong> &bull; Kagoda Daniella Evelyn (Purple aesthetic theme, reading)</li>
+    <li><strong>ernest.html</strong> &bull; Kayondo Ernest (Dark tech theme, aspiring DevOps engineer)</li>
+    <li><strong>ntwari.html</strong> &bull; Ntwari Joseph David (Green sports theme, football)</li>
+    <li><strong>ibrahim.html</strong> &bull; Lubega Ibrahim (Classic green & gold theme, golf & football)</li>
+    <li><strong>matthew.html</strong> &bull; Musiinguzi Matthew Jekyns (Dark contrast theme, basketball & chess)</li>
+  </ul>
+  <p>
+    <strong>Key Design Decisions Made:</strong>
+  </p>
+  <ul>
+    <li><strong>No Emojis:</strong> All icons are standard vector icons loaded via the industry-standard Font Awesome CDN.</li>
+    <li><strong>No Artificial Highlight Strips:</strong> All cards have clean, uniform, balanced borders all around.</li>
+    <li><strong>Individual Stylesheets:</strong> Each student has their own CSS file (e.g. <code>css/ernest.css</code>), proving separate work.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <h2>2. Line-by-Line Breakdown: Kayondo Ernest's HTML (ernest.html)</h2>
+
+  <h3>Section A: Document Header & Font Awesome Link</h3>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Kayondo Ernest - Group 7&lt;/title&gt;
+  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"&gt;
+  &lt;link rel="stylesheet" href="css/ernest.css"&gt;
+&lt;/head&gt;</code></pre>
+  <p><strong>How to explain this to the lecturer:</strong></p>
+  <ul>
+    <li><code>&lt;!DOCTYPE html&gt;</code>: Tells the browser to render the page using the latest HTML5 standard.</li>
+    <li><code>&lt;meta charset="UTF-8"&gt;</code>: Sets standard character encoding for text.</li>
+    <li><code>&lt;meta name="viewport" ...&gt;</code>: Ensures the webpage adjusts nicely on mobile phones and tablets.</li>
+    <li><code>&lt;link rel="stylesheet" ... font-awesome ...&gt;</code>: Connects the external Font Awesome library so we can display clean icons (like the swimming, running, and gym icons) instead of emojis.</li>
+    <li><code>&lt;link rel="stylesheet" href="css/ernest.css"&gt;</code>: Links Ernest's personal stylesheet.</li>
+  </ul>
+
+  <h3>Section B: Navigation Bar</h3>
+  <pre><code>&lt;header&gt;
+  &lt;div class="nav-container"&gt;
+    &lt;a href="index.html" class="logo"&gt;Group 7 &bull; Makerere&lt;/a&gt;
+    &lt;nav&gt;
+      &lt;a href="index.html"&gt;Bakhita&lt;/a&gt;
+      &lt;a href="daniella.html"&gt;Daniella&lt;/a&gt;
+      &lt;a href="ernest.html" class="active"&gt;Ernest&lt;/a&gt;
+      &lt;a href="ntwari.html"&gt;Joseph&lt;/a&gt;
+      &lt;a href="ibrahim.html"&gt;Ibrahim&lt;/a&gt;
+      &lt;a href="matthew.html"&gt;Matthew&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+  <p><strong>How to explain this to the lecturer:</strong></p>
+  <ul>
+    <li>This <code>&lt;header&gt;</code> unites all 6 individual student pages into one complete group website.</li>
+    <li>The link for Ernest has <code>class="active"</code>, which our CSS uses to highlight his tab in blue so visitors immediately know which page they are currently on.</li>
+  </ul>
+
+  <h3>Section C: About Me Card</h3>
+  <pre><code>&lt;section class="card"&gt;
+  &lt;div class="profile-header"&gt;
+    &lt;div class="profile-icon"&gt;
+      &lt;i class="fa-solid fa-code"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="profile-info"&gt;
+      &lt;h1&gt;Kayondo Ernest&lt;/h1&gt;
+      &lt;p class="profile-subtitle"&gt;Student at Makerere University &bull; Aspiring DevOps Engineer&lt;/p&gt;
+      &lt;ul class="info-list"&gt;
+        &lt;li&gt;Institution: Makerere University&lt;/li&gt;
+        &lt;li&gt;Career Goal: DevOps Engineer&lt;/li&gt;
+        &lt;li&gt;Role: Group 7 Member&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  <p><strong>How to explain this to the lecturer:</strong></p>
+  <ul>
+    <li>Uses semantic <code>&lt;section class="card"&gt;</code> to create a clean rectangular card.</li>
+    <li><code>&lt;i class="fa-solid fa-code"&gt;&lt;/i&gt;</code> displays a coding icon inside the circular profile frame.</li>
+    <li>Lists Ernest's university and his aspiration to become a DevOps engineer.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <h3>Section D: Hobbies & Interests Grid</h3>
+  <pre><code>&lt;section class="card"&gt;
+  &lt;h2&gt;&lt;i class="fa-solid fa-heart"&gt;&lt;/i&gt; My Hobbies & Interests&lt;/h2&gt;
+  &lt;div class="hobbies-grid"&gt;
+    &lt;div class="hobby-card"&gt;
+      &lt;i class="fa-solid fa-person-swimming"&gt;&lt;/i&gt;
+      &lt;h3&gt;Swimming&lt;/h3&gt;
+      &lt;p&gt;I enjoy swimming to stay in shape, improve lung capacity...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="hobby-card"&gt;
+      &lt;i class="fa-solid fa-person-running"&gt;&lt;/i&gt;
+      &lt;h3&gt;Running&lt;/h3&gt;
+      &lt;p&gt;Regular morning or evening jogs around campus...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="hobby-card"&gt;
+      &lt;i class="fa-solid fa-dumbbell"&gt;&lt;/i&gt;
+      &lt;h3&gt;Gyming&lt;/h3&gt;
+      &lt;p&gt;Working out at the gym is a regular habit of mine...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="hobby-card"&gt;
+      &lt;i class="fa-solid fa-gamepad"&gt;&lt;/i&gt;
+      &lt;h3&gt;Gaming&lt;/h3&gt;
+      &lt;p&gt;Playing video games with friends in the evening...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  <p><strong>How to explain this to the lecturer:</strong></p>
+  <ul>
+    <li>Contains Ernest's 4 genuine hobbies: Swimming, Running, Gyming, and Gaming.</li>
+    <li>Each hobby has its own icon using Font Awesome (person-swimming, person-running, dumbbell, gamepad).</li>
+    <li>The container <code>.hobbies-grid</code> uses CSS Grid to make all four boxes sit side by side on desktop and stack neatly on phones.</li>
+  </ul>
+
+  <h3>Section E: Student Blog Section</h3>
+  <pre><code>&lt;section class="card"&gt;
+  &lt;h2&gt;&lt;i class="fa-solid fa-book-open"&gt;&lt;/i&gt; Student Blog&lt;/h2&gt;
+  &lt;div class="blog-box"&gt;
+    &lt;h3&gt;Balancing Academics and an Active Lifestyle&lt;/h3&gt;
+    &lt;p&gt;Being an undergraduate student at Makerere University is both challenging and rewarding...&lt;/p&gt;
+    &lt;p&gt;At the same time, I make sure not to spend the whole day glued to a screen...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  <p><strong>How to explain this to the lecturer:</strong></p>
+  <ul>
+    <li>Shares real student reflections on balancing academic study at Makerere with fitness routines.</li>
+  </ul>
+
+  <h3>Section F: Interactive Like Button & Comment Form</h3>
+  <pre><code>&lt;section class="card"&gt;
+  &lt;h2&gt;&lt;i class="fa-solid fa-comments"&gt;&lt;/i&gt; Leave a Message for Ernest&lt;/h2&gt;
+  
+  &lt;!-- Like Button --&gt;
+  &lt;div class="interactive-row"&gt;
+    &lt;span&gt;Support Ernest's page:&lt;/span&gt;
+    &lt;button id="like-btn" class="like-btn"&gt;
+      &lt;i class="fa-solid fa-thumbs-up"&gt;&lt;/i&gt; Like (&lt;span id="like-count"&gt;0&lt;/span&gt;)
+    &lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Comment Form --&gt;
+  &lt;form id="comment-form" class="comment-form"&gt;
+    &lt;input type="text" id="comment-author" placeholder="Your Name" required&gt;
+    &lt;textarea id="comment-message" placeholder="Write a message..." required&gt;&lt;/textarea&gt;
+    &lt;button type="submit"&gt;Post Comment&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;div id="comments-list" class="comments-list"&gt;&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  <p><strong>How to explain this to the lecturer:</strong></p>
+  <ul>
+    <li>The button has <code>id="like-btn"</code> and the counter has <code>id="like-count"</code>. When clicked, JavaScript increments this number.</li>
+    <li>The form has <code>id="comment-form"</code> with required inputs for name and message. When submitted, JavaScript appends the comment into <code>#comments-list</code> without refreshing the page.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <h2>3. How the CSS Works (css/ernest.css)</h2>
+
+  <h3>1. Reset and Theme Colors</h3>
+  <pre><code>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}</code></pre>
+  <ul>
+    <li><code>box-sizing: border-box</code>: Makes sure padding and borders don't increase the total width of elements, preventing horizontal overflow.</li>
+    <li><code>#0f172a</code>: Dark slate background fitting a tech and cloud developer portfolio.</li>
+  </ul>
+
+  <h3>2. Clean, Balanced Cards</h3>
+  <pre><code>.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}</code></pre>
+  <ul>
+    <li>Clean 1px border all around. No one-sided highlight stripes, giving it a clean, human design.</li>
+  </ul>
+
+  <h3>3. Responsive CSS Grid for Hobbies</h3>
+  <pre><code>.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}</code></pre>
+  <ul>
+    <li><code>repeat(auto-fit, minmax(180px, 1fr))</code>: Automatically fits as many 180px cards across the screen as possible, wrapping to the next line on smaller devices without needing complicated media queries!</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <h2>4. How the JavaScript Works (js/main.js)</h2>
+  <p>The JavaScript is lightweight (under 60 lines) and uses plain vanilla JavaScript.</p>
+
+  <h3>1. DOMContentLoaded Listener</h3>
+  <pre><code>document.addEventListener('DOMContentLoaded', () => {
+  const student = document.body.getAttribute('data-student') || 'student';
+  ...
+});</code></pre>
+  <ul>
+    <li>Waits until all HTML elements are loaded before running the script so it never crashes.</li>
+    <li>Reads <code>data-student="ernest"</code> so Ernest's likes and comments are stored in his own separate storage key.</li>
+  </ul>
+
+  <h3>2. The Like Button Logic</h3>
+  <pre><code>const storageKey = 'group7_likes_' + student;
+let count = parseInt(localStorage.getItem(storageKey), 10) || 0;
+likeCountSpan.textContent = count;
+
+likeBtn.addEventListener('click', () => {
+  count++;
+  likeCountSpan.textContent = count;
+  localStorage.setItem(storageKey, count);
+});</code></pre>
+  <ul>
+    <li><code>localStorage.getItem(storageKey)</code>: Retrieves saved likes from the browser.</li>
+    <li><code>count++</code>: Increments the like counter by 1 on every click.</li>
+    <li><code>localStorage.setItem(storageKey, count)</code>: Saves the new number so it persists even when the user refreshes or closes the tab.</li>
+  </ul>
+
+  <h3>3. The Comment Submission Logic</h3>
+  <pre><code>commentForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Stops the page from refreshing
+
+  const name = authorInput.value.trim();
+  const text = messageInput.value.trim();
+
+  if (name !== '' && text !== '') {
+    displayComment(name, text); // Adds the comment to the page
+    saved.push({ name, text });
+    localStorage.setItem(commentsKey, JSON.stringify(saved));
+    authorInput.value = '';
+    messageInput.value = '';
+  }
+});</code></pre>
+  <ul>
+    <li><code>event.preventDefault()</code>: Prevents the default browser action of reloading the page upon form submit.</li>
+    <li>Creates a new <code>&lt;div class="comment-item"&gt;</code> element and appends it to <code>#comments-list</code>.</li>
+    <li>Saves the list of comments as a JSON array in <code>localStorage</code>.</li>
+  </ul>
+
+  <h2>5. Quick Answers for Your Presentation</h2>
+  <table>
+    <tr>
+      <th style="width: 35%;">Possible Lecturer Question</th>
+      <th>Your Direct Answer</th>
+    </tr>
+    <tr>
+      <td>"Why do the pages look different?"</td>
+      <td>"Each of the six group members built their own page individually to reflect their own personality and hobbies. At the end, we united all six pages into one website using a shared navigation bar."</td>
+    </tr>
+    <tr>
+      <td>"Where are your icons coming from?"</td>
+      <td>"We linked the official Font Awesome CDN via a standard <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> and used Font Awesome vector icon classes (like <code>fa-person-swimming</code>) instead of emojis."</td>
+    </tr>
+    <tr>
+      <td>"What makes your layout responsive?"</td>
+      <td>"We used modern CSS Grid with <code>repeat(auto-fit, minmax(180px, 1fr))</code> and Flexbox. This allows cards to automatically reposition themselves smoothly on mobile screens."</td>
+    </tr>
+    <tr>
+      <td>"How does your comment box work without a database?"</td>
+      <td>"We used the browser's built-in <code>localStorage</code> API. When someone posts a comment, JavaScript prevents page reload, creates a DOM element, and saves the message list as a JSON string."</td>
+    </tr>
+  </table>
+
+  <footer style="margin-top: 30px; border-top: 1px solid #cbd5e1; padding-top: 10px; font-size: 9pt; color: #64748b; text-align: center;">
+    Group 7 &bull; Makerere University &bull; Academic Year 2026
+  </footer>
+
+</body>
+</html>
