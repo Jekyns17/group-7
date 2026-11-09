@@ -1,0 +1,320 @@
+/* ==========================================================================
+   NANTUME BAKHITA GRACE - PERSONAL WEBPAGE STYLESHEET
+   Style Concept: Vintage Literary Journal & Reading Chronicle
+   Colors: Warm Cream Paper (#fdfbf7), Rose Wine (#9f1239), Soft Pink (#ffe4e6)
+   Font: Classic Serif ('Georgia', 'Times New Roman', serif)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #faf7f2;
+  color: #292524;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.7;
+  padding-bottom: 3rem;
+}
+
+/* Shared Top Navigation (Literary Style) */
+.literary-nav {
+  background: #ffffff;
+  border-bottom: 2px solid #e7e5e4;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #9f1239;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-chapters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-chapters a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #78716c;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid #d6d3d1;
+  border-radius: 3px;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.nav-chapters a:hover {
+  color: #9f1239;
+  border-color: #9f1239;
+  background: #fff1f2;
+}
+
+.nav-chapters a.active {
+  background: #9f1239;
+  color: #ffffff;
+  border-color: #9f1239;
+  font-style: normal;
+}
+
+.book-container {
+  max-width: 840px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Book Parchment Cards */
+.book-card {
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  margin-bottom: 1.8rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.book-card::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 1px solid #f5f5f4;
+  pointer-events: none;
+}
+
+/* Profile Section */
+.reader-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.reader-portrait {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #ffe4e6;
+  border: 2px solid #be123c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+}
+
+.reader-info h1 {
+  font-size: 1.75rem;
+  color: #881337;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.2rem;
+}
+
+.reader-tagline {
+  font-style: italic;
+  color: #78716c;
+  margin-bottom: 0.6rem;
+}
+
+.meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.meta-tags li {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #9f1239;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+}
+
+/* Hobbies Bookshelf */
+h2.chapter-heading {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #881337;
+  border-bottom: 1px solid #fecdd3;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hobbies-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.hobby-volume {
+  background: #fffaf0;
+  border: 1px solid #fde68a;
+  border-left: 4px solid #be123c;
+  padding: 1.2rem;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.hobby-icon {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.hobby-volume h3 {
+  font-size: 1.05rem;
+  color: #881337;
+  margin-bottom: 0.3rem;
+  font-weight: normal;
+}
+
+.hobby-volume p {
+  font-size: 0.85rem;
+  color: #57534e;
+}
+
+/* Journal / Reading Diary */
+.journal-entry {
+  background: #fdfbf7;
+  border: 1px dashed #d6d3d1;
+  padding: 1.5rem;
+  border-radius: 3px;
+}
+
+.journal-entry h3 {
+  color: #881337;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.journal-entry p {
+  font-size: 0.95rem;
+  color: #44403c;
+  margin-bottom: 0.8rem;
+}
+
+/* Interactive Guestbook & Stamp */
+.stamp-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  padding: 1rem 1.25rem;
+  border-radius: 3px;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn-stamp {
+  background: #9f1239;
+  color: #ffffff;
+  border: none;
+  font-family: 'Georgia', serif;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btn-stamp:hover {
+  background: #881337;
+}
+
+.guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+  border: 1px solid #d6d3d1;
+  background: #fafaf9;
+  font-family: 'Georgia', serif;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.guestbook-form button {
+  align-self: flex-start;
+  background: #be123c;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+}
+
+.guestbook-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.guestbook-item,
+.comment-item {
+  background: #fafaf9;
+  border: 1px solid #e7e5e4;
+  border-left: 3px solid #be123c;
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
+  margin-top: 0.5rem;
+}
+
+.guestbook-author,
+.comment-author {
+  font-weight: bold;
+  color: #881337;
+  margin-bottom: 0.2rem;
+}
+
+/* Page Navigation */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.chapter-btn {
+  text-decoration: none;
+  color: #78716c;
+  font-style: italic;
+  font-size: 0.88rem;
+}
+
+.chapter-btn:hover {
+  color: #9f1239;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: #a8a29e;
+  margin-top: 2rem;
+}

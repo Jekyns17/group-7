@@ -1,0 +1,312 @@
+/* ==========================================================================
+   KAGODA DANIELLA EVELYN - PERSONAL WEBPAGE STYLESHEET
+   Style Concept: Purple Aesthetic & Creative Scrapbook Space
+   Colors: Royal Purple (#7e22ce), Lavender Pastel (#ede9fe), Violet (#a855f7)
+   Font: Rounded Modern Sans ('Century Gothic', 'Trebuchet MS', sans-serif)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #faf5ff;
+  color: #3b0764;
+  font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  padding-bottom: 2.5rem;
+}
+
+/* Scrapbook Purple Navigation */
+.purple-nav {
+  background: #ffffff;
+  border-bottom: 3px solid #ede9fe;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand-scrapbook {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #7e22ce;
+  text-decoration: none;
+}
+
+.scrapbook-links {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.scrapbook-links a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b21a8;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: #f5f3ff;
+  border: 1px solid #ddd6fe;
+  transition: all 0.2s ease;
+}
+
+.scrapbook-links a:hover {
+  background: #ede9fe;
+  transform: translateY(-2px);
+}
+
+.scrapbook-links a.active {
+  background: #7e22ce;
+  color: #ffffff;
+  border-color: #7e22ce;
+}
+
+.scrapbook-container {
+  max-width: 840px;
+  margin: 1.75rem auto;
+  padding: 0 1rem;
+}
+
+/* Polaroid & Sticker Style Cards */
+.purple-card {
+  background: #ffffff;
+  border: 2px dashed #d8b4fe;
+  border-radius: 18px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 14px rgba(126, 34, 206, 0.05);
+}
+
+/* Profile Scrapbook */
+.polaroid-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.polaroid-frame {
+  width: 95px;
+  height: 95px;
+  background: #ffffff;
+  border: 3px solid #7e22ce;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  box-shadow: 3px 4px 0px #c084fc;
+}
+
+.polaroid-info h1 {
+  font-size: 1.7rem;
+  color: #581c87;
+  margin-bottom: 0.25rem;
+}
+
+.purple-subtitle {
+  color: #7e22ce;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.sticker-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.sticker-tags li {
+  background: #f3e8ff;
+  border: 1px solid #c084fc;
+  color: #6b21a8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: bold;
+}
+
+/* Hobbies & Favorites Section */
+h2.purple-heading {
+  font-size: 1.2rem;
+  color: #6b21a8;
+  margin-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.favorite-box {
+  background: #fdf4ff;
+  border: 1px solid #f0abfc;
+  border-radius: 14px;
+  padding: 1.3rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.favorite-box:hover {
+  transform: translateY(-4px);
+}
+
+.favorite-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.favorite-box h3 {
+  font-size: 1.05rem;
+  color: #7e22ce;
+  margin-bottom: 0.3rem;
+}
+
+.favorite-box p {
+  font-size: 0.86rem;
+  color: #4a044e;
+}
+
+/* Student Journal */
+.purple-note {
+  background: #faf5ff;
+  border-left: 5px solid #a855f7;
+  border-radius: 10px;
+  padding: 1.3rem;
+}
+
+.purple-note h3 {
+  color: #6b21a8;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.purple-note p {
+  color: #3b0764;
+  font-size: 0.92rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Interactive Purple Board */
+.purple-interact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3e8ff;
+  border: 1px solid #d8b4fe;
+  padding: 1rem 1.4rem;
+  border-radius: 12px;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn-purple {
+  background: #7e22ce;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  font-size: 0.92rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(126, 34, 206, 0.2);
+}
+
+.btn-purple:hover {
+  background: #6b21a8;
+}
+
+.purple-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.purple-form input,
+.purple-form textarea {
+  border: 1px solid #d8b4fe;
+  background: #ffffff;
+  padding: 0.65rem 0.9rem;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.purple-form button {
+  align-self: flex-start;
+  background: #9333ea;
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.notes-stream {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.stream-card,
+.comment-item {
+  background: #fdf4ff;
+  border: 1px solid #f0abfc;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
+  margin-top: 0.5rem;
+}
+
+.stream-card .author,
+.comment-author {
+  font-weight: bold;
+  color: #7e22ce;
+  margin-bottom: 0.2rem;
+}
+
+/* Pager */
+.purple-pager {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.purple-btn-nav {
+  text-decoration: none;
+  color: #6b21a8;
+  font-weight: bold;
+  font-size: 0.88rem;
+  background: #ffffff;
+  border: 1px solid #d8b4fe;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+}
+
+.purple-btn-nav:hover {
+  background: #f3e8ff;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #8952b8;
+  margin-top: 2rem;
+}

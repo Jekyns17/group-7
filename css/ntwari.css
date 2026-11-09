@@ -1,0 +1,331 @@
+/* ==========================================================================
+   NTWARI JOSEPH DAVID - PERSONAL WEBPAGE STYLESHEET
+   Style Concept: Football Pitch & Matchday Athletic Card
+   Colors: Pitch Green (#14532d), Turf Neon (#22c55e), Chalk White (#ffffff)
+   Font: Athletic Bold Sans ('Trebuchet MS', 'Impact', sans-serif)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #052e16;
+  background-image: linear-gradient(180deg, #052e16 0%, #14532d 100%);
+  color: #f0fdf4;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
+}
+
+/* Matchday Navigation */
+.stadium-nav {
+  background: #022c22;
+  border-bottom: 3px solid #22c55e;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stadium-logo {
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #4ade80;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.stadium-links {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.stadium-links a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #86efac;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  background: #064e3b;
+  border: 1px solid #047857;
+  transition: all 0.2s ease;
+}
+
+.stadium-links a:hover {
+  background: #22c55e;
+  color: #022c22;
+}
+
+.stadium-links a.active {
+  background: #22c55e;
+  color: #052e16;
+  border-color: #4ade80;
+}
+
+.stadium-container {
+  max-width: 860px;
+  margin: 1.8rem auto;
+  padding: 0 1rem;
+}
+
+/* Sports Pitch Cards */
+.pitch-card {
+  background: #064e3b;
+  border: 1px solid #059669;
+  border-radius: 10px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Player Profile Card */
+.player-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.jersey-badge {
+  width: 95px;
+  height: 95px;
+  background: #15803d;
+  border: 3px solid #4ade80;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.jersey-icon {
+  font-size: 2.2rem;
+}
+
+.jersey-num {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #f0fdf4;
+}
+
+.player-info h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.player-role {
+  color: #4ade80;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.scout-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.scout-badges li {
+  background: #022c22;
+  border: 1px solid #10b981;
+  color: #a7f3d0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: bold;
+}
+
+/* Matchday Hobbies */
+h2.stadium-heading {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #4ade80;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #047857;
+  padding-bottom: 0.3rem;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.match-box {
+  background: #022c22;
+  border: 1px solid #059669;
+  border-top: 4px solid #22c55e;
+  border-radius: 6px;
+  padding: 1.3rem;
+  text-align: center;
+}
+
+.match-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.match-box h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.match-box p {
+  font-size: 0.86rem;
+  color: #a7f3d0;
+}
+
+/* Match Report / Journal */
+.match-report {
+  background: #022c22;
+  border-left: 5px solid #22c55e;
+  padding: 1.3rem;
+  border-radius: 4px;
+}
+
+.match-report h3 {
+  color: #4ade80;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.match-report p {
+  color: #d1fae5;
+  font-size: 0.92rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Fan Zone / Interactive */
+.fan-zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #022c22;
+  border: 1px solid #047857;
+  padding: 1rem 1.4rem;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn-goal {
+  background: #22c55e;
+  color: #052e16;
+  border: none;
+  font-weight: 900;
+  font-size: 0.92rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-goal:hover {
+  background: #4ade80;
+}
+
+.locker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.locker-form input,
+.locker-form textarea {
+  background: #022c22;
+  border: 1px solid #059669;
+  color: #f0fdf4;
+  padding: 0.65rem 0.9rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.locker-form button {
+  align-self: flex-start;
+  background: #10b981;
+  color: #022c22;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 4px;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.fan-messages {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.fan-post,
+.comment-item {
+  background: #022c22;
+  border: 1px solid #047857;
+  border-left: 3px solid #22c55e;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  margin-top: 0.5rem;
+}
+
+.fan-author,
+.comment-author {
+  font-weight: bold;
+  color: #4ade80;
+  margin-bottom: 0.2rem;
+}
+
+/* Matchday Pager */
+.stadium-pager {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.stadium-btn {
+  text-decoration: none;
+  color: #86efac;
+  background: #064e3b;
+  border: 1px solid #059669;
+  padding: 0.45rem 1.1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.86rem;
+}
+
+.stadium-btn:hover {
+  background: #22c55e;
+  color: #052e16;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #6ee7b7;
+  margin-top: 2rem;
+}

@@ -1,0 +1,327 @@
+/* ==========================================================================
+   MUSIINGUZI MATTHEW JEKYNS - PERSONAL WEBPAGE STYLESHEET
+   Style Concept: Chess Strategy & Basketball Court Lounge
+   Colors: Basketball Orange (#ea580c), Dark Slate (#18181b), Game Blue (#3b82f6)
+   Font: Modern Geometric Sans ('Verdana', 'Tahoma', sans-serif)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #09090b;
+  color: #f4f4f5;
+  font-family: 'Verdana', 'Tahoma', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  padding-bottom: 2.5rem;
+}
+
+/* Arena Top Navigation */
+.arena-nav {
+  background: #18181b;
+  border-bottom: 3px solid #ea580c;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.arena-logo {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #ea580c;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.arena-logo span {
+  color: #3b82f6;
+}
+
+.arena-links {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.arena-links a {
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: bold;
+  color: #a1a1aa;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  transition: all 0.2s ease;
+}
+
+.arena-links a:hover {
+  color: #ea580c;
+  border-color: #ea580c;
+}
+
+.arena-links a.active {
+  background: #ea580c;
+  color: #ffffff;
+  border-color: #ea580c;
+}
+
+.arena-container {
+  max-width: 860px;
+  margin: 1.8rem auto;
+  padding: 0 1rem;
+}
+
+/* Arena & Chess Cards */
+.arena-card {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-top: 3px solid #ea580c;
+  border-radius: 8px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Profile Section */
+.arena-profile-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.chess-badge {
+  width: 90px;
+  height: 90px;
+  background: #27272a;
+  border: 2px solid #ea580c;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  box-shadow: 0 0 12px rgba(234, 88, 12, 0.25);
+}
+
+.arena-info h1 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+}
+
+.arena-role {
+  color: #ea580c;
+  font-weight: bold;
+  font-size: 0.92rem;
+  margin-bottom: 0.6rem;
+}
+
+.stat-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.stat-pills li {
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  color: #d4d4d8;
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Hobbies Matrix */
+h2.arena-heading {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #ea580c;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arena-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.arena-box {
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.arena-box:hover {
+  transform: translateY(-3px);
+  border-color: #ea580c;
+}
+
+.arena-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.arena-box h3 {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.arena-box p {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+/* Strategy Journal */
+.strategy-post {
+  background: #27272a;
+  border-left: 4px solid #ea580c;
+  padding: 1.3rem;
+  border-radius: 4px;
+}
+
+.strategy-post h3 {
+  color: #ffffff;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.strategy-post p {
+  color: #d4d4d8;
+  font-size: 0.92rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Interactive Gaming / High-Five Zone */
+.interactive-arena {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  padding: 1rem 1.4rem;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn-dunk {
+  background: #ea580c;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-dunk:hover {
+  background: #c2410c;
+}
+
+.arena-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.arena-form input,
+.arena-form textarea {
+  background: #09090b;
+  border: 1px solid #3f3f46;
+  color: #f4f4f5;
+  padding: 0.65rem 0.9rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.88rem;
+}
+
+.arena-form button {
+  align-self: flex-start;
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arena-messages {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.arena-msg-item,
+.comment-item {
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  border-left: 3px solid #ea580c;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  margin-top: 0.5rem;
+}
+
+.arena-msg-author,
+.comment-author {
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 0.2rem;
+}
+
+/* Pager */
+.arena-pager {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.arena-pager-btn {
+  text-decoration: none;
+  color: #a1a1aa;
+  background: #18181b;
+  border: 1px solid #3f3f46;
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+  font-size: 0.86rem;
+  font-weight: bold;
+}
+
+.arena-pager-btn:hover {
+  color: #ea580c;
+  border-color: #ea580c;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #71717a;
+  margin-top: 2rem;
+}

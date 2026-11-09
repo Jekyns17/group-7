@@ -1,0 +1,309 @@
+/* ==========================================================================
+   LUBEGA IBRAHIM - PERSONAL WEBPAGE STYLESHEET
+   Style Concept: Executive Clubhouse & Fairway Golf Profile
+   Colors: Forest Green (#064e3b), Gold/Amber (#b45309), Warm Ivory (#fafaf9)
+   Font: Classic Editorial Serif ('Garamond', 'Palatino', serif)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f4;
+  color: #1c1917;
+  font-family: 'Garamond', 'Palatino', 'Georgia', serif;
+  line-height: 1.7;
+  padding-bottom: 2.5rem;
+}
+
+/* Clubhouse Navigation */
+.clubhouse-nav {
+  background: #064e3b;
+  border-bottom: 3px solid #d97706;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.clubhouse-logo {
+  font-size: 1.15rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  color: #fef3c7;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.clubhouse-links {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.clubhouse-links a {
+  text-decoration: none;
+  font-size: 0.88rem;
+  color: #d1fae5;
+  padding: 0.35rem 0.8rem;
+  border-radius: 2px;
+  background: #022c22;
+  border: 1px solid #047857;
+  transition: all 0.2s ease;
+}
+
+.clubhouse-links a:hover {
+  color: #fef3c7;
+  border-color: #d97706;
+}
+
+.clubhouse-links a.active {
+  background: #d97706;
+  color: #ffffff;
+  border-color: #d97706;
+  font-weight: bold;
+}
+
+.clubhouse-container {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Elegant Cards */
+.clubhouse-card {
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-top: 3px solid #d97706;
+  padding: 2rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Profile Section */
+.clubhouse-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.crest-frame {
+  width: 90px;
+  height: 90px;
+  background: #ecfdf5;
+  border: 2px solid #064e3b;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+}
+
+.clubhouse-info h1 {
+  font-size: 1.8rem;
+  color: #064e3b;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.clubhouse-role {
+  color: #b45309;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.roster-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.roster-tags li {
+  background: #fafaf9;
+  border: 1px solid #d6d3d1;
+  color: #44403c;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 2px;
+}
+
+/* Hobbies & Fairway Passions */
+h2.clubhouse-heading {
+  font-size: 1.25rem;
+  color: #064e3b;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid #e7e5e4;
+  padding-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fairway-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.fairway-box {
+  background: #fafaf9;
+  border: 1px solid #e7e5e4;
+  border-top: 3px solid #047857;
+  padding: 1.3rem;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.fairway-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.fairway-box h3 {
+  font-size: 1.1rem;
+  color: #064e3b;
+  margin-bottom: 0.3rem;
+}
+
+.fairway-box p {
+  font-size: 0.88rem;
+  color: #57534e;
+}
+
+/* Course Log / Journal */
+.course-log {
+  background: #fafaf9;
+  border-left: 4px solid #d97706;
+  padding: 1.4rem;
+  border-radius: 2px;
+}
+
+.course-log h3 {
+  color: #064e3b;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-log p {
+  color: #44403c;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Interactive Clubhouse Register */
+.register-zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 1rem 1.4rem;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn-fairway {
+  background: #064e3b;
+  color: #fef3c7;
+  border: 1px solid #d97706;
+  font-family: 'Garamond', serif;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btn-fairway:hover {
+  background: #047857;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.register-form input,
+.register-form textarea {
+  border: 1px solid #d6d3d1;
+  background: #ffffff;
+  padding: 0.65rem 0.9rem;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 0.92rem;
+}
+
+.register-form button {
+  align-self: flex-start;
+  background: #d97706;
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 2px;
+  font-family: 'Garamond', serif;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-entries {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.entry-item,
+.comment-item {
+  background: #fafaf9;
+  border: 1px solid #e7e5e4;
+  border-left: 3px solid #d97706;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.entry-author,
+.comment-author {
+  font-weight: bold;
+  color: #064e3b;
+  margin-bottom: 0.2rem;
+}
+
+/* Pager */
+.clubhouse-pager {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.clubhouse-btn {
+  text-decoration: none;
+  color: #064e3b;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.clubhouse-btn:hover {
+  color: #d97706;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #78716c;
+  margin-top: 2rem;
+  font-style: italic;
+}
