@@ -1,7 +1,7 @@
 /* ==========================================================================
    Ntwari Joseph David - Personal Webpage Stylesheet
    Makerere University - Group 7
-   Theme: Sports & Football Green
+   Theme: Charcoal & Teal
    ========================================================================== */
 
 * {
@@ -11,16 +11,16 @@
 }
 
 body {
-  background-color: #052e16;
-  color: #f0fdf4;
+  background-color: #f1f5f4;
+  color: #263238;
   font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
   padding-bottom: 2.5rem;
 }
 
 header {
-  background: #022c22;
-  border-bottom: 1px solid #065f46;
+  background: #263238;
+  border-bottom: 1px solid #455a64;
   padding: 0.9rem 1.2rem;
 }
 
@@ -37,7 +37,7 @@ header {
 .logo {
   font-size: 1.15rem;
   font-weight: bold;
-  color: #4ade80;
+  color: #80cbc4;
   text-decoration: none;
 }
 
@@ -50,23 +50,23 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 0.88rem;
-  color: #86efac;
+  color: #e0f2f1;
   padding: 0.35rem 0.8rem;
   border-radius: 4px;
-  background: #064e3b;
-  border: 1px solid #047857;
+  background: #37474f;
+  border: 1px solid #546e7a;
   transition: all 0.2s ease;
 }
 
 nav a:hover {
-  background: #22c55e;
-  color: #022c22;
+  background: #00897b;
+  color: #ffffff;
 }
 
 nav a.active {
-  background: #22c55e;
-  color: #052e16;
-  border-color: #22c55e;
+  background: #00897b;
+  color: #ffffff;
+  border-color: #00897b;
   font-weight: bold;
 }
 
@@ -78,8 +78,8 @@ nav a.active {
 
 /* Content Cards (Uniform clean border, no highlighted single-edge strip) */
 .card {
-  background: #064e3b;
-  border: 1px solid #059669;
+  background: #ffffff;
+  border: 1px solid #d5e0de;
   border-radius: 8px;
   padding: 1.6rem;
   margin-bottom: 1.5rem;
@@ -96,24 +96,32 @@ nav a.active {
 .profile-icon {
   width: 80px;
   height: 80px;
-  background: #022c22;
-  border: 2px solid #4ade80;
+  background: #e0f2f1;
+  border: 2px solid #00897b;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  color: #4ade80;
+  color: #00897b;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #00897b;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-info h1 {
   font-size: 1.6rem;
-  color: #ffffff;
+  color: #263238;
   margin-bottom: 0.3rem;
 }
 
 .profile-subtitle {
-  color: #4ade80;
+  color: #00796b;
   font-size: 0.95rem;
   margin-bottom: 0.6rem;
 }
@@ -126,9 +134,9 @@ nav a.active {
 }
 
 .info-list li {
-  background: #022c22;
-  border: 1px solid #10b981;
-  color: #a7f3d0;
+  background: #f1f5f4;
+  border: 1px solid #c5d5d2;
+  color: #37474f;
   padding: 0.25rem 0.7rem;
   border-radius: 4px;
   font-size: 0.84rem;
@@ -136,7 +144,7 @@ nav a.active {
 
 h2 {
   font-size: 1.2rem;
-  color: #4ade80;
+  color: #263238;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -144,7 +152,7 @@ h2 {
 }
 
 h2 i {
-  color: #22c55e;
+  color: #00897b;
 }
 
 /* Hobbies Grid (Clean uniform boxes, no highlighted edge strip) */
@@ -155,8 +163,8 @@ h2 i {
 }
 
 .hobby-card {
-  background: #022c22;
-  border: 1px solid #059669;
+  background: #f8faf9;
+  border: 1px solid #d5e0de;
   border-radius: 6px;
   padding: 1.2rem;
   text-align: center;
@@ -165,43 +173,43 @@ h2 i {
 
 .hobby-card:hover {
   transform: translateY(-2px);
-  border-color: #4ade80;
+  border-color: #00897b;
 }
 
 .hobby-card i {
   font-size: 1.8rem;
-  color: #4ade80;
+  color: #00897b;
   margin-bottom: 0.5rem;
   display: inline-block;
 }
 
 .hobby-card h3 {
   font-size: 1rem;
-  color: #ffffff;
+  color: #263238;
   margin-bottom: 0.3rem;
 }
 
 .hobby-card p {
   font-size: 0.85rem;
-  color: #a7f3d0;
+  color: #546e7a;
 }
 
 /* Blog Box (Clean uniform border) */
 .blog-box {
-  background: #022c22;
-  border: 1px solid #059669;
+  background: #f8faf9;
+  border: 1px solid #d5e0de;
   border-radius: 6px;
   padding: 1.25rem;
 }
 
 .blog-box h3 {
   font-size: 1.1rem;
-  color: #4ade80;
+  color: #00796b;
   margin-bottom: 0.6rem;
 }
 
 .blog-box p {
-  color: #d1fae5;
+  color: #37474f;
   font-size: 0.92rem;
   margin-bottom: 0.8rem;
   line-height: 1.6;
@@ -214,16 +222,16 @@ h2 i {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  background: #022c22;
-  border: 1px solid #047857;
+  background: #e0f2f1;
+  border: 1px solid #b2dfdb;
   padding: 1rem 1.25rem;
   border-radius: 6px;
   margin-bottom: 1.25rem;
 }
 
 .like-btn {
-  background: #22c55e;
-  color: #052e16;
+  background: #00897b;
+  color: #ffffff;
   border: none;
   padding: 0.55rem 1.25rem;
   font-size: 0.9rem;
@@ -237,7 +245,7 @@ h2 i {
 }
 
 .like-btn:hover {
-  background: #4ade80;
+  background: #00796b;
 }
 
 .comment-form {
@@ -248,9 +256,9 @@ h2 i {
 
 .comment-form input,
 .comment-form textarea {
-  background: #022c22;
-  border: 1px solid #059669;
-  color: #f0fdf4;
+  background: #ffffff;
+  border: 1px solid #b0bec5;
+  color: #263238;
   padding: 0.65rem 0.9rem;
   border-radius: 4px;
   font-family: inherit;
@@ -260,7 +268,7 @@ h2 i {
 .comment-form input:focus,
 .comment-form textarea:focus {
   outline: none;
-  border-color: #4ade80;
+  border-color: #00897b;
 }
 
 .comment-form textarea {
@@ -270,8 +278,8 @@ h2 i {
 
 .comment-form button {
   align-self: flex-start;
-  background: #10b981;
-  color: #022c22;
+  background: #00897b;
+  color: #ffffff;
   border: none;
   padding: 0.55rem 1.3rem;
   font-size: 0.9rem;
@@ -281,7 +289,7 @@ h2 i {
 }
 
 .comment-form button:hover {
-  background: #22c55e;
+  background: #00796b;
 }
 
 .comments-list {
@@ -292,8 +300,8 @@ h2 i {
 }
 
 .comment-item {
-  background: #022c22;
-  border: 1px solid #047857;
+  background: #f8faf9;
+  border: 1px solid #d5e0de;
   border-radius: 4px;
   padding: 0.75rem 1rem;
   font-size: 0.88rem;
@@ -301,12 +309,12 @@ h2 i {
 
 .comment-author {
   font-weight: bold;
-  color: #4ade80;
+  color: #00796b;
   margin-bottom: 0.2rem;
 }
 
 .comment-item p {
-  color: #d1fae5;
+  color: #37474f;
 }
 
 .footer-nav {
@@ -320,22 +328,22 @@ h2 i {
 .footer-nav a {
   text-decoration: none;
   font-size: 0.85rem;
-  color: #86efac;
-  background: #064e3b;
-  border: 1px solid #059669;
+  color: #00695c;
+  background: #ffffff;
+  border: 1px solid #c5d5d2;
   padding: 0.45rem 1rem;
   border-radius: 4px;
   transition: all 0.2s ease;
 }
 
 .footer-nav a:hover {
-  background: #22c55e;
-  color: #052e16;
+  background: #00897b;
+  color: #ffffff;
 }
 
 footer {
   text-align: center;
   font-size: 0.82rem;
-  color: #6ee7b7;
+  color: #607d8b;
   margin-top: 2rem;
 }
