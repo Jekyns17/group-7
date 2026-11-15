@@ -1,9 +1,8 @@
 /* ==========================================================================
-   Lubega Ibrahim - LinkedIn Style Executive Profile
+   Lubega Ibrahim - Athletic Club Dossier & Scorecard
    Makerere University - Group 7
-   Theme: LinkedIn Professional Network UI
-   Colors: Executive Dark Green (#064e3b), Clean Slate (#f3f2ef), Navy (#1c1917)
-   Font: System Sans-Serif (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif)
+   Theme: Athletic Clubhouse Dossier & Dual-Sport Tactical Board
+   Palette: Clubhouse Emerald Green, Golf Gold, Crisp Turf White, Slate
    ========================================================================== */
 
 * {
@@ -13,25 +12,26 @@
 }
 
 body {
-  background-color: #f3f2ef;
-  color: #191919;
+  background-color: #f1f5f9;
+  color: #0f172a;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  padding-bottom: 3rem;
+  line-height: 1.6;
+  padding-bottom: 4rem;
 }
 
-/* 1. LinkedIn Topbar & Group Navigation */
-.linkedin-navbar {
-  background: #ffffff;
-  border-bottom: 1px solid #e0dfdc;
+/* 1. Club Top Bar */
+.club-top-bar {
+  background: #022c22;
+  color: #ffffff;
+  border-bottom: 2px solid #059669;
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 0.6rem 1.25rem;
+  padding: 0.75rem 1rem;
 }
 
-.linkedin-nav-inner {
-  max-width: 920px;
+.club-top-inner {
+  max-width: 1080px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -40,363 +40,505 @@ body {
   gap: 0.8rem;
 }
 
-.linkedin-logo {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: #064e3b;
-  text-decoration: none;
+.club-brand-badge {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.6rem;
 }
 
-.linkedin-logo span {
-  background: #064e3b;
-  color: #ffffff;
-  padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-  font-size: 0.95rem;
+.club-brand-code {
+  background: #10b981;
+  color: #022c22;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
 }
 
-.linkedin-nav-links {
+.club-brand-text {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #e2e8f0;
+}
+
+.club-nav-links {
   display: flex;
-  gap: 0.35rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
 }
 
-.linkedin-nav-links a {
+.club-nav-links a {
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #5c5c5c;
+  color: #cbd5e1;
   padding: 0.35rem 0.75rem;
   border-radius: 4px;
-  transition: all 0.15s ease;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
 }
 
-.linkedin-nav-links a:hover {
-  background: #ebebeb;
-  color: #191919;
+.club-nav-links a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
 }
 
-.linkedin-nav-links a.active {
-  background: #e8f5e9;
-  color: #064e3b;
-  border-bottom: 2px solid #064e3b;
+.club-nav-links a.active {
+  background: #10b981;
+  color: #022c22;
+  font-weight: 700;
 }
 
-/* 2. Main Feed Container */
-.linkedin-container {
-  max-width: 860px;
-  margin: 1.75rem auto;
+/* 2. Main Club Container */
+.club-container {
+  max-width: 1080px;
+  margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* 3. LinkedIn Profile Card with Cover Photo */
-.linkedin-profile-card {
-  background: #ffffff;
-  border: 1px solid #e0dfdc;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-}
-
-.linkedin-cover-photo {
-  height: 120px;
-  background: linear-gradient(135deg, #064e3b 0%, #047857 60%, #0f766e 100%);
-  width: 100%;
-}
-
-.linkedin-profile-body {
-  padding: 1.5rem 2rem 2rem 2rem;
-}
-
-.linkedin-avatar-row {
-  margin-top: -65px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.linkedin-avatar {
-  width: 96px;
-  height: 96px;
-  background: #ffffff;
-  border: 4px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.2rem;
-  color: #064e3b;
-}
-
-.linkedin-action-bar {
-  display: flex;
-  gap: 0.6rem;
-}
-
-.linkedin-endorse-btn {
+/* 3. Athlete Hero Dossier Card */
+.athlete-hero-card {
   background: #064e3b;
   color: #ffffff;
-  border: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding: 0.5rem 1.3rem;
-  border-radius: 20px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: background 0.15s ease;
+  border-radius: 12px;
+  padding: 2.25rem;
+  box-shadow: 0 4px 16px rgba(4, 47, 34, 0.15);
+  margin-bottom: 2rem;
 }
 
-.linkedin-endorse-btn:hover {
-  background: #047857;
-}
-
-.linkedin-profile-body h1 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #191919;
-  margin-bottom: 0.2rem;
-}
-
-.linkedin-headline {
-  font-size: 0.98rem;
-  color: #191919;
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
-}
-
-.linkedin-location {
-  font-size: 0.85rem;
-  color: #666666;
-  margin-bottom: 1rem;
-}
-
-.linkedin-pills-row {
+.hero-top-row {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 2rem;
   flex-wrap: wrap;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.linkedin-pill {
-  background: #f3f2ef;
-  border: 1px solid #e0dfdc;
-  color: #191919;
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 0.25rem 0.65rem;
-  border-radius: 4px;
-}
-
-/* 4. White Cards Sections */
-.linkedin-section-card {
-  background: #ffffff;
-  border: 1px solid #e0dfdc;
-  border-radius: 8px;
-  padding: 1.75rem 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.linkedin-section-card h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #191919;
-  margin-bottom: 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.linkedin-section-card h2 i {
-  color: #064e3b;
-  font-size: 1.1rem;
-}
-
-/* 5. LinkedIn Experience List (Sports & Disciplines) */
-.linkedin-exp-list {
+.athlete-monogram-crest {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #022c22 0%, #064e3b 100%);
+  border: 3px solid #facc15;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-}
-
-.linkedin-exp-item {
-  display: flex;
-  gap: 1.2rem;
-  align-items: flex-start;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid #efefef;
-}
-
-.linkedin-exp-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.linkedin-exp-icon {
-  width: 48px;
-  height: 48px;
-  background: #e8f5e9;
-  border-radius: 6px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
-  color: #064e3b;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.crest-letters {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #facc15;
+  line-height: 1;
+}
+
+.crest-sub {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #a7f3d0;
+  margin-top: 0.2rem;
+}
+
+.athlete-title-block {
+  flex: 1;
+  min-width: 280px;
+}
+
+.athlete-status-chip {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #6ee7b7;
+  margin-bottom: 0.4rem;
+}
+
+.athlete-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.athlete-role-desc {
+  font-size: 1rem;
+  color: #d1fae5;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.athlete-meta-strip {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  font-size: 0.84rem;
+  color: #a7f3d0;
+}
+
+.hero-action-cell {
   flex-shrink: 0;
 }
 
-.linkedin-exp-details h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #191919;
-  margin-bottom: 0.15rem;
-}
-
-.linkedin-exp-company {
-  font-size: 0.88rem;
-  color: #555555;
-  margin-bottom: 0.2rem;
-}
-
-.linkedin-exp-dates {
-  font-size: 0.78rem;
-  color: #888888;
-  margin-bottom: 0.5rem;
-}
-
-.linkedin-exp-details p {
+.club-endorse-btn {
+  background: #facc15;
+  color: #022c22;
+  border: none;
   font-size: 0.9rem;
-  color: #333333;
-  line-height: 1.5;
+  font-weight: 800;
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* 6. LinkedIn Article Box */
-.linkedin-article-box {
-  background: #f9f9f9;
-  border: 1px solid #e0dfdc;
-  border-radius: 6px;
-  padding: 1.25rem;
+.club-endorse-btn:hover {
+  background: #eab308;
+  transform: translateY(-1px);
 }
 
-.linkedin-article-box h3 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #191919;
-  margin-bottom: 0.5rem;
+/* Scorecard Metric Bar */
+.scorecard-metric-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  padding-top: 1.75rem;
 }
 
-.linkedin-article-box p {
-  font-size: 0.92rem;
-  color: #444444;
+.scorecard-tile {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tile-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #facc15;
+  letter-spacing: 0.02em;
+}
+
+.tile-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a7f3d0;
+  margin-top: 0.25rem;
+}
+
+/* 4. Bento Sports Grid */
+.bento-sports-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.bento-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.sport-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
   margin-bottom: 0.75rem;
+}
+
+.golf-badge {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.football-badge {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.bento-card-header h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.sport-summary {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* Golf Scorecard Table */
+.golf-scorecard-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+
+.golf-scorecard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.golf-scorecard-table th {
+  background: #f8fafc;
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  font-weight: 700;
+  color: #334155;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+.golf-scorecard-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+.golf-scorecard-table tr:hover {
+  background: #f0fdf4;
+}
+
+.sport-editorial-note {
+  background: #f8fafc;
+  border-left: 3px solid #10b981;
+  padding: 0.9rem 1rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.88rem;
+  color: #334155;
   line-height: 1.6;
 }
 
-/* 7. Recommendations Form & Comments */
-.linkedin-rec-form {
+/* Football Tactics Board */
+.football-tactics-board {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
-  margin-top: 1rem;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
 }
 
-.linkedin-rec-form input,
-.linkedin-rec-form textarea {
-  border: 1px solid #d0cfcb;
-  border-radius: 4px;
-  padding: 0.65rem 0.9rem;
+.tactic-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+}
+
+.tactic-title {
+  font-weight: 800;
+  color: #0f172a;
+  font-size: 0.92rem;
+  margin-bottom: 0.3rem;
+}
+
+.tactic-item p {
+  font-size: 0.86rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* 5. Philosophy Strip Card */
+.philosophy-strip-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.strip-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #047857;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.strip-header h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.philosophy-strip-card p {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.7;
+}
+
+/* 6. Club Shoutbox */
+.club-shoutbox-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.club-shoutbox-card h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shoutbox-sub {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.club-comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.club-comment-form input,
+.club-comment-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
   font-family: inherit;
   font-size: 0.9rem;
-}
-
-.linkedin-rec-form input:focus,
-.linkedin-rec-form textarea:focus {
+  background: #f8fafc;
   outline: none;
-  border-color: #064e3b;
 }
 
-.linkedin-rec-form textarea {
+.club-comment-form input:focus,
+.club-comment-form textarea:focus {
+  border-color: #059669;
+  background: #ffffff;
+}
+
+.club-comment-form textarea {
+  min-height: 80px;
   resize: vertical;
-  min-height: 60px;
 }
 
-.linkedin-rec-form button {
-  align-self: flex-start;
+.club-submit-btn {
+  align-self: flex-end;
   background: #064e3b;
   color: #ffffff;
   border: none;
-  font-weight: 600;
   font-size: 0.88rem;
-  padding: 0.5rem 1.4rem;
-  border-radius: 20px;
+  font-weight: 800;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-.linkedin-rec-form button:hover {
+.club-submit-btn:hover {
   background: #047857;
 }
 
-.comments-list {
-  margin-top: 1.25rem;
+.club-comments-feed {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.25rem;
 }
 
 .comment-item {
-  background: #f9f9f9;
-  border: 1px solid #e0dfdc;
-  border-radius: 6px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
   padding: 0.85rem 1rem;
-  font-size: 0.88rem;
+  border-radius: 6px;
 }
 
 .comment-author {
-  font-weight: 700;
-  color: #064e3b;
-  margin-bottom: 0.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  font-size: 0.88rem;
 }
 
-.comment-item p {
-  color: #333333;
+.comment-text {
+  font-size: 0.9rem;
+  color: #334155;
+  margin-top: 0.25rem;
 }
 
-/* 8. Pager */
-.linkedin-pager {
+.comment-time {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-top: 0.3rem;
+}
+
+/* 7. Club Pager & Footer */
+.club-pager-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid #e0dfdc;
-  flex-wrap: wrap;
-  gap: 0.8rem;
+  margin-bottom: 2rem;
 }
 
-.linkedin-pager a {
+.club-pager-btn {
   text-decoration: none;
-  font-size: 0.86rem;
-  font-weight: 600;
-  color: #064e3b;
   background: #ffffff;
-  border: 1px solid #e0dfdc;
-  padding: 0.45rem 1.1rem;
-  border-radius: 20px;
+  border: 1px solid #cbd5e1;
+  color: #064e3b;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
 }
 
-.linkedin-pager a:hover {
-  background: #e8f5e9;
+.club-pager-btn:hover {
+  background: #064e3b;
+  color: #ffffff;
+  border-color: #064e3b;
 }
 
-footer {
+.club-footer {
   text-align: center;
-  font-size: 0.82rem;
-  color: #777777;
+  font-size: 0.8rem;
+  color: #64748b;
   margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scorecard-metric-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bento-sports-grid {
+    grid-template-columns: 1fr;
+  }
 }

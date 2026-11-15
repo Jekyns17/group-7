@@ -1,7 +1,7 @@
 /* ==========================================================================
    Kayondo Ernest - Instagram Style Profile & Feed
    Makerere University - Group 7
-   Theme: Instagram Social App UI
+   Theme: Instagram Social App UI (Clean Content Cards, Zero Icon Placeholders)
    ========================================================================== */
 
 * {
@@ -109,8 +109,8 @@ body {
 }
 
 .ig-avatar-ring {
-  width: 110px;
-  height: 110px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
   padding: 3px;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -128,8 +128,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.8rem;
-  color: #0095f6;
+}
+
+.ig-avatar-initials {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -1px;
 }
 
 .ig-meta-side {
@@ -140,7 +145,7 @@ body {
 .ig-username-row {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
@@ -151,24 +156,28 @@ body {
   color: #262626;
 }
 
-.ig-verified {
+.ig-verified-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
   color: #0095f6;
-  font-size: 1.1rem;
+  background: #e0f2fe;
+  padding: 0.2rem 0.55rem;
+  border-radius: 12px;
 }
 
 .ig-btn-primary {
   background: #0095f6;
   color: #ffffff;
   border: none;
+  font-size: 0.86rem;
   font-weight: 600;
-  font-size: 0.88rem;
-  padding: 0.45rem 1.2rem;
+  padding: 0.45rem 1rem;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.2s ease;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  transition: background 0.2s ease;
 }
 
 .ig-btn-primary:hover {
@@ -182,21 +191,21 @@ body {
   font-size: 0.95rem;
 }
 
-.ig-stats-row span {
+.ig-stats-row div span {
   font-weight: 700;
   color: #262626;
 }
 
 .ig-bio h1 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #262626;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .ig-bio p {
-  font-size: 0.92rem;
-  color: #262626;
+  font-size: 0.9rem;
+  color: #333333;
   margin-bottom: 0.2rem;
 }
 
@@ -205,11 +214,11 @@ body {
   font-weight: 600;
 }
 
-/* 4. Instagram Story Highlights (Ernest's Hobbies) */
+/* 4. Instagram Story Highlights */
 .ig-stories-bar {
   display: flex;
   gap: 1.5rem;
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
   border-top: 1px solid #efefef;
   overflow-x: auto;
 }
@@ -219,31 +228,36 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.4rem;
-  min-width: 72px;
+  min-width: 68px;
 }
 
 .ig-story-circle {
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid #dbdbdb;
   padding: 2px;
-  background: #ffffff;
+  background: #f8fafc;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  color: #0095f6;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .ig-story-circle:hover {
-  transform: scale(1.06);
+  transform: scale(1.05);
   border-color: #0095f6;
 }
 
+.ig-story-text {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #0284c7;
+}
+
 .ig-story-label {
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 600;
   color: #262626;
 }
@@ -276,7 +290,7 @@ body {
   border-top: 1px solid #262626;
 }
 
-/* Feed Posts */
+/* Feed Posts Column */
 .ig-posts-column {
   display: flex;
   flex-direction: column;
@@ -310,89 +324,223 @@ body {
 }
 
 .ig-user-badge {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   background: #0095f6;
   color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 800;
 }
 
+.ig-post-tag-pill {
+  font-size: 0.72rem;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Rich Content Visual Cards (No Icon Placeholders) */
 .ig-post-body-visual {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 2.2rem 1.75rem;
+}
+
+/* Fitness Log Card */
+.ig-visual-fitness {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   color: #ffffff;
-  padding: 2.5rem 1.5rem;
+}
+
+.ig-card-header-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  color: #38bdf8;
+  margin-bottom: 1.25rem;
   text-align: center;
 }
 
-.ig-post-body-visual i {
-  font-size: 3rem;
-  color: #38bdf8;
-  margin-bottom: 0.75rem;
-  display: inline-block;
+.ig-metric-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1.25rem;
 }
 
-.ig-post-body-visual h3 {
+.ig-metric-box {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  padding: 0.8rem 0.4rem;
+  text-align: center;
+}
+
+.ig-metric-num {
+  display: block;
   font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.ig-metric-lbl {
+  display: block;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-top: 0.2rem;
+}
+
+.ig-visual-quote {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #cbd5e1;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* DevOps Terminal Card */
+.ig-visual-devops {
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.ig-terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #334155;
+}
+
+.ig-term-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #475569;
+}
+
+.ig-term-title {
+  margin-left: 0.5rem;
+  font-size: 0.76rem;
+  color: #94a3b8;
+}
+
+.ig-terminal-content {
+  font-size: 0.84rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.ig-term-line {
+  margin-bottom: 0.3rem;
+}
+
+.ig-term-green {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.ig-term-blue {
+  color: #38bdf8;
+}
+
+.ig-term-success {
+  color: #4ade80;
+  font-weight: bold;
+}
+
+/* Gaming Board Card */
+.ig-visual-gaming {
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+  color: #ffffff;
+}
+
+.ig-gaming-board {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ig-game-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #facc15;
   margin-bottom: 0.4rem;
 }
 
-.ig-post-body-visual p {
-  font-size: 0.88rem;
-  color: #94a3b8;
+.ig-game-status {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #22c55e;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.ig-game-meta {
+  font-size: 0.75rem;
+  color: #a1a1aa;
 }
 
 .ig-post-actions {
   padding: 0.75rem 1rem 0.4rem 1rem;
   display: flex;
-  gap: 1.2rem;
-  font-size: 1.3rem;
+  gap: 1.1rem;
+  font-size: 1.35rem;
   color: #262626;
 }
 
 .ig-post-actions i {
   cursor: pointer;
-  transition: transform 0.1s ease;
+  transition: color 0.2s ease;
 }
 
 .ig-post-actions i:hover {
-  transform: scale(1.15);
-  color: #ed4956;
+  color: #8e8e8e;
 }
 
 .ig-post-caption {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0.4rem 1rem 1rem 1rem;
   font-size: 0.9rem;
   line-height: 1.5;
+  color: #262626;
 }
 
 .ig-post-caption strong {
-  margin-right: 0.4rem;
+  margin-right: 0.3rem;
 }
 
 .ig-post-time {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
   color: #8e8e8e;
-  text-transform: uppercase;
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
 }
 
-/* 6. Interactive Comment Section (Instagram Comments Layout) */
+/* 6. Instagram Comments Section */
 .ig-comments-card {
   background: #ffffff;
   border: 1px solid #dbdbdb;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 1.75rem;
+  margin-top: 2rem;
   max-width: 620px;
-  margin: 1.5rem auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ig-comments-card h2 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
+  color: #262626;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -402,104 +550,106 @@ body {
 .ig-comment-form {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  margin-top: 0.75rem;
-  border-top: 1px solid #efefef;
-  padding-top: 1rem;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .ig-comment-form input,
 .ig-comment-form textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
   border: 1px solid #dbdbdb;
   border-radius: 6px;
-  padding: 0.65rem 0.9rem;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  outline: none;
   background: #fafafa;
 }
 
 .ig-comment-form input:focus,
 .ig-comment-form textarea:focus {
-  outline: none;
-  background: #ffffff;
   border-color: #a8a8a8;
+  background: #ffffff;
 }
 
 .ig-comment-form textarea {
+  min-height: 70px;
   resize: vertical;
-  min-height: 60px;
 }
 
 .ig-comment-form button {
-  align-self: flex-start;
+  align-self: flex-end;
   background: #0095f6;
   color: #ffffff;
   border: none;
-  font-weight: 600;
-  font-size: 0.88rem;
-  padding: 0.5rem 1.25rem;
+  padding: 0.45rem 1.25rem;
   border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
   cursor: pointer;
 }
 
-.ig-comment-form button:hover {
-  background: #1877f2;
-}
-
 .comments-list {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.75rem;
+  border-top: 1px solid #efefef;
+  padding-top: 1rem;
 }
 
 .comment-item {
-  background: #fafafa;
-  border: 1px solid #efefef;
+  background: #f8fafc;
+  padding: 0.75rem 1rem;
   border-radius: 6px;
-  padding: 0.7rem 0.9rem;
-  font-size: 0.88rem;
+  border: 1px solid #e2e8f0;
 }
 
 .comment-author {
   font-weight: 700;
   color: #262626;
-  margin-bottom: 0.15rem;
+  font-size: 0.85rem;
 }
 
-.comment-item p {
-  color: #555555;
+.comment-text {
+  font-size: 0.88rem;
+  color: #334155;
+  margin-top: 0.2rem;
 }
 
-/* 7. Bottom Navigation Pager */
+.comment-time {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+/* 7. Footer Pager */
 .ig-footer-pager {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid #dbdbdb;
+  margin: 2.5rem auto 1.5rem auto;
   max-width: 620px;
-  margin: 2rem auto 0 auto;
 }
 
 .ig-pager-btn {
   text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #0095f6;
   background: #ffffff;
   border: 1px solid #dbdbdb;
-  padding: 0.45rem 1rem;
+  color: #262626;
+  padding: 0.55rem 1.1rem;
   border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 .ig-pager-btn:hover {
-  background: #fafafa;
+  background: #f0f2f5;
+  border-color: #a8a8a8;
 }
 
 footer {
   text-align: center;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: #8e8e8e;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }

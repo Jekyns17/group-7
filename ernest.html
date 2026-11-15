@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kayondo Ernest (@ernest.devops) &bull; Makerere University</title>
-  <!-- Font Awesome CDN for icons instead of emojis -->
+  <!-- Font Awesome CDN for necessary small UI glyphs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/ernest.css">
 </head>
@@ -37,14 +37,14 @@
       <div class="ig-profile-top">
         <div class="ig-avatar-ring">
           <div class="ig-avatar-inner">
-            <i class="fa-solid fa-code"></i>
+            <span class="ig-avatar-initials">KE</span>
           </div>
         </div>
 
         <div class="ig-meta-side">
           <div class="ig-username-row">
             <span class="ig-username">ernest.devops</span>
-            <i class="fa-solid fa-circle-check ig-verified" title="Verified Makerere Student"></i>
+            <span class="ig-verified-badge" title="Verified Makerere Student">&#10003; Verified</span>
             <!-- Like Button styled as Instagram Follow / Cheer Button -->
             <button id="like-btn" class="ig-btn-primary">
               <i class="fa-solid fa-thumbs-up"></i> Follow & Like (<span id="like-count">0</span>)
@@ -66,32 +66,32 @@
         </div>
       </div>
 
-      <!-- Instagram Story Highlights (Ernest's Hobbies) -->
+      <!-- Instagram Story Highlights (Text & Discipline Badges, No generic icon circles) -->
       <div class="ig-stories-bar">
         <div class="ig-story-item">
           <div class="ig-story-circle">
-            <i class="fa-solid fa-person-swimming"></i>
+            <span class="ig-story-text">SWIM</span>
           </div>
           <span class="ig-story-label">Swimming</span>
         </div>
 
         <div class="ig-story-item">
           <div class="ig-story-circle">
-            <i class="fa-solid fa-person-running"></i>
+            <span class="ig-story-text">RUN</span>
           </div>
           <span class="ig-story-label">Running</span>
         </div>
 
         <div class="ig-story-item">
           <div class="ig-story-circle">
-            <i class="fa-solid fa-dumbbell"></i>
+            <span class="ig-story-text">GYM</span>
           </div>
-          <span class="ig-story-label">Gym</span>
+          <span class="ig-story-label">Fitness</span>
         </div>
 
         <div class="ig-story-item">
           <div class="ig-story-circle">
-            <i class="fa-solid fa-gamepad"></i>
+            <span class="ig-story-text">GAME</span>
           </div>
           <span class="ig-story-label">Gaming</span>
         </div>
@@ -108,23 +108,37 @@
       </div>
     </div>
 
-    <!-- Feed Posts Column -->
+    <!-- Feed Posts Column (Real Content Cards, Zero Empty Icon Placeholders) -->
     <div class="ig-posts-column">
 
       <!-- Post 1: Fitness & Morning Runs -->
       <article class="ig-post-card">
         <div class="ig-post-header">
           <div class="ig-post-user">
-            <div class="ig-user-badge"><i class="fa-solid fa-person-running"></i></div>
+            <div class="ig-user-badge">KE</div>
             <span>ernest.devops</span>
           </div>
-          <i class="fa-solid fa-ellipsis"></i>
+          <span class="ig-post-tag-pill">Athletics</span>
         </div>
 
-        <div class="ig-post-body-visual">
-          <i class="fa-solid fa-person-running"></i>
-          <h3>Morning Campus Jogs & Recovery Swimming</h3>
-          <p>Makerere Main Ground & Swimming Pool</p>
+        <!-- Real Fitness Log Card (No icon placeholder) -->
+        <div class="ig-post-body-visual ig-visual-fitness">
+          <div class="ig-card-header-label">MORNING FITNESS TRACKER</div>
+          <div class="ig-metric-row">
+            <div class="ig-metric-box">
+              <span class="ig-metric-num">5.2 km</span>
+              <span class="ig-metric-lbl">Campus Run</span>
+            </div>
+            <div class="ig-metric-box">
+              <span class="ig-metric-num">28 min</span>
+              <span class="ig-metric-lbl">Total Time</span>
+            </div>
+            <div class="ig-metric-box">
+              <span class="ig-metric-num">400 m</span>
+              <span class="ig-metric-lbl">Pool Laps</span>
+            </div>
+          </div>
+          <p class="ig-visual-quote">"Consistent morning movement clears the mind before 8:00 AM lectures."</p>
         </div>
 
         <div class="ig-post-actions">
@@ -135,7 +149,7 @@
 
         <div class="ig-post-caption">
           <strong>ernest.devops</strong> Morning run around Makerere campus before the 8:00 AM lectures. Consistency in running, swimming, and gym workouts clears my mind and keeps my energy high for coursework!
-          <div class="ig-post-time">2 HOURS AGO</div>
+          <div class="ig-post-time">2 HOURS AGO &bull; MAKERERE MAIN GROUND</div>
         </div>
       </article>
 
@@ -143,16 +157,26 @@
       <article class="ig-post-card">
         <div class="ig-post-header">
           <div class="ig-post-user">
-            <div class="ig-user-badge"><i class="fa-solid fa-server"></i></div>
+            <div class="ig-user-badge">KE</div>
             <span>ernest.devops</span>
           </div>
-          <i class="fa-solid fa-ellipsis"></i>
+          <span class="ig-post-tag-pill">Engineering</span>
         </div>
 
-        <div class="ig-post-body-visual">
-          <i class="fa-solid fa-cloud"></i>
-          <h3>Building Automated Cloud Pipelines</h3>
-          <p>Lab Study & Server Infrastructure Practice</p>
+        <!-- Real DevOps Terminal Visual Card (No icon placeholder) -->
+        <div class="ig-post-body-visual ig-visual-devops">
+          <div class="ig-terminal-bar">
+            <span class="ig-term-dot"></span>
+            <span class="ig-term-dot"></span>
+            <span class="ig-term-dot"></span>
+            <span class="ig-term-title">devops-lab &bull; bash</span>
+          </div>
+          <div class="ig-terminal-content">
+            <div class="ig-term-line"><span class="ig-term-green">$</span> ./deploy-pipeline.sh --env production</div>
+            <div class="ig-term-line ig-term-blue">[BUILD] Compiling container manifests... Done (1.4s)</div>
+            <div class="ig-term-line ig-term-blue">[TEST] Running automated test suites... 12/12 passed</div>
+            <div class="ig-term-line ig-term-success">[DEPLOY] Target cluster updated. Status: Healthy</div>
+          </div>
         </div>
 
         <div class="ig-post-actions">
@@ -163,7 +187,7 @@
 
         <div class="ig-post-caption">
           <strong>ernest.devops</strong> Spent the afternoon practicing automated CI/CD deployment pipelines and container setups. Understanding how server architectures communicate is the most exciting part of my software path.
-          <div class="ig-post-time">YESTERDAY</div>
+          <div class="ig-post-time">YESTERDAY &bull; COMPUTING LAB</div>
         </div>
       </article>
 
@@ -171,16 +195,21 @@
       <article class="ig-post-card">
         <div class="ig-post-header">
           <div class="ig-post-user">
-            <div class="ig-user-badge"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="ig-user-badge">KE</div>
             <span>ernest.devops</span>
           </div>
-          <i class="fa-solid fa-ellipsis"></i>
+          <span class="ig-post-tag-pill">Downtime</span>
         </div>
 
-        <div class="ig-post-body-visual">
-          <i class="fa-solid fa-gamepad"></i>
-          <h3>Multiplayer Gaming Downtime</h3>
-          <p>Weekend Gaming Lounge with Coursemates</p>
+        <!-- Real Gaming Match Visual Card (No icon placeholder) -->
+        <div class="ig-post-body-visual ig-visual-gaming">
+          <div class="ig-card-header-label">WEEKEND MULTIPLAYER SESSION</div>
+          <div class="ig-gaming-board">
+            <div class="ig-game-title">Squad Arena Ranked Match</div>
+            <div class="ig-game-status">VICTORY &bull; TOP SQUAD</div>
+            <div class="ig-game-meta">Makerere Coursemates Co-op &bull; 45 Mins Session</div>
+          </div>
+          <p class="ig-visual-quote">"Unwinding and laughing with good friends after days of dense reading and code."</p>
         </div>
 
         <div class="ig-post-actions">
@@ -191,7 +220,7 @@
 
         <div class="ig-post-caption">
           <strong>ernest.devops</strong> Unwinding with multiplayer games on weekends. After long sessions of coursework and coding, gaming is the best way to kick back and laugh with good friends.
-          <div class="ig-post-time">3 DAYS AGO</div>
+          <div class="ig-post-time">3 DAYS AGO &bull; WEEKEND LOUNGE</div>
         </div>
       </article>
 

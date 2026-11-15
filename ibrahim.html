@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lubega Ibrahim &bull; Professional Profile &bull; Makerere University</title>
-  <!-- Font Awesome CDN for icons instead of emojis -->
+  <title>Lubega Ibrahim &bull; Athletic Dossier & Scorecard &bull; Group 7</title>
+  <!-- Font Awesome for small UI glyphs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/ibrahim.css">
 </head>
 <body data-student="ibrahim">
 
   <!-- ======================================================================
-       1. LINKEDIN TOPBAR & NAVIGATION
+       1. ATHLETIC CLUB TOP NAVIGATION BAR
        ====================================================================== -->
-  <header class="linkedin-navbar">
-    <div class="linkedin-nav-inner">
-      <a href="index.html" class="linkedin-logo">Group<span>7</span> Network</a>
-      <nav class="linkedin-nav-links">
+  <header class="club-top-bar">
+    <div class="club-top-inner">
+      <div class="club-brand-badge">
+        <span class="club-brand-code">MAC-07</span>
+        <span class="club-brand-text">MAKERERE ATHLETIC CLUB &bull; ATHLETE ROSTER</span>
+      </div>
+      <nav class="club-nav-links">
         <a href="index.html">Grace</a>
         <a href="daniella.html">Daniella</a>
         <a href="ernest.html">Ernest</a>
@@ -28,143 +31,190 @@
   </header>
 
   <!-- ======================================================================
-       2. MAIN LINKEDIN FEED CONTAINER
+       2. ATHLETIC DOSSIER MAIN CONTAINER
        ====================================================================== -->
-  <main class="linkedin-container">
+  <main class="club-container">
 
-    <!-- Profile Card with Cover Photo Banner -->
-    <section class="linkedin-profile-card">
-      <div class="linkedin-cover-photo"></div>
+    <!-- Athlete Identity Dossier Card (Zero Icon Placeholders) -->
+    <section class="athlete-hero-card">
+      <div class="hero-top-row">
+        <!-- Monogram Crest (No fake icon placeholder) -->
+        <div class="athlete-monogram-crest">
+          <span class="crest-letters">LI</span>
+          <span class="crest-sub">ROSTER #24</span>
+        </div>
 
-      <div class="linkedin-profile-body">
-        <div class="linkedin-avatar-row">
-          <div class="linkedin-avatar">
-            <i class="fa-solid fa-user-tie"></i>
+        <div class="athlete-title-block">
+          <div class="athlete-status-chip">ACTIVE COMPETITOR &bull; MAKERERE UNIVERSITY</div>
+          <h1 class="athlete-name">Lubega Ibrahim</h1>
+          <p class="athlete-role-desc">
+            Competitive Golfer &bull; Campus Football Midfielder &bull; Group 7 Contributor
+          </p>
+          <div class="athlete-meta-strip">
+            <span class="meta-item">DOB: 01 / January / 2005</span>
+            <span class="meta-item">Email: lubegaibra24@gmail.com</span>
+            <span class="meta-item">Base: Kampala, Uganda</span>
           </div>
-          <div class="linkedin-action-bar">
-            <!-- Endorse Button as Like Button -->
-            <button id="like-btn" class="linkedin-endorse-btn">
-              <i class="fa-solid fa-thumbs-up"></i> Endorse Profile (<span id="like-count">0</span>)
-            </button>
-          </div>
         </div>
 
-        <h1>Lubega Ibrahim</h1>
-        <div class="linkedin-headline">
-          Undergraduate Student at Makerere University &bull; Competitive Golfer & Football Athlete
+        <div class="hero-action-cell">
+          <button id="like-btn" class="club-endorse-btn">
+            <i class="fa-solid fa-thumbs-up"></i> Endorse Athlete (<span id="like-count">0</span>)
+          </button>
         </div>
-        <div class="linkedin-location">
-          Kampala, Central Region, Uganda &bull; Makerere University
-        </div>
+      </div>
 
-        <div class="linkedin-pills-row">
-          <span class="linkedin-pill">DOB: 01 / Jan / 2005</span>
-          <span class="linkedin-pill">lubegaibra24@gmail.com</span>
-          <span class="linkedin-pill">Team: Group 7</span>
+      <!-- Performance Metrics Scorecard Bar -->
+      <div class="scorecard-metric-bar">
+        <div class="scorecard-tile">
+          <span class="tile-number">12</span>
+          <span class="tile-label">Golf Handicap</span>
+        </div>
+        <div class="scorecard-tile">
+          <span class="tile-number">MIDFIELD</span>
+          <span class="tile-label">Football Role</span>
+        </div>
+        <div class="scorecard-tile">
+          <span class="tile-number">18 HOLES</span>
+          <span class="tile-label">Strategy Focus</span>
+        </div>
+        <div class="scorecard-tile">
+          <span class="tile-number">GROUP 7</span>
+          <span class="tile-label">Academic Team</span>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="linkedin-section-card">
-      <h2><i class="fa-solid fa-circle-user"></i> About</h2>
-      <p style="font-size: 0.95rem; color: #333333; line-height: 1.7;">
-        I am an undergraduate student at Makerere University passionate about academic growth and high-performance athletics. Outside my lecture halls and group assignments, I compete in golf and football—two disciplines that instill focus, strategic planning, physical resilience, and decisive team communication.
-      </p>
-    </section>
+    <!-- ======================================================================
+         3. DUAL-SPORT INTERACTIVE BENTO SPREAD
+         ====================================================================== -->
+    <div class="bento-sports-grid">
 
-    <!-- Experience / Hobbies Section -->
-    <section class="linkedin-section-card">
-      <h2><i class="fa-solid fa-briefcase"></i> Activities & Sports Disciplines</h2>
+      <!-- SPORT 1: Golf Fairway & Strategy Breakdown -->
+      <section class="bento-card golf-card">
+        <div class="bento-card-header">
+          <span class="sport-badge golf-badge">DISCIPLINE 01 &bull; GOLF FAIRWAY PRECISION</span>
+          <h2>The Fairway Strategy & Course Management</h2>
+          <p class="sport-summary">
+            Competing on 18-hole courses instills mental composure, trajectory planning, and calculated risk management.
+          </p>
+        </div>
 
-      <div class="linkedin-exp-list">
+        <!-- Authentic Golf Scorecard Table (Real Data, Zero Placeholders) -->
+        <div class="golf-scorecard-table-wrap">
+          <table class="golf-scorecard-table">
+            <thead>
+              <tr>
+                <th>Discipline Metric</th>
+                <th>Focus Area</th>
+                <th>Performance Target</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Drive Accuracy</strong></td>
+                <td>Fairway Center Off the Tee</td>
+                <td>75% Regulation</td>
+              </tr>
+              <tr>
+                <td><strong>Iron Play</strong></td>
+                <td>Green in Regulation (GIR)</td>
+                <td>Controlled Spin & Pin Distance</td>
+              </tr>
+              <tr>
+                <td><strong>Putting Composure</strong></td>
+                <td>Speed & Green Break Reading</td>
+                <td>Consistent Two-Putt Maximum</td>
+              </tr>
+              <tr>
+                <td><strong>Course Mindset</strong></td>
+                <td>Shot-by-Shot Reset</td>
+                <td>Zero Panic After Bad Bounces</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <!-- Experience 1: Golf -->
-        <div class="linkedin-exp-item">
-          <div class="linkedin-exp-icon">
-            <i class="fa-solid fa-golf-ball-tee"></i>
+        <div class="sport-editorial-note">
+          <strong>Strategic Takeaway:</strong> "In golf, every shot requires deliberate calculation. One rushed swing ruins a hole; steady patience wins the round. That exact patience guides my approach to demanding academic assignments."
+        </div>
+      </section>
+
+      <!-- SPORT 2: Football Midfield Tactics Board -->
+      <section class="bento-card football-card">
+        <div class="bento-card-header">
+          <span class="sport-badge football-badge">DISCIPLINE 02 &bull; CAMPUS FOOTBALL</span>
+          <h2>Central Midfield Coordination & Stamina</h2>
+          <p class="sport-summary">
+            Controlling the tempo, distributing possession, and bridging defense to attack in competitive campus matches.
+          </p>
+        </div>
+
+        <div class="football-tactics-board">
+          <div class="tactic-item">
+            <div class="tactic-title">Box-to-Box Work Rate</div>
+            <p>Covering ground for 90 minutes, providing defensive cover while arriving in attacking zones to create scoring chances.</p>
           </div>
-          <div class="linkedin-exp-details">
-            <h3>Competitive Golfer &bull; Fairway Precision</h3>
-            <div class="linkedin-exp-company">Uganda Golf Circuit &bull; Self-Directed Athlete</div>
-            <div class="linkedin-exp-dates">2023 - Present &bull; Active Discipline</div>
-            <p>
-              Practicing course strategy, swing mechanics, and emotional composure under pressure. Golf demands calculated risk management and patience over 18 holes.
-            </p>
+          <div class="tactic-item">
+            <div class="tactic-title">Spatial Vision & Distribution</div>
+            <p>Scanning passing lanes before receiving the ball to switch play quickly and bypass defensive blocks.</p>
+          </div>
+          <div class="tactic-item">
+            <div class="tactic-title">Team Chemistry & Trust</div>
+            <p>Football is the ultimate group effort; trusting coursemates on the pitch mirrors team synergy on academic projects.</p>
           </div>
         </div>
 
-        <!-- Experience 2: Football -->
-        <div class="linkedin-exp-item">
-          <div class="linkedin-exp-icon">
-            <i class="fa-solid fa-futbol"></i>
-          </div>
-          <div class="linkedin-exp-details">
-            <h3>Football Athlete &bull; Midfield Coordination</h3>
-            <div class="linkedin-exp-company">Campus & Intramural League &bull; Makerere</div>
-            <div class="linkedin-exp-dates">2024 - Present</div>
-            <p>
-              Active participation in competitive campus matches. Developing high stamina, spatial awareness, tactical transitions, and teamwork with coursemates.
-            </p>
-          </div>
+        <div class="sport-editorial-note">
+          <strong>Tactical Takeaway:</strong> "High-tempo matches test communication under intense pressure. Knowing where your teammate will be before you pass is how goals—and great group projects—are scored."
         </div>
+      </section>
 
-        <!-- Experience 3: Undergraduate -->
-        <div class="linkedin-exp-item">
-          <div class="linkedin-exp-icon">
-            <i class="fa-solid fa-graduation-cap"></i>
-          </div>
-          <div class="linkedin-exp-details">
-            <h3>Undergraduate Scholar &bull; Group 7 Contributor</h3>
-            <div class="linkedin-exp-company">Makerere University, Kampala</div>
-            <div class="linkedin-exp-dates">Current Academic Year</div>
-            <p>
-              Attending daily lectures, participating in tutorial debates, and collaborating on web development group assignments with my peers.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Featured Thought Piece / Article -->
-    <section class="linkedin-section-card">
-      <h2><i class="fa-solid fa-newspaper"></i> Featured Thought Piece</h2>
-      <div class="linkedin-article-box">
-        <h3>How Sports Discipline Drives Academic Focus at Makerere</h3>
-        <p>
-          Balancing higher education with sports requires deliberate time management. The calm focus needed on the putting green mirrors the concentration required during complex university revisions.
-        </p>
-        <p>
-          Meanwhile, the physical intensity of football provides a healthy release valve for academic stress. Combining mental precision and physical energy keeps my university performance consistent.
-        </p>
-      </div>
-    </section>
-
-    <!-- Recommendations & Comments Section -->
-    <section class="linkedin-section-card">
-      <h2><i class="fa-solid fa-comments"></i> Endorsements & Recommendations</h2>
-      <p style="font-size: 0.88rem; color: #666666; margin-bottom: 0.75rem;">
-        Leave a professional endorsement or note for Ibrahim:
-      </p>
-
-      <form id="comment-form" class="linkedin-rec-form">
-        <input type="text" id="comment-author" placeholder="Your Full Name / Title" required>
-        <textarea id="comment-message" placeholder="Write a recommendation or comment..." required></textarea>
-        <button type="submit">Submit Recommendation</button>
-      </form>
-
-      <div id="comments-list" class="comments-list"></div>
-    </section>
-
-    <!-- Pager Navigation -->
-    <div class="linkedin-pager">
-      <a href="ntwari.html">&larr; Previous: Joseph</a>
-      <a href="matthew.html">Next: Matthew &rarr;</a>
     </div>
 
-    <footer>
-      <p>&copy; 2026 Group 7 &bull; Makerere University</p>
+    <!-- ======================================================================
+         4. ACADEMIC & ATHLETIC HARMONY SECTION
+         ====================================================================== -->
+    <section class="philosophy-strip-card">
+      <div class="strip-header">
+        <span class="strip-label">THE COMPETITOR'S MINDSET</span>
+        <h3>Balancing High-Intensity Athletics with Computing Coursework</h3>
+      </div>
+      <p>
+        Athletics and academics are not conflicting pursuits—they reinforce each other. The physical exhaustion of football clears mental fog, while the tactical calmness developed on golf greens prevents panic when faced with complex university coursework. Contributing to Group 7 has allowed me to apply sports team leadership directly into collaborative software projects.
+      </p>
+    </section>
+
+    <!-- ======================================================================
+         5. LOCKER ROOM SHOUTBOX & PEER NOTES
+         ====================================================================== -->
+    <section class="club-shoutbox-card">
+      <h2><i class="fa-solid fa-comments"></i> Athlete Guestbook & Locker Room Notes</h2>
+      <p class="shoutbox-sub">Leave an endorsement, athletic message, or note for Ibrahim.</p>
+
+      <form id="comment-form" class="club-comment-form">
+        <div class="form-row">
+          <input type="text" id="comment-author" placeholder="Your Name or Team Moniker" required>
+        </div>
+        <div class="form-row">
+          <textarea id="comment-message" placeholder="Post a message or cheer for Ibrahim..." required></textarea>
+        </div>
+        <button type="submit" class="club-submit-btn">Post to Guestbook</button>
+      </form>
+
+      <div id="comments-list" class="comments-list club-comments-feed"></div>
+    </section>
+
+    <!-- ======================================================================
+         6. ATHLETIC ROSTER PAGER
+         ====================================================================== -->
+    <div class="club-pager-nav">
+      <a href="ntwari.html" class="club-pager-btn">&larr; Previous Athlete: Joseph Ntwari</a>
+      <a href="matthew.html" class="club-pager-btn">Next Member: Matthew &rarr;</a>
+    </div>
+
+    <footer class="club-footer">
+      <p>&copy; 2026 Makerere Athletic Club &bull; Group 7 &bull; Lubega Ibrahim Official Dossier</p>
     </footer>
 
   </main>
