@@ -125,6 +125,21 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.grace-initials-badge {
+  width: 52px;
+  height: 52px;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.8rem;
+}
+
 .grace-sidebar-card h1 {
   font-size: 1.45rem;
   font-weight: 800;

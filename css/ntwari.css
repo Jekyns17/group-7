@@ -1,9 +1,8 @@
 /* ==========================================================================
-   Ntwari Joseph David - Sports Match Center & Player Card
+   Ntwari Joseph David - Official Premier League Player Profile Theme
    Makerere University - Group 7
-   Theme: ESPN / BBC Sport Matchday Profile
-   Colors: Pitch Black (#0a0a0a), Stadium Green (#16a34a), Gold/Volt (#facc15)
-   Font: Bold Athletic Sans ('Trebuchet MS', 'Arial Black', sans-serif)
+   Theme: Official Premier League Matchday & Player Hub
+   Palette: Premier League Deep Purple, Magenta, Neon Mint, Crisp White
    ========================================================================== */
 
 * {
@@ -13,25 +12,26 @@
 }
 
 body {
-  background-color: #0f172a;
-  color: #f8fafc;
-  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #242424;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
-/* 1. Sports Ticker & Navigation Bar */
-.sports-topbar {
-  background: #020617;
-  border-bottom: 2px solid #22c55e;
-  padding: 0.65rem 1.25rem;
+/* 1. Official PL Top Header */
+.pl-top-header {
+  background: #38003c;
+  color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 3px solid #ff005a;
+  padding: 0.75rem 1rem;
 }
 
-.sports-nav-inner {
-  max-width: 960px;
+.pl-top-inner {
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -40,350 +40,565 @@ body {
   gap: 0.8rem;
 }
 
-.sports-logo {
-  font-size: 1.15rem;
-  font-weight: 900;
-  color: #22c55e;
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.sports-logo span {
-  color: #facc15;
-}
-
-.sports-nav-links {
+.pl-brand-group {
   display: flex;
-  gap: 0.35rem;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.pl-lion-badge {
+  background: #00ff85;
+  color: #38003c;
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.pl-brand-title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.pl-season-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.pl-nav-links {
+  display: flex;
+  gap: 0.4rem;
   flex-wrap: wrap;
 }
 
-.sports-nav-links a {
+.pl-nav-links a {
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: 700;
-  color: #94a3b8;
+  color: #ffffff;
   padding: 0.35rem 0.75rem;
   border-radius: 4px;
-  background: #1e293b;
-  transition: all 0.15s ease;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
 }
 
-.sports-nav-links a:hover {
-  background: #22c55e;
-  color: #020617;
-}
-
-.sports-nav-links a.active {
-  background: #22c55e;
-  color: #020617;
-}
-
-/* 2. Main Stadium Layout Container */
-.stadium-container {
-  max-width: 900px;
-  margin: 1.75rem auto;
-  padding: 0 1rem;
-}
-
-/* 3. Hero Player Card with Large Squad Number */
-.player-hero-banner {
-  background: linear-gradient(135deg, #14532d 0%, #1e293b 70%, #0f172a 100%);
-  border: 1px solid #334155;
-  border-radius: 10px;
-  padding: 2rem 2.5rem;
-  margin-bottom: 1.75rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.player-hero-meta h1 {
-  font-size: 2.2rem;
-  font-weight: 900;
-  text-transform: uppercase;
+.pl-nav-links a:hover {
+  background: #ff005a;
   color: #ffffff;
-  letter-spacing: 0.04em;
-  line-height: 1.1;
-  margin-bottom: 0.35rem;
 }
 
-.player-club-tag {
-  color: #facc15;
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 1rem;
-}
-
-.player-specs-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  list-style: none;
-}
-
-.player-specs-list li {
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid #334155;
-  color: #e2e8f0;
-  font-size: 0.82rem;
-  font-weight: 700;
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
-}
-
-.player-squad-number-box {
-  background: #020617;
-  border: 2px solid #22c55e;
-  border-radius: 12px;
-  padding: 1rem 1.75rem;
-  text-align: center;
-}
-
-.squad-digit {
-  font-size: 3.5rem;
+.pl-nav-links a.active {
+  background: #00ff85;
+  color: #38003c;
   font-weight: 900;
-  color: #22c55e;
-  line-height: 1;
 }
 
-.squad-caption {
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: #94a3b8;
-  letter-spacing: 0.1em;
-}
-
-/* 4. Matchday MVP / Cheer Bar */
-.mvp-cheer-bar {
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 8px;
-  padding: 1.1rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.75rem;
-}
-
-.mvp-cheer-bar span {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #f8fafc;
-}
-
-.btn-cheer-goal {
-  background: #22c55e;
-  color: #020617;
-  border: none;
-  font-weight: 900;
-  font-size: 0.92rem;
-  padding: 0.55rem 1.4rem;
-  border-radius: 6px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: background 0.15s ease;
-}
-
-.btn-cheer-goal:hover {
-  background: #4ade80;
-}
-
-/* 5. Matchcenter Sections */
-.matchcenter-section {
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 8px;
-  padding: 1.75rem 2rem;
-  margin-bottom: 1.75rem;
-}
-
-.matchcenter-section h2 {
-  font-size: 1.25rem;
-  font-weight: 900;
-  color: #22c55e;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-/* Performance Attributes Breakdown */
-.sports-attributes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem;
-}
-
-.attribute-card {
-  background: #0f172a;
-  border: 1px solid #334155;
-  border-radius: 6px;
-  padding: 1.4rem;
-}
-
-.attribute-icon-badge {
-  width: 44px;
-  height: 44px;
-  background: #14532d;
-  color: #22c55e;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  margin-bottom: 0.75rem;
-}
-
-.attribute-card h3 {
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 0.35rem;
-}
-
-.attribute-card p {
-  font-size: 0.88rem;
-  color: #94a3b8;
-  line-height: 1.5;
-}
-
-/* Matchday Report Box */
-.match-report-box {
-  background: #0f172a;
-  border: 1px solid #334155;
-  border-radius: 6px;
-  padding: 1.5rem;
-}
-
-.match-report-box h3 {
-  color: #facc15;
-  font-size: 1.15rem;
-  font-weight: 800;
-  margin-bottom: 0.6rem;
-}
-
-.match-report-box p {
+/* Ticker Strip */
+.pl-ticker-strip {
+  background: #27002a;
   color: #cbd5e1;
-  font-size: 0.94rem;
-  line-height: 1.7;
-  margin-bottom: 0.75rem;
+  font-size: 0.78rem;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px solid #4a0050;
 }
 
-/* Fan Shoutbox Form */
-.shoutbox-form {
+.pl-ticker-inner {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-
-.shoutbox-form input,
-.shoutbox-form textarea {
-  background: #0f172a;
-  border: 1px solid #334155;
-  color: #ffffff;
-  padding: 0.7rem 0.9rem;
-  border-radius: 6px;
-  font-family: inherit;
-  font-size: 0.9rem;
-}
-
-.shoutbox-form input:focus,
-.shoutbox-form textarea:focus {
-  outline: none;
-  border-color: #22c55e;
-}
-
-.shoutbox-form textarea {
-  resize: vertical;
-  min-height: 60px;
-}
-
-.shoutbox-form button {
-  align-self: flex-start;
-  background: #22c55e;
-  color: #020617;
-  border: none;
-  font-weight: 900;
-  font-size: 0.88rem;
-  padding: 0.55rem 1.4rem;
-  border-radius: 6px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.shoutbox-form button:hover {
-  background: #4ade80;
-}
-
-.comments-list {
-  margin-top: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.comment-item {
-  background: #0f172a;
-  border: 1px solid #334155;
-  border-radius: 6px;
-  padding: 0.8rem 1rem;
-  font-size: 0.88rem;
-}
-
-.comment-author {
-  font-weight: 800;
-  color: #22c55e;
-  margin-bottom: 0.2rem;
-}
-
-.comment-item p {
-  color: #cbd5e1;
-}
-
-/* Bottom Navigation Pager */
-.stadium-pager {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.stadium-pager a {
-  text-decoration: none;
-  font-size: 0.85rem;
+.pl-ticker-item strong {
+  color: #00ff85;
+}
+
+.pl-ticker-sep {
+  color: #ff005a;
+}
+
+/* 2. Main PL Container */
+.pl-main-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* 3. Premier League Player Card */
+.pl-player-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(56, 0, 60, 0.08);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.pl-card-header-bar {
+  background: #38003c;
+  color: #e2e8f0;
+  font-size: 0.72rem;
   font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.6rem 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff005a;
+}
+
+.pl-active-status {
+  color: #00ff85;
+}
+
+.pl-hero-content {
+  padding: 2rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.pl-player-initials-badge {
+  width: 110px;
+  height: 110px;
+  background: #38003c;
+  border: 3px solid #00ff85;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 6px 14px rgba(56, 0, 60, 0.2);
+}
+
+.pl-initials-text {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.pl-badge-squad-no {
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #00ff85;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+}
+
+.pl-player-title-col {
+  flex: 1;
+  min-width: 280px;
+}
+
+.pl-club-pill {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #ff005a;
   text-transform: uppercase;
-  color: #94a3b8;
-  background: #1e293b;
-  border: 1px solid #334155;
-  padding: 0.45rem 1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.pl-player-name {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #38003c;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem;
+}
+
+.pl-bio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem 1.5rem;
+  font-size: 0.86rem;
+}
+
+.bio-label {
+  color: #64748b;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
+.bio-val {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+/* King of the Match */
+.pl-kotm-col {
+  background: #fdf2f8;
+  border: 1px solid #fbcfe8;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.kotm-banner {
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #9d174d;
+  margin-bottom: 0.6rem;
+}
+
+.pl-vote-btn {
+  background: #ff005a;
+  color: #ffffff;
+  border: none;
+  font-size: 0.88rem;
+  font-weight: 800;
+  padding: 0.65rem 1.35rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 2px 8px rgba(255, 0, 90, 0.3);
+}
+
+.pl-vote-btn:hover {
+  background: #e1004f;
+  transform: translateY(-1px);
+}
+
+.kotm-subtext {
+  display: block;
+  font-size: 0.7rem;
+  color: #831843;
+  margin-top: 0.4rem;
+}
+
+/* Official PL Stats Table Bar */
+.pl-stats-table-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #38003c;
+  color: #ffffff;
+}
+
+.pl-stat-box {
+  padding: 1.25rem 0.8rem;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pl-stat-box:last-child {
+  border-right: none;
+}
+
+.stat-num {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #00ff85;
+}
+
+.stat-title {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #e2e8f0;
+  margin-top: 0.25rem;
+}
+
+/* 4. Form Guide Section */
+.pl-section-panel {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.panel-section-title {
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #38003c;
+  border-bottom: 2px solid #38003c;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.pl-form-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.form-match-pill {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.form-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.form-badge.win {
+  background: #00ff85;
+  color: #38003c;
+}
+
+.form-badge.draw {
+  background: #cbd5e1;
+  color: #334155;
+}
+
+.match-meta strong {
+  display: block;
+  font-size: 0.8rem;
+  color: #0f172a;
+}
+
+.match-meta span {
+  display: block;
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+/* 5. Editorial Grid */
+.pl-editorial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.pl-editorial-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 1.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.editorial-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #ff005a;
+  margin-bottom: 0.4rem;
+}
+
+.pl-editorial-card h2 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #38003c;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.pl-editorial-card p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.pl-breakdown-box {
+  background: #faf5ff;
+  border-left: 3px solid #a855f7;
+  padding: 1rem;
+  border-radius: 0 6px 6px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.86rem;
+  color: #3b0764;
+}
+
+.pl-recovery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.recovery-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.86rem;
+}
+
+.rec-bullet {
+  background: #38003c;
+  color: #00ff85;
+  font-weight: 900;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* 6. Fan Zone & Comments */
+.pl-fanzone-card {
+  margin-bottom: 2rem;
+}
+
+.fanzone-intro {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.pl-fan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.pl-fan-form input,
+.pl-fan-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background: #f8fafc;
+  outline: none;
+}
+
+.pl-fan-form input:focus,
+.pl-fan-form textarea:focus {
+  border-color: #ff005a;
+  background: #ffffff;
+}
+
+.pl-fan-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.pl-submit-btn {
+  align-self: flex-end;
+  background: #38003c;
+  color: #ffffff;
+  border: none;
+  font-size: 0.88rem;
+  font-weight: 800;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pl-submit-btn:hover {
+  background: #ff005a;
+}
+
+.pl-fan-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.25rem;
+}
+
+.comment-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 0.85rem 1rem;
   border-radius: 6px;
 }
 
-.stadium-pager a:hover {
-  color: #22c55e;
-  border-color: #22c55e;
+.comment-author {
+  font-weight: 800;
+  color: #38003c;
+  font-size: 0.88rem;
 }
 
-footer {
+.comment-text {
+  font-size: 0.9rem;
+  color: #334155;
+  margin-top: 0.25rem;
+}
+
+.comment-time {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-top: 0.3rem;
+}
+
+/* 7. Pager & Footer */
+.pl-pager-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.pl-pager-link {
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #38003c;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.86rem;
+  font-weight: 800;
+  transition: all 0.2s ease;
+}
+
+.pl-pager-link:hover {
+  background: #38003c;
+  color: #ffffff;
+}
+
+.pl-footer {
   text-align: center;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: #64748b;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pl-stats-table-bar,
+  .pl-form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pl-editorial-grid {
+    grid-template-columns: 1fr;
+  }
 }

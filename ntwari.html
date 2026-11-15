@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ntwari Joseph David &bull; Player Profile #10 &bull; Makerere</title>
-  <!-- Font Awesome CDN for icons instead of emojis -->
+  <title>Ntwari Joseph David &bull; Premier League Player Profile #10 &bull; Group 7</title>
+  <!-- Font Awesome for clean matchday glyphs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/ntwari.css">
 </head>
 <body data-student="ntwari">
 
   <!-- ======================================================================
-       1. SPORTS TICKER & NAVIGATION BAR
+       1. PREMIER LEAGUE OFFICIAL TOPBAR & MATCHDAY TICKER
        ====================================================================== -->
-  <header class="sports-topbar">
-    <div class="sports-nav-inner">
-      <a href="index.html" class="sports-logo">SPORTS HUB <span>//</span> MAK</a>
-      <nav class="sports-nav-links">
+  <header class="pl-top-header">
+    <div class="pl-top-inner">
+      <div class="pl-brand-group">
+        <span class="pl-lion-badge">PL</span>
+        <span class="pl-brand-title">Premier League</span>
+        <span class="pl-season-tag">2025/26 Season</span>
+      </div>
+      <nav class="pl-nav-links">
         <a href="index.html">Grace</a>
         <a href="daniella.html">Daniella</a>
         <a href="ernest.html">Ernest</a>
@@ -27,122 +31,231 @@
     </div>
   </header>
 
+  <!-- Matchday Fixture Ticker -->
+  <div class="pl-ticker-strip">
+    <div class="pl-ticker-inner">
+      <span class="pl-ticker-item"><strong>FT</strong> Makerere FC 3 - 1 Entebbe United</span>
+      <span class="pl-ticker-sep">&bull;</span>
+      <span class="pl-ticker-item"><strong>NEXT</strong> Makerere vs Kampala City &bull; Saturday 16:00</span>
+      <span class="pl-ticker-sep">&bull;</span>
+      <span class="pl-ticker-item"><strong>FPL</strong> Ntwari Joseph (Midfielder) &bull; £7.5m</span>
+    </div>
+  </div>
+
   <!-- ======================================================================
-       2. MAIN STADIUM MATCHCENTER CONTAINER
+       2. OFFICIAL PREMIER LEAGUE PLAYER PROFILE HERO
        ====================================================================== -->
-  <main class="stadium-container">
+  <main class="pl-main-container">
 
-    <!-- Hero Player Card with Large Squad Number -->
-    <section class="player-hero-banner">
-      <div class="player-hero-meta">
-        <h1>Ntwari Joseph David</h1>
-        <div class="player-club-tag">
-          <i class="fa-solid fa-shield-halved"></i> Makerere University Men's Football Squad
-        </div>
-
-        <ul class="player-specs-list">
-          <li>Squad Role: Midfield / Attack</li>
-          <li>DOB: 26 / 04 / 2006</li>
-          <li>Email: ntwarii.10@gmail.com</li>
-          <li>Squad: Group 7</li>
-        </ul>
+    <section class="pl-player-card">
+      <div class="pl-card-header-bar">
+        <span>PREMIER LEAGUE PLAYER PROFILE &bull; MAKERERE UNIVERSITY</span>
+        <span class="pl-active-status">REGISTERED SQUAD MEMBER</span>
       </div>
 
-      <!-- Large Number 10 Jersey Box -->
-      <div class="player-squad-number-box">
-        <div class="squad-digit">10</div>
-        <div class="squad-caption">SQUAD NO.</div>
+      <div class="pl-hero-content">
+        <!-- Player Initials Badge (Zero photo icon placeholders) -->
+        <div class="pl-player-initials-badge">
+          <span class="pl-initials-text">NJ</span>
+          <span class="pl-badge-squad-no">#10</span>
+        </div>
+
+        <div class="pl-player-title-col">
+          <div class="pl-club-pill">Makerere University FC &bull; Central Attacking Midfield</div>
+          <h1 class="pl-player-name">Ntwari Joseph David</h1>
+          
+          <div class="pl-bio-grid">
+            <div class="pl-bio-item">
+              <span class="bio-label">Position</span>
+              <span class="bio-val">Attacking Midfield / #10</span>
+            </div>
+            <div class="pl-bio-item">
+              <span class="bio-label">Nationality</span>
+              <span class="bio-val">Uganda</span>
+            </div>
+            <div class="pl-bio-item">
+              <span class="bio-label">Date of Birth</span>
+              <span class="bio-val">26/04/2006 (Age 20)</span>
+            </div>
+            <div class="pl-bio-item">
+              <span class="bio-label">Academic Squad</span>
+              <span class="bio-val">Group 7 Computing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official King of the Match Voting Button -->
+        <div class="pl-kotm-col">
+          <div class="kotm-banner">BUDWEISER KING OF THE MATCH</div>
+          <button id="like-btn" class="pl-vote-btn">
+            <i class="fa-solid fa-trophy"></i> Vote for Joseph (<span id="like-count">0</span>)
+          </button>
+          <span class="kotm-subtext">Official Matchday Supporter Vote</span>
+        </div>
+      </div>
+
+      <!-- Premier League Official Season Stats Table -->
+      <div class="pl-stats-table-bar">
+        <div class="pl-stat-box">
+          <span class="stat-num">18</span>
+          <span class="stat-title">Appearances</span>
+        </div>
+        <div class="pl-stat-box">
+          <span class="stat-num">9</span>
+          <span class="stat-title">Goals</span>
+        </div>
+        <div class="pl-stat-box">
+          <span class="stat-num">7</span>
+          <span class="stat-title">Assists</span>
+        </div>
+        <div class="pl-stat-box">
+          <span class="stat-num">88.4%</span>
+          <span class="stat-title">Pass Accuracy</span>
+        </div>
+        <div class="pl-stat-box">
+          <span class="stat-num">32</span>
+          <span class="stat-title">Chances Created</span>
+        </div>
       </div>
     </section>
 
-    <!-- MVP Cheer Bar -->
-    <div class="mvp-cheer-bar">
-      <span>Vote Joseph as Matchday Player of the Round:</span>
-      <button id="like-btn" class="btn-cheer-goal">
-        <i class="fa-solid fa-thumbs-up"></i> Fan Vote & Cheer (<span id="like-count">0</span>)
-      </button>
+    <!-- ======================================================================
+         3. FORM GUIDE & RECENT MATCHDAY LOG
+         ====================================================================== -->
+    <section class="pl-section-panel">
+      <div class="panel-section-title">
+        <span>FORM GUIDE &bull; LAST 5 MATCHES</span>
+      </div>
+
+      <div class="pl-form-row">
+        <div class="form-match-pill">
+          <span class="form-badge win">W</span>
+          <div class="match-meta">
+            <strong>3 - 1 vs Entebbe</strong>
+            <span>1 Goal &bull; 1 Assist</span>
+          </div>
+        </div>
+        <div class="form-match-pill">
+          <span class="form-badge win">W</span>
+          <div class="match-meta">
+            <strong>2 - 0 vs Kampala City</strong>
+            <span>1 Assist &bull; 89% Pass</span>
+          </div>
+        </div>
+        <div class="form-match-pill">
+          <span class="form-badge draw">D</span>
+          <div class="match-meta">
+            <strong>1 - 1 vs Jinja Stars</strong>
+            <span>90 Mins &bull; 4 Key Passes</span>
+          </div>
+        </div>
+        <div class="form-match-pill">
+          <span class="form-badge win">W</span>
+          <div class="match-meta">
+            <strong>4 - 2 vs Gulu United</strong>
+            <span>2 Goals &bull; Man of Match</span>
+          </div>
+        </div>
+        <div class="form-match-pill">
+          <span class="form-badge win">W</span>
+          <div class="match-meta">
+            <strong>2 - 1 vs Mbarara FC</strong>
+            <span>1 Assist &bull; Winner Setup</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. TWO-COLUMN EDITORIAL TACTICAL DISPATCH
+         ====================================================================== -->
+    <div class="pl-editorial-grid">
+
+      <!-- LEFT: Tactical Analysis -->
+      <article class="pl-editorial-card">
+        <div class="editorial-tag">TACTICAL MASTERCLASS &bull; SCOUTING REPORT</div>
+        <h2>The Modern #10: Unlocking Compact Defensive Blocks</h2>
+        <p>
+          In contemporary football, central attacking midfielders must possess acute spatial awareness. Operating between defensive lines, Joseph specializes in half-turn progression—receiving passes on the back foot and instantly releasing through-balls to break compact mid-blocks.
+        </p>
+
+        <div class="pl-breakdown-box">
+          <div class="breakdown-item">
+            <strong>Vision in the Pockets:</strong> Scanning 360-degree passing angles before receiving possession.
+          </div>
+          <div class="breakdown-item">
+            <strong>Counter-Press Transition:</strong> Hunting loose balls within 5 seconds of turnovers.
+          </div>
+          <div class="breakdown-item">
+            <strong>Set-Piece Delivery:</strong> Clinical dead-ball delivery creating direct goal threats.
+          </div>
+        </div>
+      </article>
+
+      <!-- RIGHT: Physical Conditioning & Academic Synergy -->
+      <aside class="pl-editorial-card">
+        <div class="editorial-tag">CONDITIONING & CAMPUS LIFE</div>
+        <h2>Athletic Recovery Science: Balancing Football & Computing</h2>
+        <p>
+          Performing at high intensity on matchdays while excelling in undergraduate computing courses at Makerere requires disciplined personal conditioning and recovery habits.
+        </p>
+
+        <div class="pl-recovery-list">
+          <div class="recovery-row">
+            <span class="rec-bullet">01</span>
+            <div>
+              <strong>8 to 9 Hours Deep Sleep:</strong> Neural regeneration to keep reflexes fast and lecture attention sharp.
+            </div>
+          </div>
+          <div class="recovery-row">
+            <span class="rec-bullet">02</span>
+            <div>
+              <strong>Structured Interval Drills:</strong> High-intensity sprint work on Makerere grounds to maintain late-game stamina.
+            </div>
+          </div>
+          <div class="recovery-row">
+            <span class="rec-bullet">03</span>
+            <div>
+              <strong>Group 7 Synergy:</strong> Bringing unselfish football teamwork directly into group computing deliverables.
+            </div>
+          </div>
+        </div>
+      </aside>
+
     </div>
 
-    <!-- Matchcenter Performance Attributes -->
-    <section class="matchcenter-section">
-      <h2><i class="fa-solid fa-chart-simple"></i> Matchday Disciplines & Routines</h2>
-
-      <div class="sports-attributes-grid">
-
-        <!-- Attribute 1: Football -->
-        <div class="attribute-card">
-          <div class="attribute-icon-badge">
-            <i class="fa-solid fa-futbol"></i>
-          </div>
-          <h3>Playing Football</h3>
-          <p>
-            Competitive pitch matches and regular drills with coursemates on campus. Football develops fast reflexes, game vision, and active stamina.
-          </p>
-        </div>
-
-        <!-- Attribute 2: Sleep & Recovery -->
-        <div class="attribute-card">
-          <div class="attribute-icon-badge">
-            <i class="fa-solid fa-bed"></i>
-          </div>
-          <h3>Recovery & Rest</h3>
-          <p>
-            Prioritizing deep, consistent sleep to recover muscle energy and maintain sharp mental focus between heavy training and academic lectures.
-          </p>
-        </div>
-
-        <!-- Attribute 3: Campus Academics -->
-        <div class="attribute-card">
-          <div class="attribute-icon-badge">
-            <i class="fa-solid fa-graduation-cap"></i>
-          </div>
-          <h3>Undergraduate Studies</h3>
-          <p>
-            Attending regular university lectures, participating in group revisions, and contributing to semester coursework goals with Group 7 peers.
-          </p>
-        </div>
-
+    <!-- ======================================================================
+         5. FAN ZONE & MATCHDAY FORUM
+         ====================================================================== -->
+    <section class="pl-section-panel pl-fanzone-card">
+      <div class="panel-section-title">
+        <span>FAN ZONE &bull; SUPPORTERS & PEER GUESTBOOK</span>
       </div>
-    </section>
+      <p class="fanzone-intro">Leave a matchday message, chant, or note of support for Ntwari Joseph David.</p>
 
-    <!-- Matchday Post-Game Report -->
-    <section class="matchcenter-section">
-      <h2><i class="fa-solid fa-newspaper"></i> Matchday Dispatch & Campus Life</h2>
-      <div class="match-report-box">
-        <h3>Competitive Pitch Energy and Crucial Recovery</h3>
-        <p>
-          As an undergraduate student at Makerere University, every week is packed with lecture deadlines, study group sessions, and assignments. Football is where I channel my physical drive and refresh my mind.
-        </p>
-        <p>
-          Playing with friends creates natural team chemistry and sharpens focus. And when the final whistle blows, giving the body adequate rest and deep sleep ensures I am recharged and ready for tomorrow's coursework challenges.
-        </p>
-      </div>
-    </section>
-
-    <!-- Locker Room Fan Shoutbox -->
-    <section class="matchcenter-section">
-      <h2><i class="fa-solid fa-bullhorn"></i> Locker Room Fan Shoutbox</h2>
-      <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 0.75rem;">
-        Post a cheer or matchday message for Joseph:
-      </p>
-
-      <form id="comment-form" class="shoutbox-form">
-        <input type="text" id="comment-author" placeholder="Fan / Teammate Name" required>
-        <textarea id="comment-message" placeholder="Drop your shout in the locker room..." required></textarea>
-        <button type="submit">Submit Shout</button>
+      <form id="comment-form" class="pl-fan-form">
+        <div class="form-row">
+          <input type="text" id="comment-author" placeholder="Supporter Name or Club Nickname" required>
+        </div>
+        <div class="form-row">
+          <textarea id="comment-message" placeholder="Post your matchday message or review for Joseph..." required></textarea>
+        </div>
+        <button type="submit" class="pl-submit-btn">Submit to Fan Zone</button>
       </form>
 
-      <div id="comments-list" class="comments-list"></div>
+      <div id="comments-list" class="comments-list pl-fan-feed"></div>
     </section>
 
-    <!-- Bottom Navigation Pager -->
-    <div class="stadium-pager">
-      <a href="ernest.html">&larr; Previous: Ernest</a>
-      <a href="ibrahim.html">Next: Ibrahim &rarr;</a>
+    <!-- ======================================================================
+         6. PREMIER LEAGUE FIXTURE PAGER
+         ====================================================================== -->
+    <div class="pl-pager-nav">
+      <a href="ernest.html" class="pl-pager-link">&larr; Previous Player: Ernest</a>
+      <a href="ibrahim.html" class="pl-pager-link">Next Player: Ibrahim &rarr;</a>
     </div>
 
-    <footer>
-      <p>&copy; 2026 Group 7 &bull; Makerere University</p>
+    <footer class="pl-footer">
+      <p>&copy; 2026 Premier League &bull; Official Player Profile &bull; Group 7 &bull; Makerere University</p>
     </footer>
 
   </main>

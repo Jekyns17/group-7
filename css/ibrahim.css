@@ -1,8 +1,9 @@
 /* ==========================================================================
-   Lubega Ibrahim - Athletic Club Dossier & Scorecard
+   Lubega Ibrahim - Official NBA Player Profile Theme
    Makerere University - Group 7
-   Theme: Athletic Clubhouse Dossier & Dual-Sport Tactical Board
-   Palette: Clubhouse Emerald Green, Golf Gold, Crisp Turf White, Slate
+   Theme: Official NBA.com Player Profile & Multi-Sport Box Score
+   Palette: NBA Midnight Navy, Official NBA Red, Ice White, Silver Grey
+   Note: Zero basketball icons included per user instruction
    ========================================================================== */
 
 * {
@@ -13,25 +14,25 @@
 
 body {
   background-color: #f1f5f9;
-  color: #0f172a;
+  color: #111827;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   padding-bottom: 4rem;
 }
 
-/* 1. Club Top Bar */
-.club-top-bar {
-  background: #022c22;
+/* 1. Official NBA Topbar */
+.nba-top-header {
+  background: #051c2d;
   color: #ffffff;
-  border-bottom: 2px solid #059669;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 3px solid #c8102e;
   padding: 0.75rem 1rem;
 }
 
-.club-top-inner {
-  max-width: 1080px;
+.nba-top-inner {
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -40,39 +41,48 @@ body {
   gap: 0.8rem;
 }
 
-.club-brand-badge {
+.nba-brand-group {
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
 
-.club-brand-code {
-  background: #10b981;
-  color: #022c22;
-  font-size: 0.75rem;
+.nba-logoman-badge {
+  background: #c8102e;
+  color: #ffffff;
   font-weight: 900;
-  padding: 0.2rem 0.5rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.65rem;
   border-radius: 4px;
+}
+
+.nba-site-title {
+  font-size: 1.15rem;
+  font-weight: 900;
   letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
-.club-brand-text {
-  font-size: 0.8rem;
+.nba-roster-tag {
+  background: rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #e2e8f0;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
 }
 
-.club-nav-links {
+.nba-nav-links {
   display: flex;
   gap: 0.4rem;
   flex-wrap: wrap;
 }
 
-.club-nav-links a {
+.nba-nav-links a {
   text-decoration: none;
   font-size: 0.82rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #cbd5e1;
   padding: 0.35rem 0.75rem;
   border-radius: 4px;
@@ -80,356 +90,409 @@ body {
   transition: all 0.2s ease;
 }
 
-.club-nav-links a:hover {
-  background: rgba(255, 255, 255, 0.18);
+.nba-nav-links a:hover {
+  background: #c8102e;
   color: #ffffff;
 }
 
-.club-nav-links a.active {
-  background: #10b981;
-  color: #022c22;
-  font-weight: 700;
+.nba-nav-links a.active {
+  background: #ffffff;
+  color: #051c2d;
+  font-weight: 900;
 }
 
-/* 2. Main Club Container */
-.club-container {
-  max-width: 1080px;
+/* Scoreboard Ticker */
+.nba-scoreboard-strip {
+  background: #0a253a;
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px solid #133954;
+}
+
+.nba-score-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.nba-score-item strong {
+  color: #38bdf8;
+}
+
+.nba-score-sep {
+  color: #c8102e;
+}
+
+/* 2. Main NBA Container */
+.nba-main-container {
+  max-width: 1120px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* 3. Athlete Hero Dossier Card */
-.athlete-hero-card {
-  background: #064e3b;
+/* 3. Official NBA Player Hero Card */
+.nba-player-hero {
+  background: #051c2d;
   color: #ffffff;
-  border-radius: 12px;
-  padding: 2.25rem;
-  box-shadow: 0 4px 16px rgba(4, 47, 34, 0.15);
+  border-radius: 8px;
+  border: 1px solid #133954;
+  box-shadow: 0 4px 16px rgba(5, 28, 45, 0.2);
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
-.hero-top-row {
+.nba-hero-top {
+  padding: 2.25rem 2rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.25rem;
   flex-wrap: wrap;
-  padding-bottom: 1.75rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #133954;
 }
 
-.athlete-monogram-crest {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, #022c22 0%, #064e3b 100%);
-  border: 3px solid #facc15;
+.nba-initials-badge {
+  width: 115px;
+  height: 115px;
+  background: linear-gradient(135deg, #112a45 0%, #051c2d 100%);
+  border: 3px solid #c8102e;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-.crest-letters {
-  font-size: 2.4rem;
+.nba-initials-text {
+  font-size: 2.8rem;
   font-weight: 900;
-  letter-spacing: -1px;
-  color: #facc15;
+  color: #ffffff;
   line-height: 1;
 }
 
-.crest-sub {
-  font-size: 0.6rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  color: #a7f3d0;
+.nba-jersey-no {
+  font-size: 0.82rem;
+  font-weight: 900;
+  color: #38bdf8;
+  letter-spacing: 0.08em;
   margin-top: 0.2rem;
 }
 
-.athlete-title-block {
+.nba-hero-info {
   flex: 1;
   min-width: 280px;
 }
 
-.athlete-status-chip {
-  font-size: 0.72rem;
+.nba-team-pos {
+  font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
-  color: #6ee7b7;
-  margin-bottom: 0.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 0.3rem;
 }
 
-.athlete-name {
-  font-size: 2.2rem;
-  font-weight: 800;
+.nba-player-name {
+  font-size: 2.4rem;
+  font-weight: 900;
   color: #ffffff;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.9rem;
 }
 
-.athlete-role-desc {
-  font-size: 1rem;
-  color: #d1fae5;
-  margin-bottom: 0.8rem;
-  font-weight: 500;
-}
-
-.athlete-meta-strip {
+.nba-vitals-strip {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  font-size: 0.84rem;
-  color: #a7f3d0;
 }
 
-.hero-action-cell {
+.vital-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding-right: 1.5rem;
+}
+
+.vital-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.vital-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+}
+
+.vital-val {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0.15rem;
+}
+
+/* Fan vote */
+.nba-vote-block {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
   flex-shrink: 0;
 }
 
-.club-endorse-btn {
-  background: #facc15;
-  color: #022c22;
+.allstar-banner {
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #facc15;
+  margin-bottom: 0.6rem;
+}
+
+.nba-allstar-btn {
+  background: #c8102e;
+  color: #ffffff;
   border: none;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 800;
-  padding: 0.75rem 1.4rem;
-  border-radius: 8px;
+  padding: 0.65rem 1.35rem;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  gap: 0.4rem;
+  box-shadow: 0 2px 8px rgba(200, 16, 46, 0.4);
 }
 
-.club-endorse-btn:hover {
-  background: #eab308;
+.nba-allstar-btn:hover {
+  background: #e11d48;
   transform: translateY(-1px);
 }
 
-/* Scorecard Metric Bar */
-.scorecard-metric-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  padding-top: 1.75rem;
-}
-
-.scorecard-tile {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1rem 0.8rem;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.tile-number {
+.allstar-subtext {
   display: block;
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: #facc15;
-  letter-spacing: 0.02em;
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 0.4rem;
 }
 
-.tile-label {
+/* Season Stats Bar */
+.nba-stats-table-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #02121e;
+}
+
+.nba-stat-cell {
+  padding: 1.25rem 0.8rem;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nba-stat-cell:last-child {
+  border-right: none;
+}
+
+.nba-stat-cell .stat-num {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.nba-stat-cell .stat-lbl {
   display: block;
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #a7f3d0;
-  margin-top: 0.25rem;
+  color: #38bdf8;
+  margin-top: 0.2rem;
 }
 
-/* 4. Bento Sports Grid */
-.bento-sports-grid {
+/* 4. Section Card & Table */
+.nba-section-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.nba-section-heading {
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #051c2d;
+  border-bottom: 2px solid #051c2d;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.nba-table-responsive {
+  overflow-x: auto;
+}
+
+.nba-boxscore-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.nba-boxscore-table th {
+  background: #051c2d;
+  color: #ffffff;
+  text-align: left;
+  padding: 0.65rem 0.85rem;
+  font-weight: 800;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+}
+
+.nba-boxscore-table td {
+  padding: 0.75rem 0.85rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
+}
+
+.nba-boxscore-table tr:hover {
+  background: #f8fafc;
+}
+
+.tag-win {
+  background: #ecfdf5;
+  color: #047857;
+  font-weight: 800;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.76rem;
+}
+
+.tag-special {
+  background: #fef3c7;
+  color: #b45309;
+  font-weight: 800;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.76rem;
+}
+
+/* 5. Two Column Editorial Grid */
+.nba-grid-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.bento-card {
+.nba-editorial-card {
   background: #ffffff;
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: 8px;
   border: 1px solid #cbd5e1;
+  padding: 1.75rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.sport-badge {
-  display: inline-block;
+.scouting-tag {
   font-size: 0.7rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
-  margin-bottom: 0.75rem;
-}
-
-.golf-badge {
-  background: #ecfdf5;
-  color: #047857;
-  border: 1px solid #a7f3d0;
-}
-
-.football-badge {
-  background: #fef3c7;
-  color: #b45309;
-  border: 1px solid #fde68a;
-}
-
-.bento-card-header h2 {
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: #0f172a;
+  letter-spacing: 0.08em;
+  color: #c8102e;
   margin-bottom: 0.4rem;
 }
 
-.sport-summary {
-  font-size: 0.92rem;
-  color: #475569;
-  line-height: 1.6;
-  margin-bottom: 1.25rem;
-}
-
-/* Golf Scorecard Table */
-.golf-scorecard-table-wrap {
-  overflow-x: auto;
-  margin-bottom: 1.25rem;
-}
-
-.golf-scorecard-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
-}
-
-.golf-scorecard-table th {
-  background: #f8fafc;
-  text-align: left;
-  padding: 0.6rem 0.75rem;
-  font-weight: 700;
-  color: #334155;
-  border-bottom: 2px solid #cbd5e1;
-}
-
-.golf-scorecard-table td {
-  padding: 0.65rem 0.75rem;
-  border-bottom: 1px solid #e2e8f0;
-  color: #334155;
-}
-
-.golf-scorecard-table tr:hover {
-  background: #f0fdf4;
-}
-
-.sport-editorial-note {
-  background: #f8fafc;
-  border-left: 3px solid #10b981;
-  padding: 0.9rem 1rem;
-  border-radius: 0 6px 6px 0;
-  font-size: 0.88rem;
-  color: #334155;
-  line-height: 1.6;
-}
-
-/* Football Tactics Board */
-.football-tactics-board {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  margin-bottom: 1.25rem;
-}
-
-.tactic-item {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  padding: 0.9rem 1rem;
-}
-
-.tactic-title {
-  font-weight: 800;
-  color: #0f172a;
-  font-size: 0.92rem;
-  margin-bottom: 0.3rem;
-}
-
-.tactic-item p {
-  font-size: 0.86rem;
-  color: #475569;
-  line-height: 1.5;
-}
-
-/* 5. Philosophy Strip Card */
-.philosophy-strip-card {
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.strip-label {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  color: #047857;
-  display: block;
-  margin-bottom: 0.3rem;
-}
-
-.strip-header h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #0f172a;
+.nba-editorial-card h2 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #051c2d;
+  line-height: 1.25;
   margin-bottom: 0.75rem;
 }
 
-.philosophy-strip-card p {
-  font-size: 0.95rem;
-  color: #334155;
-  line-height: 1.7;
+.nba-editorial-card p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
 }
 
-/* 6. Club Shoutbox */
-.club-shoutbox-card {
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
-  padding: 2rem;
+.scouting-attributes {
+  background: #f8fafc;
+  border-left: 3px solid #051c2d;
+  padding: 1rem;
+  border-radius: 0 6px 6px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.86rem;
+  color: #334155;
+}
+
+.academic-profile-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.88rem;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #cbd5e1;
+  padding-bottom: 0.4rem;
+}
+
+.p-lbl {
+  color: #64748b;
+  font-weight: 600;
+}
+
+.p-val {
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.nba-quote-banner {
+  background: #051c2d;
+  color: #38bdf8;
+  font-size: 0.88rem;
+  font-weight: 700;
+  font-style: italic;
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* 6. Media Room & Comments */
+.nba-media-room-card {
   margin-bottom: 2rem;
 }
 
-.club-shoutbox-card h2 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #0f172a;
-  margin-bottom: 0.3rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.shoutbox-sub {
-  font-size: 0.88rem;
+.media-intro {
+  font-size: 0.9rem;
   color: #64748b;
   margin-bottom: 1.5rem;
 }
 
-.club-comment-form {
+.nba-comment-form {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
   margin-bottom: 1.5rem;
 }
 
-.club-comment-form input,
-.club-comment-form textarea {
+.nba-comment-form input,
+.nba-comment-form textarea {
   width: 100%;
   padding: 0.75rem 0.9rem;
   border: 1px solid #cbd5e1;
@@ -440,20 +503,20 @@ body {
   outline: none;
 }
 
-.club-comment-form input:focus,
-.club-comment-form textarea:focus {
-  border-color: #059669;
+.nba-comment-form input:focus,
+.nba-comment-form textarea:focus {
+  border-color: #c8102e;
   background: #ffffff;
 }
 
-.club-comment-form textarea {
+.nba-comment-form textarea {
   min-height: 80px;
   resize: vertical;
 }
 
-.club-submit-btn {
+.nba-submit-btn {
   align-self: flex-end;
-  background: #064e3b;
+  background: #051c2d;
   color: #ffffff;
   border: none;
   font-size: 0.88rem;
@@ -461,14 +524,14 @@ body {
   padding: 0.6rem 1.4rem;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.club-submit-btn:hover {
-  background: #047857;
+.nba-submit-btn:hover {
+  background: #c8102e;
 }
 
-.club-comments-feed {
+.nba-comments-feed {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -485,7 +548,7 @@ body {
 
 .comment-author {
   font-weight: 800;
-  color: #0f172a;
+  color: #051c2d;
   font-size: 0.88rem;
 }
 
@@ -501,32 +564,31 @@ body {
   margin-top: 0.3rem;
 }
 
-/* 7. Club Pager & Footer */
-.club-pager-nav {
+/* 7. Pager & Footer */
+.nba-pager-nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
 
-.club-pager-btn {
+.nba-pager-link {
   text-decoration: none;
   background: #ffffff;
   border: 1px solid #cbd5e1;
-  color: #064e3b;
+  color: #051c2d;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
-  font-size: 0.88rem;
-  font-weight: 700;
+  font-size: 0.86rem;
+  font-weight: 800;
   transition: all 0.2s ease;
 }
 
-.club-pager-btn:hover {
-  background: #064e3b;
+.nba-pager-link:hover {
+  background: #051c2d;
   color: #ffffff;
-  border-color: #064e3b;
 }
 
-.club-footer {
+.nba-footer {
   text-align: center;
   font-size: 0.8rem;
   color: #64748b;
@@ -535,10 +597,17 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .scorecard-metric-bar {
+  .nba-vitals-strip {
+    gap: 0.8rem;
+  }
+  .vital-item {
+    border-right: none;
+    padding-right: 0;
+  }
+  .nba-stats-table-bar {
     grid-template-columns: repeat(2, 1fr);
   }
-  .bento-sports-grid {
+  .nba-grid-two {
     grid-template-columns: 1fr;
   }
 }

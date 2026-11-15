@@ -83,6 +83,22 @@ body {
   padding: 1.5rem 0 1rem 0;
 }
 
+.author-monogram-badge {
+  width: 52px;
+  height: 52px;
+  background: #581c87;
+  color: #ffffff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Georgia", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 6px rgba(88, 28, 135, 0.25);
+}
+
 .gazette-eyebrow {
   font-size: 0.72rem;
   letter-spacing: 0.16em;
