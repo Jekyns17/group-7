@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nantume Bakhita Grace &bull; BIST Student</title>
-  <!-- Font Awesome CDN for icons instead of emojis -->
+  <title>Nantume Bakhita Grace &bull; CyberSec Intelligence Lab &bull; Group 7</title>
+  <!-- Font Awesome for security & terminal glyphs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/bakhita.css">
 </head>
 <body data-student="bakhita">
 
   <!-- ======================================================================
-       1. MINIMALIST TOPBAR
+       1. SOC TOP SYSTEM BAR
        ====================================================================== -->
-  <header class="grace-navbar">
-    <div class="grace-nav-inner">
-      <a href="index.html" class="grace-brand">GRACE<span>.DEV</span> // Makerere</a>
-      <nav class="grace-nav-links">
+  <header class="soc-top-bar">
+    <div class="soc-top-inner">
+      <div class="soc-brand">
+        <span class="soc-live-dot"></span>
+        <span class="soc-logo">SOC-07.DEFENSE</span>
+        <span class="soc-badge">CYBER INTELLIGENCE</span>
+      </div>
+      <nav class="soc-nav-links">
         <a href="index.html" class="active">Grace</a>
         <a href="daniella.html">Daniella</a>
         <a href="ernest.html">Ernest</a>
@@ -28,156 +32,168 @@
   </header>
 
   <!-- ======================================================================
-       2. ASYMMETRICAL 2-COLUMN PORTFOLIO LAYOUT
+       2. CYBER SECURITY ANALYST MAIN CONTAINER
        ====================================================================== -->
-  <div class="grace-layout">
+  <main class="soc-container">
 
-    <!-- Left Column: Sticky Profile Card & Quick Info -->
-    <aside class="grace-sidebar">
-      <div class="grace-sidebar-card">
-        <h1>Nantume Bakhita Grace</h1>
-        <div class="grace-title-tag">Aspiring Cyber security analyst</div>
+    <!-- Analyst Security Clearance Dossier -->
+    <section class="soc-dossier-card">
+      <div class="soc-dossier-top">
+        <div class="soc-crest-box">
+          <span class="crest-code">SEC//OPS</span>
+          <span class="crest-initials">NG</span>
+        </div>
 
-        <table class="grace-meta-table">
-          <tr>
-            <td class="label">Age</td>
-            <td class="value">21 Years Old</td>
-          </tr>
-          <tr>
-            <td class="label">Campus</td>
-            <td class="value">Makerere University</td>
-          </tr>
-          <tr>
-            <td class="label">Focus</td>
-            <td class="value">Cyber Security</td>
-          </tr>
-          <tr>
-            <td class="label">Project</td>
-            <td class="value">Group 7</td>
-          </tr>
-        </table>
+        <div class="soc-title-block">
+          <div class="soc-clearance-chip">ANALYST CLEARANCE: LEVEL 7 &bull; MAKERERE UNIVERSITY</div>
+          <h1 class="soc-analyst-name">Nantume Bakhita Grace</h1>
+          <p class="soc-analyst-sub">
+            Aspiring Cyber Security Analyst &bull; Threat Mitigation, Network Defense & Digital Forensics
+          </p>
+          <div class="soc-spec-chips">
+            <span class="chip-item">Age: 21 Years Old</span>
+            <span class="chip-item">Institution: Makerere University</span>
+            <span class="chip-item">Team: Group 7 Project Lead</span>
+          </div>
+        </div>
 
-        <!-- Interactive Like Panel -->
-        <div class="grace-like-panel">
-          <p>Support Grace's Portfolio</p>
-          <button id="like-btn" class="grace-like-btn">
-            <i class="fa-solid fa-heart"></i> Like (<span id="like-count">0</span>)
+        <div class="soc-action-block">
+          <button id="like-btn" class="soc-endorse-btn">
+            <i class="fa-solid fa-shield-halved"></i> Endorse Analyst (<span id="like-count">0</span>)
           </button>
         </div>
       </div>
-    </aside>
 
-    <!-- Right Column: Main Content Stream -->
-    <main class="grace-main">
+      <!-- Core Security Posture Metrics -->
+      <div class="soc-metrics-strip">
+        <div class="soc-metric-tile">
+          <span class="metric-val">ZERO TRUST</span>
+          <span class="metric-lbl">Architecture</span>
+        </div>
+        <div class="soc-metric-tile">
+          <span class="metric-val">SHA-256</span>
+          <span class="metric-lbl">Data Integrity</span>
+        </div>
+        <div class="soc-metric-tile">
+          <span class="metric-val">DEFCON 4</span>
+          <span class="metric-lbl">Threat Posture</span>
+        </div>
+        <div class="soc-metric-tile">
+          <span class="metric-val">AUDITED</span>
+          <span class="metric-lbl">Network Access</span>
+        </div>
+      </div>
+    </section>
 
-      <!-- Panel 1: Welcome & Overview -->
-      <section class="grace-panel">
-        <h2 class="grace-panel-heading">
-          <i class="fa-solid fa-user"></i> About Me
-        </h2>
-        <p class="grace-hero-intro">
-          Hello! I am <strong>Nantume Bakhita Grace</strong>, a 21-year-old student at Makerere University. I am deeply interested in software engineering, cyber security, system logic, and understanding how technology can solve everyday challenges. When I am not writing code or studying, I enjoy simple, grounding habits that keep life balanced.
+    <!-- ======================================================================
+         3. TWO-COLUMN CYBER LAB SPREAD
+         ====================================================================== -->
+    <div class="soc-two-col-grid">
+
+      <!-- LEFT COLUMN: Cyber Defense Research & Principles -->
+      <section class="soc-panel">
+        <div class="panel-tag">SECURITY INTELLIGENCE BRIEFING</div>
+        <h2>Defending Networks: The Zero-Trust Paradigm</h2>
+        <p class="panel-p">
+          In contemporary computing environments, perimeter-based security is no longer sufficient. My academic focus in cyber security centers on implementing <strong>Zero Trust</strong>—the principle of <em>"Never Trust, Always Verify"</em>—across all endpoints, microservices, and network channels.
         </p>
-      </section>
 
-      <!-- Panel 2: Hobbies & Downtime (Horizontal Modern Rows) -->
-      <section class="grace-panel">
-        <h2 class="grace-panel-heading">
-          <i class="fa-solid fa-shapes"></i> Free Time & Interests
-        </h2>
-        <div class="grace-hobbies-list">
-
-          <div class="grace-hobby-row">
-            <div class="grace-hobby-icon">
-              <i class="fa-solid fa-book-open"></i>
-            </div>
-            <div class="grace-hobby-content">
-              <h3>Reading Novels</h3>
-              <p>Exploring captivating fiction and thought-provoking literature during quiet moments.</p>
-            </div>
+        <!-- Security Terminal Scanner Output -->
+        <div class="soc-terminal-wrap">
+          <div class="terminal-header">
+            <span class="term-dot"></span>
+            <span class="term-dot"></span>
+            <span class="term-dot"></span>
+            <span class="term-label">security-audit &bull; vulnerability-scanner</span>
           </div>
-
-          <div class="grace-hobby-row">
-            <div class="grace-hobby-icon">
-              <i class="fa-solid fa-film"></i>
-            </div>
-            <div class="grace-hobby-content">
-              <h3>Watching Movies</h3>
-              <p>Relaxing with compelling films on weekends when academic coursework winds down.</p>
-            </div>
+          <div class="terminal-screen">
+            <div class="t-line"><span class="t-green">[START]</span> Initializing vulnerability assessment on Group 7 gateway...</div>
+            <div class="t-line"><span class="t-cyan">[PORTS]</span> Scanning active sockets: 80 (HTTP), 443 (HTTPS), 22 (SSH-hardened)</div>
+            <div class="t-line"><span class="t-green">[ENCRYPT]</span> TLS 1.3 certificate valid &bull; Cipher suite: Strict AEAD</div>
+            <div class="t-line"><span class="t-green">[RESULT]</span> 0 critical vulnerabilities found. Access controls enforced.</div>
           </div>
+        </div>
 
-          <div class="grace-hobby-row">
-            <div class="grace-hobby-icon">
-              <i class="fa-solid fa-tv"></i>
-            </div>
-            <div class="grace-hobby-content">
-              <h3>Watching Series</h3>
-              <p>Following engaging episodic dramas and exciting storylines in the evenings.</p>
-            </div>
-          </div>
-
-          <div class="grace-hobby-row">
-            <div class="grace-hobby-icon">
-              <i class="fa-solid fa-moon"></i>
-            </div>
-            <div class="grace-hobby-content">
-              <h3>Rest & Sleep</h3>
-              <p>Prioritizing peaceful, restorative sleep to keep my mind sharp for morning lectures.</p>
-            </div>
-          </div>
-
+        <div class="soc-quote-box">
+          <strong>Security Principle:</strong> "Cyber security is not merely about erecting walls; it is about cultivating proactive vigilance, understanding attacker psychology, and safeguarding data privacy."
         </div>
       </section>
 
-      <!-- Panel 3: Journal / Campus Reflections -->
-      <section class="grace-panel">
-        <h2 class="grace-panel-heading">
-          <i class="fa-solid fa-newspaper"></i> Campus Reflections
-        </h2>
-        <article class="grace-article">
-          <div class="grace-article-meta">
-            <span class="category">Makerere University</span>
-            <span>&bull;</span>
-            <span>Student Life</span>
+      <!-- RIGHT COLUMN: Cognitive Quarantine & Decompression (Hobbies) -->
+      <aside class="soc-panel">
+        <div class="panel-tag">SYSTEM QUARANTINE & RESTORATION</div>
+        <h2>Cognitive Decompression: Hobbies & Downtime</h2>
+        <p class="panel-p">
+          A successful security analyst requires sharp diagnostic intuition. When technical sessions conclude, deliberate relaxation restores mental clarity and prevents cognitive burnout.
+        </p>
+
+        <div class="decompress-protocol-list">
+          <div class="protocol-card">
+            <div class="protocol-tag">PROTOCOL 01</div>
+            <div class="protocol-info">
+              <h3>Reading Novels</h3>
+              <p>Diving into captivating literature and suspense fiction during quiet study breaks to stretch imaginative thinking.</p>
+            </div>
           </div>
-          <h3>Balancing Code, Lecture Halls, and Solitude</h3>
-          <p>
-            Being an IT student at Makerere requires consistent practice, discipline, and attention to detail. Every week brings new algorithms, project discussions, and deadlines that challenge our problem-solving skills.
-          </p>
-          <p>
-            Finding healthy downtime is what makes the journey sustainable. Whether it is reading a few chapters of a novel, catching up on an episode of my favorite series, or taking a refreshing nap, keeping my routine balanced helps me stay energized and ready to contribute to my group.
-          </p>
-        </article>
-      </section>
 
-      <!-- Panel 4: Interactive Comment Box -->
-      <section class="grace-panel">
-        <h2 class="grace-panel-heading">
-          <i class="fa-solid fa-comment-dots"></i> Leave a Friendly Note
-        </h2>
-        <form id="comment-form" class="grace-comment-form">
-          <input type="text" id="comment-author" placeholder="Your Name" required>
-          <textarea id="comment-message" placeholder="Leave a message or feedback for Grace..." required></textarea>
-          <button type="submit">Post Comment</button>
-        </form>
+          <div class="protocol-card">
+            <div class="protocol-tag">PROTOCOL 02</div>
+            <div class="protocol-info">
+              <h3>Films & Drama Series</h3>
+              <p>Unwinding in the evenings with engaging episodic series and thought-provoking cinematic storylines.</p>
+            </div>
+          </div>
 
-        <div id="comments-list" class="comments-list"></div>
-      </section>
+          <div class="protocol-card">
+            <div class="protocol-tag">PROTOCOL 03</div>
+            <div class="protocol-info">
+              <h3>Restorative Sleep</h3>
+              <p>Prioritizing regular, undisturbed sleep to refresh neural alertness before early morning lectures at Makerere.</p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Navigation to other group members -->
-      <div class="grace-footer-nav">
-        <a href="matthew.html" class="grace-footer-btn">&larr; Previous: Matthew</a>
-        <a href="daniella.html" class="grace-footer-btn">Next: Daniella &rarr;</a>
-      </div>
+        <div class="soc-quote-box">
+          <strong>Rest Philosophy:</strong> "High mental alertness requires disciplined downtime. A rested mind spots subtle anomalies that an exhausted eye overlooks."
+        </div>
+      </aside>
 
-      <footer>
-        <p>&copy; 2026 Group 7 &bull; Makerere University</p>
-      </footer>
+    </div>
 
-    </main>
+    <!-- ======================================================================
+         4. INCIDENT LOGS & PEER GUESTBOOK (COMMENTS)
+         ====================================================================== -->
+    <section class="soc-panel soc-comments-panel">
+      <div class="panel-tag">ENCRYPTED COMMUNICATIONS</div>
+      <h2><i class="fa-solid fa-satellite-dish"></i> Encrypted Dispatches & Guestbook</h2>
+      <p class="panel-p">Leave a message, security note, or peer feedback for Nantume Bakhita Grace.</p>
 
-  </div>
+      <form id="comment-form" class="soc-transmission-form">
+        <div class="form-row">
+          <input type="text" id="comment-author" placeholder="Agent / Sender Identifier" required>
+        </div>
+        <div class="form-row">
+          <textarea id="comment-message" placeholder="Input transmission log or message for Grace..." required></textarea>
+        </div>
+        <button type="submit" class="soc-submit-btn">Send Dispatch</button>
+      </form>
+
+      <div id="comments-list" class="comments-list soc-comments-feed"></div>
+    </section>
+
+    <!-- ======================================================================
+         5. SOC PAGER
+         ====================================================================== -->
+    <div class="soc-pager-nav">
+      <a href="matthew.html" class="soc-pager-btn">&larr; Node 06: Matthew</a>
+      <a href="daniella.html" class="soc-pager-btn">Node 02: Daniella Evelyn &rarr;</a>
+    </div>
+
+    <footer class="soc-footer">
+      <p>&copy; 2026 SOC-07 Intelligence Console &bull; Group 7 &bull; Makerere University &bull; Nantume Bakhita Grace</p>
+    </footer>
+
+  </main>
 
   <script src="js/main.js"></script>
 </body>

@@ -1,7 +1,8 @@
 /* ==========================================================================
-   Kayondo Ernest - Instagram Style Profile & Feed
+   Kayondo Ernest - CloudOps & DevOps Console
    Makerere University - Group 7
-   Theme: Instagram Social App UI (Clean Content Cards, Zero Icon Placeholders)
+   Theme: Cloud Infrastructure Command Center & Automated CI/CD Terminal
+   Palette: Cyber Obsidian Slate, Terminal Emerald, Cyber Cyan, Crisp Light Data
    ========================================================================== */
 
 * {
@@ -11,25 +12,25 @@
 }
 
 body {
-  background-color: #fafafa;
-  color: #262626;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  padding-bottom: 3rem;
+  background-color: #090d16;
+  color: #f1f5f9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Courier New", monospace;
+  line-height: 1.6;
+  padding-bottom: 4rem;
 }
 
-/* 1. Instagram Top Bar & Group Navigation */
-.ig-top-header {
-  background: #ffffff;
-  border-bottom: 1px solid #dbdbdb;
+/* 1. CloudOps Top Header */
+.ops-header {
+  background: #060911;
+  border-bottom: 1px solid #1e293b;
   position: sticky;
   top: 0;
   z-index: 100;
   padding: 0.75rem 1rem;
 }
 
-.ig-top-container {
-  max-width: 935px;
+.ops-header-inner {
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -38,618 +39,602 @@ body {
   gap: 0.8rem;
 }
 
-.ig-brand {
-  font-size: 1.25rem;
+.ops-sys-status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.ops-logo {
+  font-family: "Courier New", monospace;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  color: #38bdf8;
+}
+
+.ops-node-tag {
+  background: #1e293b;
+  color: #94a3b8;
+  font-size: 0.68rem;
   font-weight: 700;
-  color: #262626;
-  text-decoration: none;
-  font-style: italic;
-  font-family: 'Segoe UI', cursive, sans-serif;
-}
-
-.ig-brand span {
-  font-style: normal;
-  font-size: 0.75rem;
-  background: #efefef;
-  padding: 0.2rem 0.5rem;
+  padding: 0.15rem 0.5rem;
   border-radius: 4px;
-  color: #8e8e8e;
-  margin-left: 0.4rem;
-  font-family: sans-serif;
+  border: 1px solid #334155;
 }
 
-.ig-nav-links {
+.ops-nav-links {
   display: flex;
   gap: 0.4rem;
   flex-wrap: wrap;
 }
 
-.ig-nav-links a {
+.ops-nav-links a {
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #262626;
+  color: #94a3b8;
   padding: 0.35rem 0.75rem;
-  border-radius: 6px;
-  background: #f0f2f5;
+  border-radius: 4px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
   transition: all 0.2s ease;
 }
 
-.ig-nav-links a:hover {
-  background: #e4e6eb;
-}
-
-.ig-nav-links a.active {
-  background: #0095f6;
+.ops-nav-links a:hover {
+  background: #1e293b;
   color: #ffffff;
 }
 
-/* 2. Instagram Main Layout Container */
-.ig-main-container {
-  max-width: 935px;
+.ops-nav-links a.active {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #38bdf8;
+}
+
+/* 2. Main Ops Container */
+.ops-container {
+  max-width: 1100px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* 3. Instagram Profile Header Card */
-.ig-profile-card {
-  background: #ffffff;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-  padding: 2rem 2.5rem;
-  margin-bottom: 1.5rem;
+/* 3. Hero Identity Card */
+.ops-hero-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 2.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-.ig-profile-top {
+.ops-hero-top {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #1e293b;
 }
 
-.ig-avatar-ring {
-  width: 105px;
-  height: 105px;
-  border-radius: 50%;
-  padding: 3px;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+.ops-avatar-chip {
+  width: 95px;
+  height: 95px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border: 2px solid #38bdf8;
+  border-radius: 8px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
 
-.ig-avatar-inner {
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ig-avatar-initials {
-  font-size: 2.2rem;
+.chip-code {
+  font-size: 0.62rem;
+  font-family: monospace;
   font-weight: 800;
-  color: #1e293b;
-  letter-spacing: -1px;
+  letter-spacing: 0.1em;
+  color: #e0f2fe;
 }
 
-.ig-meta-side {
+.chip-initials {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.ops-bio-block {
   flex: 1;
-  min-width: 250px;
+  min-width: 280px;
 }
 
-.ig-username-row {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-.ig-username {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #262626;
-}
-
-.ig-verified-badge {
+.ops-role-pill {
   font-size: 0.72rem;
-  font-weight: 700;
-  color: #0095f6;
-  background: #e0f2fe;
-  padding: 0.2rem 0.55rem;
-  border-radius: 12px;
-}
-
-.ig-btn-primary {
-  background: #0095f6;
-  color: #ffffff;
-  border: none;
-  font-size: 0.86rem;
-  font-weight: 600;
-  padding: 0.45rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.ig-btn-primary:hover {
-  background: #1877f2;
-}
-
-.ig-stats-row {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
-}
-
-.ig-stats-row div span {
-  font-weight: 700;
-  color: #262626;
-}
-
-.ig-bio h1 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #262626;
-  margin-bottom: 0.2rem;
-}
-
-.ig-bio p {
-  font-size: 0.9rem;
-  color: #333333;
-  margin-bottom: 0.2rem;
-}
-
-.ig-bio .tagline {
-  color: #00376b;
-  font-weight: 600;
-}
-
-/* 4. Instagram Story Highlights */
-.ig-stories-bar {
-  display: flex;
-  gap: 1.5rem;
-  padding: 1rem 0 0 0;
-  border-top: 1px solid #efefef;
-  overflow-x: auto;
-}
-
-.ig-story-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-  min-width: 68px;
-}
-
-.ig-story-circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid #dbdbdb;
-  padding: 2px;
-  background: #f8fafc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
-
-.ig-story-circle:hover {
-  transform: scale(1.05);
-  border-color: #0095f6;
-}
-
-.ig-story-text {
-  font-size: 0.72rem;
+  font-family: monospace;
   font-weight: 800;
-  letter-spacing: 0.05em;
-  color: #0284c7;
-}
-
-.ig-story-label {
-  font-size: 0.74rem;
-  font-weight: 600;
-  color: #262626;
-}
-
-/* 5. Instagram Feed Grid (Posts Layout) */
-.ig-feed-tabs {
-  border-top: 1px solid #dbdbdb;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.ig-tab {
-  font-size: 0.78rem;
-  font-weight: 700;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #8e8e8e;
-  padding: 0.9rem 0;
-  border-top: 1px solid transparent;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  cursor: pointer;
-}
-
-.ig-tab.active {
-  color: #262626;
-  border-top: 1px solid #262626;
-}
-
-/* Feed Posts Column */
-.ig-posts-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 620px;
-  margin: 0 auto;
-}
-
-.ig-post-card {
-  background: #ffffff;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.ig-post-header {
-  padding: 0.85rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #efefef;
-}
-
-.ig-post-user {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #262626;
-}
-
-.ig-user-badge {
-  width: 30px;
-  height: 30px;
-  background: #0095f6;
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 800;
-}
-
-.ig-post-tag-pill {
-  font-size: 0.72rem;
-  background: #f1f5f9;
-  color: #475569;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-/* Rich Content Visual Cards (No Icon Placeholders) */
-.ig-post-body-visual {
-  padding: 2.2rem 1.75rem;
-}
-
-/* Fitness Log Card */
-.ig-visual-fitness {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  color: #ffffff;
-}
-
-.ig-card-header-label {
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  font-weight: 800;
   color: #38bdf8;
-  margin-bottom: 1.25rem;
-  text-align: center;
-}
-
-.ig-metric-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.8rem;
-  margin-bottom: 1.25rem;
-}
-
-.ig-metric-box {
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 6px;
-  padding: 0.8rem 0.4rem;
-  text-align: center;
-}
-
-.ig-metric-num {
-  display: block;
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-.ig-metric-lbl {
-  display: block;
-  font-size: 0.72rem;
-  color: #94a3b8;
-  margin-top: 0.2rem;
-}
-
-.ig-visual-quote {
-  font-size: 0.88rem;
-  font-style: italic;
-  color: #cbd5e1;
-  text-align: center;
-  line-height: 1.6;
-}
-
-/* DevOps Terminal Card */
-.ig-visual-devops {
-  background: #0f172a;
-  color: #f8fafc;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.ig-terminal-bar {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid #334155;
-}
-
-.ig-term-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #475569;
-}
-
-.ig-term-title {
-  margin-left: 0.5rem;
-  font-size: 0.76rem;
-  color: #94a3b8;
-}
-
-.ig-terminal-content {
-  font-size: 0.84rem;
-  line-height: 1.8;
-  text-align: left;
-}
-
-.ig-term-line {
-  margin-bottom: 0.3rem;
-}
-
-.ig-term-green {
-  color: #22c55e;
-  font-weight: bold;
-}
-
-.ig-term-blue {
-  color: #38bdf8;
-}
-
-.ig-term-success {
-  color: #4ade80;
-  font-weight: bold;
-}
-
-/* Gaming Board Card */
-.ig-visual-gaming {
-  background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
-  color: #ffffff;
-}
-
-.ig-gaming-board {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1.25rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.ig-game-title {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: #facc15;
   margin-bottom: 0.4rem;
 }
 
-.ig-game-status {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #22c55e;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.3rem;
+.ops-engineer-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
 }
 
-.ig-game-meta {
-  font-size: 0.75rem;
-  color: #a1a1aa;
+.ops-headline {
+  font-size: 0.98rem;
+  color: #cbd5e1;
+  margin-bottom: 0.8rem;
 }
 
-.ig-post-actions {
-  padding: 0.75rem 1rem 0.4rem 1rem;
+.ops-system-specs {
   display: flex;
-  gap: 1.1rem;
-  font-size: 1.35rem;
-  color: #262626;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
-.ig-post-actions i {
+.spec-tag {
+  background: #090d16;
+  border: 1px solid #334155;
+  color: #94a3b8;
+  font-size: 0.74rem;
+  font-family: monospace;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
+.ops-action-block {
+  flex-shrink: 0;
+}
+
+.ops-deploy-btn {
+  background: #0284c7;
+  color: #ffffff;
+  border: 1px solid #38bdf8;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 0.7rem 1.35rem;
+  border-radius: 6px;
   cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.ig-post-actions i:hover {
-  color: #8e8e8e;
-}
-
-.ig-post-caption {
-  padding: 0.4rem 1rem 1rem 1rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #262626;
-}
-
-.ig-post-caption strong {
-  margin-right: 0.3rem;
-}
-
-.ig-post-time {
-  font-size: 0.68rem;
-  letter-spacing: 0.05em;
-  color: #8e8e8e;
-  margin-top: 0.5rem;
-}
-
-/* 6. Instagram Comments Section */
-.ig-comments-card {
-  background: #ffffff;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-  padding: 1.75rem;
-  margin-top: 2rem;
-  max-width: 620px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.ig-comments-card h2 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #262626;
-  margin-bottom: 1rem;
-  display: flex;
+  transition: all 0.2s ease;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  box-shadow: 0 0 12px rgba(2, 132, 199, 0.4);
 }
 
-.ig-comment-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
+.ops-deploy-btn:hover {
+  background: #0369a1;
+  transform: translateY(-1px);
 }
 
-.ig-comment-form input,
-.ig-comment-form textarea {
-  width: 100%;
-  padding: 0.65rem 0.85rem;
-  border: 1px solid #dbdbdb;
+/* Telemetry Grid */
+.ops-telemetry-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  padding-top: 1.75rem;
+}
+
+.telemetry-cell {
+  background: #060911;
+  border: 1px solid #1e293b;
   border-radius: 6px;
-  font-family: inherit;
-  font-size: 0.88rem;
-  outline: none;
-  background: #fafafa;
+  padding: 1rem 0.8rem;
+  text-align: center;
 }
 
-.ig-comment-form input:focus,
-.ig-comment-form textarea:focus {
-  border-color: #a8a8a8;
-  background: #ffffff;
+.tele-val {
+  display: block;
+  font-size: 1.45rem;
+  font-family: monospace;
+  font-weight: 900;
+  color: #10b981;
 }
 
-.ig-comment-form textarea {
-  min-height: 70px;
-  resize: vertical;
-}
-
-.ig-comment-form button {
-  align-self: flex-end;
-  background: #0095f6;
-  color: #ffffff;
-  border: none;
-  padding: 0.45rem 1.25rem;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-
-.comments-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  border-top: 1px solid #efefef;
-  padding-top: 1rem;
-}
-
-.comment-item {
-  background: #f8fafc;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  border: 1px solid #e2e8f0;
-}
-
-.comment-author {
-  font-weight: 700;
-  color: #262626;
-  font-size: 0.85rem;
-}
-
-.comment-text {
-  font-size: 0.88rem;
-  color: #334155;
-  margin-top: 0.2rem;
-}
-
-.comment-time {
-  font-size: 0.7rem;
+.tele-lbl {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: #94a3b8;
   margin-top: 0.25rem;
 }
 
-/* 7. Footer Pager */
-.ig-footer-pager {
-  display: flex;
-  justify-content: space-between;
-  margin: 2.5rem auto 1.5rem auto;
-  max-width: 620px;
+/* 4. CI/CD Pipeline Section */
+.ops-pipeline-section {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
-.ig-pager-btn {
-  text-decoration: none;
-  background: #ffffff;
-  border: 1px solid #dbdbdb;
-  color: #262626;
-  padding: 0.55rem 1.1rem;
+.section-badge {
+  font-size: 0.7rem;
+  font-family: monospace;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #10b981;
+  margin-bottom: 0.4rem;
+}
+
+.section-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.pipeline-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.pipeline-stage {
+  background: #060911;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 1.1rem 1rem;
+  min-width: 190px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stage-pass {
+  border-color: #065f46;
+}
+
+.stage-active {
+  border-color: #0284c7;
+  box-shadow: 0 0 10px rgba(2, 132, 199, 0.3);
+}
+
+.stage-num {
+  font-size: 0.72rem;
+  font-family: monospace;
+  font-weight: 800;
+  color: #64748b;
+}
+
+.stage-name {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  letter-spacing: 0.05em;
+}
+
+.stage-sub {
+  font-size: 0.74rem;
+  color: #94a3b8;
+}
+
+.stage-status-chip {
+  align-self: flex-start;
+  font-size: 0.65rem;
+  font-family: monospace;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: #064e3b;
+  color: #34d399;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.4rem;
+}
+
+.chip-live {
+  background: #0369a1;
+  color: #38bdf8;
+}
+
+.pipeline-connector {
+  width: 24px;
+  height: 2px;
+  background: #334155;
+  flex-shrink: 0;
+}
+
+/* 5. Two Column Ops Grid */
+.ops-grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.ops-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.card-tag {
+  font-size: 0.7rem;
+  font-family: monospace;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.ops-card h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+
+.card-p {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+/* Terminal block */
+.code-terminal-block {
+  background: #060911;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+}
+
+.terminal-bar {
+  background: #0b1120;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.term-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #334155;
+}
+
+.term-title {
+  margin-left: 0.5rem;
+  font-size: 0.72rem;
+  font-family: monospace;
+  color: #94a3b8;
+}
+
+.terminal-body {
+  padding: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.term-green {
+  color: #10b981;
+  font-weight: bold;
+}
+
+.term-dim {
+  color: #64748b;
+}
+
+.term-cyan {
+  color: #38bdf8;
+}
+
+.ops-principle-box {
+  background: rgba(2, 132, 199, 0.1);
+  border-left: 3px solid #0284c7;
+  padding: 0.85rem 1rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.86rem;
+  color: #e2e8f0;
+  line-height: 1.55;
+}
+
+/* Cooldown rows */
+.cooldown-metrics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.cooldown-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #060911;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.cooldown-badge {
+  background: #1e293b;
+  color: #38bdf8;
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.35rem 0.6rem;
   border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  border: 1px solid #334155;
+  flex-shrink: 0;
+}
+
+.cooldown-details h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.cooldown-details p {
+  font-size: 0.84rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* 6. Deploy logs & comments */
+.ops-deploy-logs-card {
+  margin-bottom: 2rem;
+}
+
+.ops-terminal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.ops-terminal-form input,
+.ops-terminal-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  background: #060911;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #f1f5f9;
+  font-family: inherit;
+  font-size: 0.88rem;
+  outline: none;
+}
+
+.ops-terminal-form input:focus,
+.ops-terminal-form textarea:focus {
+  border-color: #38bdf8;
+}
+
+.ops-terminal-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.ops-submit-btn {
+  align-self: flex-end;
+  background: #10b981;
+  color: #064e3b;
+  font-weight: 800;
+  border: none;
+  font-size: 0.88rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
   transition: all 0.2s ease;
 }
 
-.ig-pager-btn:hover {
-  background: #f0f2f5;
-  border-color: #a8a8a8;
+.ops-submit-btn:hover {
+  background: #34d399;
 }
 
-footer {
+.ops-comments-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid #1e293b;
+  padding-top: 1.25rem;
+}
+
+.comment-item {
+  background: #060911;
+  border: 1px solid #1e293b;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+}
+
+.comment-author {
+  font-family: monospace;
+  font-weight: 800;
+  color: #38bdf8;
+  font-size: 0.88rem;
+}
+
+.comment-text {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  margin-top: 0.25rem;
+}
+
+.comment-time {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-top: 0.3rem;
+  font-family: monospace;
+}
+
+/* 7. Pager & Footer */
+.ops-pager-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.ops-pager-btn {
+  text-decoration: none;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  color: #38bdf8;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.86rem;
+  font-family: monospace;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.ops-pager-btn:hover {
+  background: #1e293b;
+  border-color: #38bdf8;
+}
+
+.ops-footer {
   text-align: center;
-  font-size: 0.8rem;
-  color: #8e8e8e;
+  font-size: 0.78rem;
+  font-family: monospace;
+  color: #64748b;
   margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ops-telemetry-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ops-grid-two {
+    grid-template-columns: 1fr;
+  }
 }

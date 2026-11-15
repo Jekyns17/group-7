@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayondo Ernest (@ernest.devops) &bull; Makerere University</title>
-  <!-- Font Awesome CDN for necessary small UI glyphs -->
+  <title>Kayondo Ernest &bull; CloudOps & DevOps Console &bull; Group 7</title>
+  <!-- Font Awesome for clean terminal/system glyphs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/ernest.css">
 </head>
 <body data-student="ernest">
 
   <!-- ======================================================================
-       1. INSTAGRAM TOP NAVIGATION BAR
+       1. CLOUDOPS TOP SYSTEM NAV
        ====================================================================== -->
-  <header class="ig-top-header">
-    <div class="ig-top-container">
-      <a href="index.html" class="ig-brand">Instagram <span>Group 7</span></a>
-      <nav class="ig-nav-links">
+  <header class="ops-header">
+    <div class="ops-header-inner">
+      <div class="ops-sys-status">
+        <span class="status-indicator"></span>
+        <span class="ops-logo">CLOUDOPS.CONSOLE</span>
+        <span class="ops-node-tag">NODE-07 &bull; PROD</span>
+      </div>
+      <nav class="ops-nav-links">
         <a href="index.html">Grace</a>
         <a href="daniella.html">Daniella</a>
         <a href="ernest.html" class="active">Ernest</a>
@@ -28,224 +32,218 @@
   </header>
 
   <!-- ======================================================================
-       2. MAIN INSTAGRAM PROFILE CONTAINER
+       2. DEVOPS COMMAND CENTER CONTAINER
        ====================================================================== -->
-  <main class="ig-main-container">
+  <main class="ops-container">
 
-    <!-- Instagram Profile Header Card -->
-    <section class="ig-profile-card">
-      <div class="ig-profile-top">
-        <div class="ig-avatar-ring">
-          <div class="ig-avatar-inner">
-            <span class="ig-avatar-initials">KE</span>
+    <!-- Engineer Identity & Cluster Telemetry -->
+    <section class="ops-hero-card">
+      <div class="ops-hero-top">
+        <div class="ops-avatar-chip">
+          <span class="chip-code">DEV//OPS</span>
+          <span class="chip-initials">KE</span>
+        </div>
+
+        <div class="ops-bio-block">
+          <div class="ops-role-pill">INFRASTRUCTURE AUTOMATION & CLOUD PLATFORMS</div>
+          <h1 class="ops-engineer-name">Kayondo Ernest</h1>
+          <p class="ops-headline">
+            Undergraduate DevOps Engineer &bull; Cloud Systems, CI/CD Pipelines & Container Orchestration
+          </p>
+          <div class="ops-system-specs">
+            <span class="spec-tag">BASE: Makerere University</span>
+            <span class="spec-tag">CLUSTER: Group 7 Production</span>
+            <span class="spec-tag">CONTACT: ernestk17@github</span>
           </div>
         </div>
 
-        <div class="ig-meta-side">
-          <div class="ig-username-row">
-            <span class="ig-username">ernest.devops</span>
-            <span class="ig-verified-badge" title="Verified Makerere Student">&#10003; Verified</span>
-            <!-- Like Button styled as Instagram Follow / Cheer Button -->
-            <button id="like-btn" class="ig-btn-primary">
-              <i class="fa-solid fa-thumbs-up"></i> Follow & Like (<span id="like-count">0</span>)
-            </button>
-          </div>
-
-          <div class="ig-stats-row">
-            <div><span>3</span> posts</div>
-            <div><span>256</span> followers</div>
-            <div><span>128</span> following</div>
-          </div>
-
-          <div class="ig-bio">
-            <h1>Kayondo Ernest</h1>
-            <p class="tagline">Aspiring DevOps & Cloud Infrastructure Engineer</p>
-            <p>Undergraduate Student at Makerere University, Kampala</p>
-            <p>Passionate about cloud automation, container systems, and physical fitness.</p>
-          </div>
+        <div class="ops-action-block">
+          <button id="like-btn" class="ops-deploy-btn">
+            <i class="fa-solid fa-server"></i> Endorse & Deploy (<span id="like-count">0</span>)
+          </button>
         </div>
       </div>
 
-      <!-- Instagram Story Highlights (Text & Discipline Badges, No generic icon circles) -->
-      <div class="ig-stories-bar">
-        <div class="ig-story-item">
-          <div class="ig-story-circle">
-            <span class="ig-story-text">SWIM</span>
-          </div>
-          <span class="ig-story-label">Swimming</span>
+      <!-- Real-time Cluster Health Grid -->
+      <div class="ops-telemetry-bar">
+        <div class="telemetry-cell">
+          <span class="tele-val">99.98%</span>
+          <span class="tele-lbl">Service Uptime</span>
         </div>
-
-        <div class="ig-story-item">
-          <div class="ig-story-circle">
-            <span class="ig-story-text">RUN</span>
-          </div>
-          <span class="ig-story-label">Running</span>
+        <div class="telemetry-cell">
+          <span class="tele-val">3 / 3</span>
+          <span class="tele-lbl">Active Nodes</span>
         </div>
-
-        <div class="ig-story-item">
-          <div class="ig-story-circle">
-            <span class="ig-story-text">GYM</span>
-          </div>
-          <span class="ig-story-label">Fitness</span>
+        <div class="telemetry-cell">
+          <span class="tele-val">24 ms</span>
+          <span class="tele-lbl">Cluster Latency</span>
         </div>
-
-        <div class="ig-story-item">
-          <div class="ig-story-circle">
-            <span class="ig-story-text">GAME</span>
-          </div>
-          <span class="ig-story-label">Gaming</span>
+        <div class="telemetry-cell">
+          <span class="tele-val">PASS</span>
+          <span class="tele-lbl">Security Audits</span>
         </div>
       </div>
     </section>
 
-    <!-- Feed Tab Navigation -->
-    <div class="ig-feed-tabs">
-      <div class="ig-tab active">
-        <i class="fa-solid fa-table-cells"></i> Posts & Updates
+    <!-- ======================================================================
+         3. LIVE CI/CD PIPELINE ARCHITECTURE (INTERACTIVE FLOW)
+         ====================================================================== -->
+    <section class="ops-pipeline-section">
+      <div class="section-badge">AUTOMATED CI/CD WORKFLOW</div>
+      <h2 class="section-title">Production Delivery Pipeline: Zero-Downtime Releases</h2>
+      
+      <div class="pipeline-flow">
+        <div class="pipeline-stage stage-pass">
+          <div class="stage-num">01</div>
+          <div class="stage-info">
+            <div class="stage-name">LINT & AUDIT</div>
+            <div class="stage-sub">Syntax & Security Checks</div>
+          </div>
+          <span class="stage-status-chip">PASSED</span>
+        </div>
+
+        <div class="pipeline-connector"></div>
+
+        <div class="pipeline-stage stage-pass">
+          <div class="stage-num">02</div>
+          <div class="stage-info">
+            <div class="stage-name">CONTAINER BUILD</div>
+            <div class="stage-sub">Docker Multi-Stage Build</div>
+          </div>
+          <span class="stage-status-chip">BUILT</span>
+        </div>
+
+        <div class="pipeline-connector"></div>
+
+        <div class="pipeline-stage stage-pass">
+          <div class="stage-num">03</div>
+          <div class="stage-info">
+            <div class="stage-name">INTEGRATION TESTS</div>
+            <div class="stage-sub">Automated Unit Suites</div>
+          </div>
+          <span class="stage-status-chip">100% OK</span>
+        </div>
+
+        <div class="pipeline-connector"></div>
+
+        <div class="pipeline-stage stage-active">
+          <div class="stage-num">04</div>
+          <div class="stage-info">
+            <div class="stage-name">KUBERNETES ROLLOUT</div>
+            <div class="stage-sub">Rolling Cluster Update</div>
+          </div>
+          <span class="stage-status-chip chip-live">ACTIVE</span>
+        </div>
       </div>
-      <div class="ig-tab">
-        <i class="fa-solid fa-bookmark"></i> Campus Notes
-      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. TWO-COLUMN DEVOPS LAB & FIELD LOGS
+         ====================================================================== -->
+    <div class="ops-grid-two">
+
+      <!-- LEFT: Technical Infrastructure Notes -->
+      <section class="ops-card">
+        <div class="card-tag">INFRASTRUCTURE AS CODE</div>
+        <h3>Containerization & Cloud Infrastructure</h3>
+        <p class="card-p">
+          Modern software engineering is only as good as the reliability of its hosting infrastructure. My focus as an aspiring DevOps engineer revolves around creating repeatable, automated environments where code moves from development to production without manual friction.
+        </p>
+
+        <div class="code-terminal-block">
+          <div class="terminal-bar">
+            <span class="term-dot"></span>
+            <span class="term-dot"></span>
+            <span class="term-dot"></span>
+            <span class="term-title">bash &bull; devops-engine</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="term-green">$</span> kubectl get pods -n group-7-prod</div>
+            <div class="term-dim">NAME                             READY   STATUS    RESTARTS   AGE</div>
+            <div class="term-cyan">group-7-web-gateway-7b9c9f    1/1     Running   0          42m</div>
+            <div class="term-cyan">group-7-api-server-89cf4d     1/1     Running   0          42m</div>
+            <div class="term-cyan">group-7-cache-redis-44b2      1/1     Running   0          42m</div>
+            <div><span class="term-green">$</span> echo "All microservices healthy across nodes."</div>
+          </div>
+        </div>
+
+        <div class="ops-principle-box">
+          <strong>Core Engineering Rule:</strong> "If a deployment has to be performed by hand more than once, write an automation script to guarantee precision and eliminate human oversight."
+        </div>
+      </section>
+
+      <!-- RIGHT: Human Cooldown & Uptime Protocols (Swimming, Fitness, Gaming) -->
+      <aside class="ops-card">
+        <div class="card-tag">SYSTEM RECOVERY & HEALTH</div>
+        <h3>Human Memory-Leak Prevention: Athletic Cooldown</h3>
+        <p class="card-p">
+          Just as high-throughput servers require active cooling and garbage collection, an engineer requires deliberate physical routines to prevent mental fatigue and maintain sustained focus.
+        </p>
+
+        <div class="cooldown-metrics-list">
+          <div class="cooldown-row">
+            <div class="cooldown-badge">SWIM</div>
+            <div class="cooldown-details">
+              <h4>Makerere Pool Lap Drills</h4>
+              <p>400m recovery swimming sessions to reset posture and release tension after hours of terminal work.</p>
+            </div>
+          </div>
+
+          <div class="cooldown-row">
+            <div class="cooldown-badge">RUN</div>
+            <div class="cooldown-details">
+              <h4>Morning Campus 5.2 km Jog</h4>
+              <p>Aerobic conditioning around Makerere main ground before 8:00 AM lecture timetables begin.</p>
+            </div>
+          </div>
+
+          <div class="cooldown-row">
+            <div class="cooldown-badge">PLAY</div>
+            <div class="cooldown-details">
+              <h4>Low-Latency Multiplayer Gaming</h4>
+              <p>Weekend cooperative gaming sessions with coursemates to laugh, coordinate tactics, and decompress.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ops-principle-box">
+          <strong>Fitness Philosophy:</strong> "Physical stamina directly correlates with mental stamina. High endurance on the track delivers high focus in computing labs."
+        </div>
+      </aside>
+
     </div>
 
-    <!-- Feed Posts Column (Real Content Cards, Zero Empty Icon Placeholders) -->
-    <div class="ig-posts-column">
+    <!-- ======================================================================
+         5. DEPLOY LOGS & GUESTBOOK (INTERACTIVE COMMENTS)
+         ====================================================================== -->
+    <section class="ops-card ops-deploy-logs-card">
+      <div class="card-tag">CLUSTER TRANSMISSIONS</div>
+      <h3><i class="fa-solid fa-terminal"></i> Peer Deployment Notes & Guestbook</h3>
+      <p class="card-p">Leave a message, feedback, or system ping for Kayondo Ernest.</p>
 
-      <!-- Post 1: Fitness & Morning Runs -->
-      <article class="ig-post-card">
-        <div class="ig-post-header">
-          <div class="ig-post-user">
-            <div class="ig-user-badge">KE</div>
-            <span>ernest.devops</span>
-          </div>
-          <span class="ig-post-tag-pill">Athletics</span>
+      <form id="comment-form" class="ops-terminal-form">
+        <div class="form-row">
+          <input type="text" id="comment-author" placeholder="Engineer Name or Call-Sign" required>
         </div>
-
-        <!-- Real Fitness Log Card (No icon placeholder) -->
-        <div class="ig-post-body-visual ig-visual-fitness">
-          <div class="ig-card-header-label">MORNING FITNESS TRACKER</div>
-          <div class="ig-metric-row">
-            <div class="ig-metric-box">
-              <span class="ig-metric-num">5.2 km</span>
-              <span class="ig-metric-lbl">Campus Run</span>
-            </div>
-            <div class="ig-metric-box">
-              <span class="ig-metric-num">28 min</span>
-              <span class="ig-metric-lbl">Total Time</span>
-            </div>
-            <div class="ig-metric-box">
-              <span class="ig-metric-num">400 m</span>
-              <span class="ig-metric-lbl">Pool Laps</span>
-            </div>
-          </div>
-          <p class="ig-visual-quote">"Consistent morning movement clears the mind before 8:00 AM lectures."</p>
+        <div class="form-row">
+          <textarea id="comment-message" placeholder="Input transmission log or message for Ernest..." required></textarea>
         </div>
-
-        <div class="ig-post-actions">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-comment"></i>
-          <i class="fa-solid fa-paper-plane"></i>
-        </div>
-
-        <div class="ig-post-caption">
-          <strong>ernest.devops</strong> Morning run around Makerere campus before the 8:00 AM lectures. Consistency in running, swimming, and gym workouts clears my mind and keeps my energy high for coursework!
-          <div class="ig-post-time">2 HOURS AGO &bull; MAKERERE MAIN GROUND</div>
-        </div>
-      </article>
-
-      <!-- Post 2: DevOps Engineering Journey -->
-      <article class="ig-post-card">
-        <div class="ig-post-header">
-          <div class="ig-post-user">
-            <div class="ig-user-badge">KE</div>
-            <span>ernest.devops</span>
-          </div>
-          <span class="ig-post-tag-pill">Engineering</span>
-        </div>
-
-        <!-- Real DevOps Terminal Visual Card (No icon placeholder) -->
-        <div class="ig-post-body-visual ig-visual-devops">
-          <div class="ig-terminal-bar">
-            <span class="ig-term-dot"></span>
-            <span class="ig-term-dot"></span>
-            <span class="ig-term-dot"></span>
-            <span class="ig-term-title">devops-lab &bull; bash</span>
-          </div>
-          <div class="ig-terminal-content">
-            <div class="ig-term-line"><span class="ig-term-green">$</span> ./deploy-pipeline.sh --env production</div>
-            <div class="ig-term-line ig-term-blue">[BUILD] Compiling container manifests... Done (1.4s)</div>
-            <div class="ig-term-line ig-term-blue">[TEST] Running automated test suites... 12/12 passed</div>
-            <div class="ig-term-line ig-term-success">[DEPLOY] Target cluster updated. Status: Healthy</div>
-          </div>
-        </div>
-
-        <div class="ig-post-actions">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-comment"></i>
-          <i class="fa-solid fa-paper-plane"></i>
-        </div>
-
-        <div class="ig-post-caption">
-          <strong>ernest.devops</strong> Spent the afternoon practicing automated CI/CD deployment pipelines and container setups. Understanding how server architectures communicate is the most exciting part of my software path.
-          <div class="ig-post-time">YESTERDAY &bull; COMPUTING LAB</div>
-        </div>
-      </article>
-
-      <!-- Post 3: Evening Gaming Sessions -->
-      <article class="ig-post-card">
-        <div class="ig-post-header">
-          <div class="ig-post-user">
-            <div class="ig-user-badge">KE</div>
-            <span>ernest.devops</span>
-          </div>
-          <span class="ig-post-tag-pill">Downtime</span>
-        </div>
-
-        <!-- Real Gaming Match Visual Card (No icon placeholder) -->
-        <div class="ig-post-body-visual ig-visual-gaming">
-          <div class="ig-card-header-label">WEEKEND MULTIPLAYER SESSION</div>
-          <div class="ig-gaming-board">
-            <div class="ig-game-title">Squad Arena Ranked Match</div>
-            <div class="ig-game-status">VICTORY &bull; TOP SQUAD</div>
-            <div class="ig-game-meta">Makerere Coursemates Co-op &bull; 45 Mins Session</div>
-          </div>
-          <p class="ig-visual-quote">"Unwinding and laughing with good friends after days of dense reading and code."</p>
-        </div>
-
-        <div class="ig-post-actions">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-comment"></i>
-          <i class="fa-solid fa-paper-plane"></i>
-        </div>
-
-        <div class="ig-post-caption">
-          <strong>ernest.devops</strong> Unwinding with multiplayer games on weekends. After long sessions of coursework and coding, gaming is the best way to kick back and laugh with good friends.
-          <div class="ig-post-time">3 DAYS AGO &bull; WEEKEND LOUNGE</div>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- Instagram Comments Box -->
-    <section class="ig-comments-card">
-      <h2><i class="fa-solid fa-comments"></i> Leave a Comment for Ernest</h2>
-      <form id="comment-form" class="ig-comment-form">
-        <input type="text" id="comment-author" placeholder="Add your username or name..." required>
-        <textarea id="comment-message" placeholder="Add a comment..." required></textarea>
-        <button type="submit">Post</button>
+        <button type="submit" class="ops-submit-btn">Transmit Log</button>
       </form>
 
-      <div id="comments-list" class="comments-list"></div>
+      <div id="comments-list" class="comments-list ops-comments-feed"></div>
     </section>
 
-    <!-- Navigation Pager -->
-    <div class="ig-footer-pager">
-      <a href="daniella.html" class="ig-pager-btn">&larr; Previous: Daniella</a>
-      <a href="ntwari.html" class="ig-pager-btn">Next: Joseph &rarr;</a>
+    <!-- ======================================================================
+         6. CLUSTER PAGER
+         ====================================================================== -->
+    <div class="ops-pager-nav">
+      <a href="daniella.html" class="ops-pager-btn">&larr; Previous Node: Daniella Evelyn</a>
+      <a href="ntwari.html" class="ops-pager-btn">Next Node: Joseph Ntwari &rarr;</a>
     </div>
 
-    <footer>
-      <p>&copy; 2026 Group 7 &bull; Makerere University</p>
+    <footer class="ops-footer">
+      <p>&copy; 2026 CloudOps Console &bull; Group 7 &bull; Makerere University &bull; Kayondo Ernest</p>
     </footer>
 
   </main>
