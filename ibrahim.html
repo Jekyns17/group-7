@@ -3,24 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lubega Ibrahim &bull; Official Player Profile &bull; Group 7</title>
-  <!-- Font Awesome for clean UI glyphs -->
+  <title>Lubega Ibrahim &bull; Athletic Dossier & Scorecard &bull; Group 7</title>
+  <!-- Font Awesome for small UI glyphs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/ibrahim.css">
 </head>
 <body data-student="ibrahim">
 
   <!-- ======================================================================
-       1. NBA OFFICIAL TOPBAR & SCOREBOARD STRIP
+       1. ATHLETIC CLUB TOP NAVIGATION BAR
        ====================================================================== -->
-  <header class="nba-top-header">
-    <div class="nba-top-inner">
-      <div class="nba-brand-group">
-        <span class="nba-logoman-badge">NBA</span>
-        <span class="nba-site-title">PLAYERS</span>
-        <span class="nba-roster-tag">OFFICIAL ROSTER</span>
+  <header class="club-top-bar">
+    <div class="club-top-inner">
+      <div class="club-brand-badge">
+        <span class="club-brand-code">MAC-07</span>
+        <span class="club-brand-text">MAKERERE ATHLETIC CLUB &bull; ATHLETE ROSTER</span>
       </div>
-      <nav class="nba-nav-links">
+      <nav class="club-nav-links">
         <a href="index.html">Grace</a>
         <a href="daniella.html">Daniella</a>
         <a href="ernest.html">Ernest</a>
@@ -31,258 +30,185 @@
     </div>
   </header>
 
-  <!-- Game Scoreboard Ticker -->
-  <div class="nba-scoreboard-strip">
-    <div class="nba-score-inner">
-      <span class="nba-score-item"><strong>FINAL</strong> Group 7 114 - 102 Makerere All-Stars</span>
-      <span class="nba-score-sep">&bull;</span>
-      <span class="nba-score-item"><strong>NEXT GAME</strong> vs Engineering United &bull; Thursday 18:30 EST</span>
-      <span class="nba-score-sep">&bull;</span>
-      <span class="nba-score-item"><strong>STATUS</strong> Active Dual-Sport Athlete</span>
-    </div>
-  </div>
-
   <!-- ======================================================================
-       2. OFFICIAL NBA PLAYER BIO CARD
+       2. ATHLETIC DOSSIER MAIN CONTAINER
        ====================================================================== -->
-  <main class="nba-main-container">
+  <main class="club-container">
 
-    <section class="nba-player-hero">
-      <div class="nba-hero-top">
-        <!-- Player Initials Badge (Zero photo icon placeholders, zero basketballs) -->
-        <div class="nba-initials-badge">
-          <span class="nba-initials-text">LI</span>
-          <span class="nba-jersey-no">#24</span>
-        </div>
-
-        <div class="nba-hero-info">
-          <div class="nba-team-pos">Group 7 / Makerere &bull; #24 &bull; Forward & Multi-Sport Athlete</div>
-          <h1 class="nba-player-name">Lubega Ibrahim</h1>
-
-          <div class="nba-vitals-strip">
-            <div class="vital-item">
-              <span class="vital-label">HEIGHT</span>
-              <span class="vital-val">6'1" (1.85m)</span>
-            </div>
-            <div class="vital-item">
-              <span class="vital-label">WEIGHT</span>
-              <span class="vital-val">180 lbs (82 kg)</span>
-            </div>
-            <div class="vital-item">
-              <span class="vital-label">COUNTRY</span>
-              <span class="vital-val">Uganda</span>
-            </div>
-            <div class="vital-item">
-              <span class="vital-label">BORN</span>
-              <span class="vital-val">01/01/2005 (Age 21)</span>
-            </div>
-            <div class="vital-item">
-              <span class="vital-label">COLLEGE</span>
-              <span class="vital-val">Makerere University</span>
-            </div>
+    <!-- Athlete Identity Dossier Card (Just Name & Specs, Zero Image Icon Boxes) -->
+    <section class="athlete-hero-card">
+      <div class="hero-top-row">
+        <div class="athlete-title-block">
+          <div class="athlete-status-chip">ACTIVE COMPETITOR &bull; MAKERERE UNIVERSITY</div>
+          <h1 class="athlete-name">Lubega Ibrahim</h1>
+          <p class="athlete-role-desc">
+            Competitive Golfer &bull; Campus Football Midfielder &bull; Group 7 Contributor
+          </p>
+          <div class="athlete-meta-strip">
+            <span class="meta-item">DOB: 01 / January / 2005</span>
+            <span class="meta-item">Email: lubegaibra24@gmail.com</span>
+            <span class="meta-item">Base: Kampala, Uganda</span>
           </div>
         </div>
 
-        <!-- Official All-Star Fan Vote Button -->
-        <div class="nba-vote-block">
-          <div class="allstar-banner">ALL-STAR FAN VOTE</div>
-          <button id="like-btn" class="nba-allstar-btn">
-            <i class="fa-solid fa-star"></i> Vote All-Star (<span id="like-count">0</span>)
+        <div class="hero-action-cell">
+          <button id="like-btn" class="club-endorse-btn">
+            <i class="fa-solid fa-thumbs-up"></i> Endorse Athlete (<span id="like-count">0</span>)
           </button>
-          <span class="allstar-subtext">Official Supporter Ballot</span>
         </div>
       </div>
 
-      <!-- Official Season Stat Leaderboard Bar -->
-      <div class="nba-stats-table-bar">
-        <div class="nba-stat-cell">
-          <span class="stat-num">22.4</span>
-          <span class="stat-lbl">PPG</span>
+      <!-- Performance Metrics Scorecard Bar -->
+      <div class="scorecard-metric-bar">
+        <div class="scorecard-tile">
+          <span class="tile-number">12</span>
+          <span class="tile-label">Golf Handicap</span>
         </div>
-        <div class="nba-stat-cell">
-          <span class="stat-num">7.8</span>
-          <span class="stat-lbl">RPG</span>
+        <div class="scorecard-tile">
+          <span class="tile-number">MIDFIELD</span>
+          <span class="tile-label">Football Role</span>
         </div>
-        <div class="nba-stat-cell">
-          <span class="stat-num">6.2</span>
-          <span class="stat-lbl">APG</span>
+        <div class="scorecard-tile">
+          <span class="tile-number">18 HOLES</span>
+          <span class="tile-label">Strategy Focus</span>
         </div>
-        <div class="nba-stat-cell">
-          <span class="stat-num">52.1%</span>
-          <span class="stat-lbl">FG%</span>
-        </div>
-        <div class="nba-stat-cell">
-          <span class="stat-num">12</span>
-          <span class="stat-lbl">Golf HCP</span>
+        <div class="scorecard-tile">
+          <span class="tile-number">GROUP 7</span>
+          <span class="tile-label">Academic Team</span>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         3. RECENT GAME LOG & BOX SCORE TABLE
+         3. DUAL-SPORT INTERACTIVE BENTO SPREAD
          ====================================================================== -->
-    <section class="nba-section-card">
-      <div class="nba-section-heading">
-        <span>RECENT GAME LOG & PERFORMANCE BREAKDOWN</span>
-      </div>
+    <div class="bento-sports-grid">
 
-      <div class="nba-table-responsive">
-        <table class="nba-boxscore-table">
-          <thead>
-            <tr>
-              <th>DATE</th>
-              <th>OPPONENT / EVENT</th>
-              <th>RESULT</th>
-              <th>MIN</th>
-              <th>PTS</th>
-              <th>REB</th>
-              <th>AST</th>
-              <th>FG%</th>
-              <th>NOTES</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Nov 12</strong></td>
-              <td>vs Engineering Stars</td>
-              <td><span class="tag-win">W 114-102</span></td>
-              <td>34</td>
-              <td><strong>26</strong></td>
-              <td>8</td>
-              <td>9</td>
-              <td>58%</td>
-              <td>Double-Double & Clutch 4th Quarter</td>
-            </tr>
-            <tr>
-              <td><strong>Nov 08</strong></td>
-              <td>vs Central Varsity</td>
-              <td><span class="tag-win">W 98-90</span></td>
-              <td>30</td>
-              <td><strong>21</strong></td>
-              <td>6</td>
-              <td>5</td>
-              <td>50%</td>
-              <td>Defensive Stops & Fastbreak Distribution</td>
-            </tr>
-            <tr>
-              <td><strong>Nov 03</strong></td>
-              <td>Uganda Golf Circuit (Fairway Open)</td>
-              <td><span class="tag-special">Top 3 Finish</span></td>
-              <td>18 H</td>
-              <td><strong>+2</strong></td>
-              <td>--</td>
-              <td>--</td>
-              <td>78% GIR</td>
-              <td>Fairway Precision & Cold Putting Stroke</td>
-            </tr>
-            <tr>
-              <td><strong>Oct 28</strong></td>
-              <td>vs Business College</td>
-              <td><span class="tag-win">W 105-99</span></td>
-              <td>32</td>
-              <td><strong>19</strong></td>
-              <td>9</td>
-              <td>6</td>
-              <td>48%</td>
-              <td>Lead Team In Assists & Rebounds</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         4. TWO-COLUMN ATHLETIC SCOUTING REPORT
-         ====================================================================== -->
-    <div class="nba-grid-two">
-
-      <!-- LEFT: Scouting Report & Multi-Sport Mindset -->
-      <article class="nba-editorial-card">
-        <div class="scouting-tag">OFFICIAL SCOUTING REPORT</div>
-        <h2>Multi-Sport Dominance: Fairway Focus Meets Court Agility</h2>
-        <p>
-          Ibrahim represents a rare caliber of multi-sport athlete. On competitive courses, his 12-handicap golf game sharpens mental stillness, trajectory visualization, and patience. Under match intensity, that exact calculated discipline transfers into high-IQ decision making, court vision, and clutch execution.
-        </p>
-
-        <div class="scouting-attributes">
-          <div class="scout-attr-item">
-            <strong>Mental Composure:</strong> Unflappable demeanor under late-game pressure.
-          </div>
-          <div class="scout-attr-item">
-            <strong>Spatial Geometry:</strong> Calculating angles on fairways directly enhances passing lanes.
-          </div>
-          <div class="scout-attr-item">
-            <strong>Physical Work Capacity:</strong> Relentless stamina spanning 18-hole walks and 48-minute games.
-          </div>
+      <!-- SPORT 1: Golf Fairway & Strategy Breakdown -->
+      <section class="bento-card golf-card">
+        <div class="bento-card-header">
+          <span class="sport-badge golf-badge">DISCIPLINE 01 &bull; GOLF FAIRWAY PRECISION</span>
+          <h2>The Fairway Strategy & Course Management</h2>
+          <p class="sport-summary">
+            Competing on 18-hole courses instills mental composure, trajectory planning, and calculated risk management.
+          </p>
         </div>
-      </article>
 
-      <!-- RIGHT: Academic Synergy & Team Chemistry -->
-      <aside class="nba-editorial-card">
-        <div class="scouting-tag">ACADEMIC PROFILE & SCHOLARSHIP</div>
-        <h2>Group 7 Synergy: Applying Sports Chemistry to Computing</h2>
-        <p>
-          Athletic leadership is fundamentally about collective trust. Ibrahim channels the chemistry of sports teams into Group 7's university computing milestones at Makerere University.
-        </p>
+        <!-- Authentic Golf Scorecard Table (Real Data, Zero Placeholders) -->
+        <div class="golf-scorecard-table-wrap">
+          <table class="golf-scorecard-table">
+            <thead>
+              <tr>
+                <th>Discipline Metric</th>
+                <th>Focus Area</th>
+                <th>Performance Target</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Drive Accuracy</strong></td>
+                <td>Fairway Center Off the Tee</td>
+                <td>75% Regulation</td>
+              </tr>
+              <tr>
+                <td><strong>Iron Play</strong></td>
+                <td>Green in Regulation (GIR)</td>
+                <td>Controlled Spin & Pin Distance</td>
+              </tr>
+              <tr>
+                <td><strong>Putting Composure</strong></td>
+                <td>Speed & Green Break Reading</td>
+                <td>Consistent Two-Putt Maximum</td>
+              </tr>
+              <tr>
+                <td><strong>Course Mindset</strong></td>
+                <td>Shot-by-Shot Reset</td>
+                <td>Zero Panic After Bad Bounces</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <div class="academic-profile-box">
-          <div class="profile-row">
-            <span class="p-lbl">Squad Role:</span>
-            <span class="p-val">Group 7 Core Contributor</span>
+        <div class="sport-editorial-note">
+          <strong>Strategic Takeaway:</strong> "In golf, every shot requires deliberate calculation. One rushed swing ruins a hole; steady patience wins the round. That exact patience guides my approach to demanding academic assignments."
+        </div>
+      </section>
+
+      <!-- SPORT 2: Football Midfield Tactics Board -->
+      <section class="bento-card football-card">
+        <div class="bento-card-header">
+          <span class="sport-badge football-badge">DISCIPLINE 02 &bull; CAMPUS FOOTBALL</span>
+          <h2>Central Midfield Coordination & Stamina</h2>
+          <p class="sport-summary">
+            Controlling the tempo, distributing possession, and bridging defense to attack in competitive campus matches.
+          </p>
+        </div>
+
+        <div class="football-tactics-board">
+          <div class="tactic-item">
+            <div class="tactic-title">Box-to-Box Work Rate</div>
+            <p>Covering ground for 90 minutes, providing defensive cover while arriving in attacking zones to create scoring chances.</p>
           </div>
-          <div class="profile-row">
-            <span class="p-lbl">Specialty:</span>
-            <span class="p-val">Tactical Planning & Coordination</span>
+          <div class="tactic-item">
+            <div class="tactic-title">Spatial Vision & Distribution</div>
+            <p>Scanning passing lanes before receiving the ball to switch play quickly and bypass defensive blocks.</p>
           </div>
-          <div class="profile-row">
-            <span class="p-lbl">Contact:</span>
-            <span class="p-val">lubegaibra24@gmail.com</span>
-          </div>
-          <div class="profile-row">
-            <span class="p-lbl">Campus Base:</span>
-            <span class="p-val">Kampala, Uganda</span>
+          <div class="tactic-item">
+            <div class="tactic-title">Team Chemistry & Trust</div>
+            <p>Football is the ultimate group effort; trusting coursemates on the pitch mirrors team synergy on academic projects.</p>
           </div>
         </div>
 
-        <div class="nba-quote-banner">
-          "Trust the work, trust the squad, and execute when the clock winds down."
+        <div class="sport-editorial-note">
+          <strong>Tactical Takeaway:</strong> "High-tempo matches test communication under intense pressure. Knowing where your teammate will be before you pass is how goals—and great group projects—are scored."
         </div>
-      </aside>
+      </section>
 
     </div>
 
     <!-- ======================================================================
-         5. COURTSIDE MEDIA ROOM & FAN Q&A (COMMENTS)
+         4. ACADEMIC & ATHLETIC HARMONY SECTION
          ====================================================================== -->
-    <section class="nba-section-card nba-media-room-card">
-      <div class="nba-section-heading">
-        <span>POST-GAME MEDIA ROOM & FAN Q&A</span>
+    <section class="philosophy-strip-card">
+      <div class="strip-header">
+        <span class="strip-label">THE COMPETITOR'S MINDSET</span>
+        <h3>Balancing High-Intensity Athletics with Computing Coursework</h3>
       </div>
-      <p class="media-intro">Leave a post-game question, cheer, or message for Lubega Ibrahim.</p>
+      <p>
+        Athletics and academics are not conflicting pursuits—they reinforce each other. The physical exhaustion of football clears mental fog, while the tactical calmness developed on golf greens prevents panic when faced with complex university coursework. Contributing to Group 7 has allowed me to apply sports team leadership directly into collaborative software projects.
+      </p>
+    </section>
 
-      <form id="comment-form" class="nba-comment-form">
+    <!-- ======================================================================
+         5. LOCKER ROOM SHOUTBOX & PEER NOTES
+         ====================================================================== -->
+    <section class="club-shoutbox-card">
+      <h2><i class="fa-solid fa-comments"></i> Athlete Guestbook & Locker Room Notes</h2>
+      <p class="shoutbox-sub">Leave an endorsement, athletic message, or note for Ibrahim.</p>
+
+      <form id="comment-form" class="club-comment-form">
         <div class="form-row">
-          <input type="text" id="comment-author" placeholder="Media Reporter or Fan Name" required>
+          <input type="text" id="comment-author" placeholder="Your Name or Team Moniker" required>
         </div>
         <div class="form-row">
-          <textarea id="comment-message" placeholder="Post your post-game comment or message for Ibrahim..." required></textarea>
+          <textarea id="comment-message" placeholder="Post a message or cheer for Ibrahim..." required></textarea>
         </div>
-        <button type="submit" class="nba-submit-btn">Submit to Media Room</button>
+        <button type="submit" class="club-submit-btn">Post to Guestbook</button>
       </form>
 
-      <div id="comments-list" class="comments-list nba-comments-feed"></div>
+      <div id="comments-list" class="comments-list club-comments-feed"></div>
     </section>
 
     <!-- ======================================================================
-         6. NBA PAGER
+         6. ATHLETIC ROSTER PAGER
          ====================================================================== -->
-    <div class="nba-pager-nav">
-      <a href="ntwari.html" class="nba-pager-link">&larr; Previous: Joseph Ntwari</a>
-      <a href="matthew.html" class="nba-pager-link">Next: Matthew &rarr;</a>
+    <div class="club-pager-nav">
+      <a href="ntwari.html" class="club-pager-btn">&larr; Previous Athlete: Joseph Ntwari</a>
+      <a href="matthew.html" class="club-pager-btn">Next Member: Matthew &rarr;</a>
     </div>
 
-    <footer class="nba-footer">
-      <p>&copy; 2026 NBA Media Ventures &bull; Official Player Profile &bull; Group 7 &bull; Lubega Ibrahim</p>
+    <footer class="club-footer">
+      <p>&copy; 2026 Makerere Athletic Club &bull; Group 7 &bull; Lubega Ibrahim Official Dossier</p>
     </footer>
 
   </main>
