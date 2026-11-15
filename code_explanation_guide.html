@@ -125,12 +125,12 @@
     Our website represents six Makerere University students in Group 7. Each student designed their page using a completely different real-world website archetype, proving separate and individual design work:
   </p>
   <ul>
-    <li><strong>ernest.html</strong> &bull; <strong>Kayondo Ernest:</strong> <em>CloudOps & DevOps Console</em> (Live 4-stage automated CI/CD pipeline, cluster telemetry bar, bash terminal microservices output, athletic cooldown protocols).</li>
+    <li><strong>ernest.html</strong> &bull; <strong>Kayondo Ernest:</strong> <em>Instagram Profile & Feed Layout</em> (Initials avatar "KE", text discipline highlights, workout log metrics, devops terminal snippet, multiplayer arena score card).</li>
     <li><strong>daniella.html</strong> &bull; <strong>Kagoda Daniella Evelyn:</strong> <em>The Bookmark &bull; Literary Magazine & Gazette</em> (Ivory paper aesthetic, classic serif typography, drop cap feature essay, bookshelf review cards, royal purple ink accents).</li>
     <li><strong>ibrahim.html</strong> &bull; <strong>Lubega Ibrahim:</strong> <em>Athletic Club Dossier & High-Performance Scorecard</em> (Clubhouse emerald & gold palette, athlete monogram crest, golf scorecard metrics table, football midfield tactical board).</li>
-    <li><strong>ntwari.html</strong> &bull; <strong>Ntwari Joseph David:</strong> <em>Matchday Playmaker #10 Tactical Playbook</em> (Stadium crimson & gold palette, playmaker radar metrics, 4-2-3-1 tactical breakdown, recovery science).</li>
-    <li><strong>index.html</strong> &bull; <strong>Nantume Bakhita Grace:</strong> <em>SOC-07 Cyber Security Intelligence Lab</em> (Stealth cyber indigo palette, zero-trust architecture, security terminal scanner, cognitive decompression protocols).</li>
-    <li><strong>matthew.html</strong> &bull; <strong>Musiinguzi Matthew Jekyns:</strong> <em>Tactical Chess & Basketball Arena</em> (High-contrast dark court layout, chess tactical blog, pickup basketball drills).</li>
+    <li><strong>ntwari.html</strong> &bull; <strong>Ntwari Joseph David:</strong> <em>ESPN / Sports Match Center</em> (Large squad jersey #10, performance radar, match report).</li>
+    <li><strong>index.html</strong> &bull; <strong>Nantume Bakhita Grace:</strong> <em>Modern Software Developer Portfolio</em> (Asymmetrical sidebar + content stream).</li>
+    <li><strong>matthew.html</strong> &bull; <strong>Musiinguzi Matthew Jekyns:</strong> <em>Tactical Chess & Basketball Arena</em> (High-contrast dark court layout).</li>
   </ul>
   <p>
     <strong>Key Shared Principles:</strong>
@@ -145,13 +145,13 @@
 
   <h2>2. Line-by-Line Breakdown: Kayondo Ernest's Webpage (ernest.html)</h2>
 
-  <h3>Section A: Document Header & Stylesheet Link</h3>
+  <h3>Section A: Document Header & Font Awesome Link</h3>
   <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
   &lt;meta charset="UTF-8"&gt;
   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;title&gt;Kayondo Ernest &bull; CloudOps & DevOps Console &bull; Group 7&lt;/title&gt;
+  &lt;title&gt;Kayondo Ernest (@ernest.devops) &bull; Makerere University&lt;/title&gt;
   &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"&gt;
   &lt;link rel="stylesheet" href="css/ernest.css"&gt;
 &lt;/head&gt;</code></pre>
@@ -160,19 +160,15 @@
     <li><code>&lt;!DOCTYPE html&gt;</code>: Tells the browser to render the page using the latest HTML5 standard.</li>
     <li><code>&lt;meta charset="UTF-8"&gt;</code>: Sets standard character encoding for text.</li>
     <li><code>&lt;meta name="viewport" ...&gt;</code>: Ensures the webpage adjusts nicely on mobile phones and tablets.</li>
-    <li><code>&lt;link rel="stylesheet" ... font-awesome ...&gt;</code>: Connects the external Font Awesome library for clean vector UI icons instead of emojis.</li>
-    <li><code>&lt;link rel="stylesheet" href="css/ernest.css"&gt;</code>: Links Ernest's personal stylesheet with the CloudOps command center theme.</li>
+    <li><code>&lt;link rel="stylesheet" ... font-awesome ...&gt;</code>: Connects the external Font Awesome library so we can display clean icons (like the swimming, running, and gym icons) instead of emojis.</li>
+    <li><code>&lt;link rel="stylesheet" href="css/ernest.css"&gt;</code>: Links Ernest's personal stylesheet with the Instagram UI theme.</li>
   </ul>
 
-  <h3>Section B: CloudOps System Navigation Bar</h3>
-  <pre><code>&lt;header class="ops-header"&gt;
-  &lt;div class="ops-header-inner"&gt;
-    &lt;div class="ops-sys-status"&gt;
-      &lt;span class="status-indicator"&gt;&lt;/span&gt;
-      &lt;span class="ops-logo"&gt;CLOUDOPS.CONSOLE&lt;/span&gt;
-      &lt;span class="ops-node-tag"&gt;NODE-07 &bull; PROD&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;nav class="ops-nav-links"&gt;
+  <h3>Section B: Navigation Bar</h3>
+  <pre><code>&lt;header class="ig-top-header"&gt;
+  &lt;div class="ig-top-container"&gt;
+    &lt;a href="index.html" class="ig-brand"&gt;Instagram &lt;span&gt;Group 7&lt;/span&gt;&lt;/a&gt;
+    &lt;nav class="ig-nav-links"&gt;
       &lt;a href="index.html"&gt;Grace&lt;/a&gt;
       &lt;a href="daniella.html"&gt;Daniella&lt;/a&gt;
       &lt;a href="ernest.html" class="active"&gt;Ernest&lt;/a&gt;
@@ -184,59 +180,74 @@
 &lt;/header&gt;</code></pre>
   <p><strong>How to explain this to the lecturer:</strong></p>
   <ul>
-    <li>Styled like an authentic cloud operations console with a pulsing live green status indicator and node tag.</li>
-    <li>The link for Ernest has <code>class="active"</code>, highlighting his tab in terminal cyan (<code>#0284c7</code>).</li>
+    <li>Styled like Instagram's sticky top header with logo on the left and navigation on the right.</li>
+    <li>The link for Ernest has <code>class="active"</code>, which highlights his tab in Instagram blue (<code>#0095f6</code>).</li>
   </ul>
 
-  <h3>Section C: Engineer Identity & Real-Time Telemetry Bar</h3>
-  <pre><code>&lt;section class="ops-hero-card"&gt;
-  &lt;div class="ops-hero-top"&gt;
-    &lt;div class="ops-avatar-chip"&gt;
-      &lt;span class="chip-code"&gt;DEV//OPS&lt;/span&gt;
-      &lt;span class="chip-initials"&gt;KE&lt;/span&gt;
+  <h3>Section C: Instagram Profile Header & Story Highlights</h3>
+  <pre><code>&lt;section class="ig-profile-card"&gt;
+  &lt;div class="ig-profile-top"&gt;
+    &lt;div class="ig-avatar-ring"&gt;
+      &lt;div class="ig-avatar-inner"&gt;&lt;i class="fa-solid fa-code"&gt;&lt;/i&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="ops-bio-block"&gt;
-      &lt;h1&gt;Kayondo Ernest&lt;/h1&gt;
-      &lt;p&gt;Undergraduate DevOps Engineer &bull; Cloud Systems, CI/CD Pipelines...&lt;/p&gt;
+    &lt;div class="ig-meta-side"&gt;
+      &lt;div class="ig-username-row"&gt;
+        &lt;span class="ig-username"&gt;ernest.devops&lt;/span&gt;
+        &lt;i class="fa-solid fa-circle-check ig-verified"&gt;&lt;/i&gt;
+        &lt;button id="like-btn" class="ig-btn-primary"&gt;
+          &lt;i class="fa-solid fa-thumbs-up"&gt;&lt;/i&gt; Follow & Like (&lt;span id="like-count"&gt;0&lt;/span&gt;)
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="ig-stats-row"&gt;
+        &lt;div&gt;&lt;span&gt;3&lt;/span&gt; posts&lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;256&lt;/span&gt; followers&lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;128&lt;/span&gt; following&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="ig-bio"&gt;
+        &lt;h1&gt;Kayondo Ernest&lt;/h1&gt;
+        &lt;p class="tagline"&gt;Aspiring DevOps & Cloud Infrastructure Engineer&lt;/p&gt;
+        &lt;p&gt;Undergraduate Student at Makerere University, Kampala&lt;/p&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;button id="like-btn" class="ops-deploy-btn"&gt;
-      &lt;i class="fa-solid fa-server"&gt;&lt;/i&gt; Endorse & Deploy (&lt;span id="like-count"&gt;0&lt;/span&gt;)
-    &lt;/button&gt;
   &lt;/div&gt;
-  &lt;!-- Telemetry Grid --&gt;
-  &lt;div class="ops-telemetry-bar"&gt;
-    &lt;div&gt;99.98% Service Uptime&lt;/div&gt;
-    &lt;div&gt;3 / 3 Active Nodes&lt;/div&gt;
-    &lt;div&gt;24 ms Latency&lt;/div&gt;
-    &lt;div&gt;PASS Security Audits&lt;/div&gt;
+  &lt;!-- Story Highlights for Hobbies --&gt;
+  &lt;div class="ig-stories-bar"&gt;
+    &lt;div class="ig-story-item"&gt;Swimming&lt;/div&gt;
+    &lt;div class="ig-story-item"&gt;Running&lt;/div&gt;
+    &lt;div class="ig-story-item"&gt;Gym&lt;/div&gt;
+    &lt;div class="ig-story-item"&gt;Gaming&lt;/div&gt;
   &lt;/div&gt;
 &lt;/section&gt;</code></pre>
   <p><strong>How to explain this to the lecturer:</strong></p>
   <ul>
-    <li>Uses clean typography initials ("KE") rather than empty icon placeholders.</li>
-    <li>Displays key cloud infrastructure metrics (Uptime, Active Nodes, Latency) framed around cloud engineering.</li>
+    <li>Uses the signature Instagram colorful gradient border ring around the avatar.</li>
+    <li>Displays follower stats, verified checkmark, and student bio.</li>
+    <li>Ernest's 4 genuine hobbies (Swimming, Running, Gym, Gaming) are displayed as circular Instagram Story Highlights.</li>
   </ul>
 
   <div class="page-break"></div>
 
-  <h3>Section D: Automated CI/CD Pipeline & Technical Lab</h3>
-  <pre><code>&lt;section class="ops-pipeline-section"&gt;
-  &lt;!-- 4-Stage Production Delivery Pipeline --&gt;
-  &lt;div class="pipeline-flow"&gt;
-    &lt;div class="stage"&gt;01 LINT & AUDIT&lt;/div&gt;
-    &lt;div class="stage"&gt;02 CONTAINER BUILD&lt;/div&gt;
-    &lt;div class="stage"&gt;03 INTEGRATION TESTS&lt;/div&gt;
-    &lt;div class="stage"&gt;04 KUBERNETES ROLLOUT&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;</code></pre>
+  <h3>Section D: Instagram Posts Feed</h3>
+  <pre><code>&lt;div class="ig-posts-column"&gt;
+  &lt;!-- Post 1: Fitness & Morning Runs --&gt;
+  &lt;article class="ig-post-card"&gt;
+    &lt;div class="ig-post-header"&gt;...&lt;/div&gt;
+    &lt;div class="ig-post-body-visual"&gt;Morning Campus Jogs & Recovery Swimming&lt;/div&gt;
+    &lt;div class="ig-post-actions"&gt;&lt;i class="fa-solid fa-heart"&gt;&lt;/i&gt; ...&lt;/div&gt;
+    &lt;div class="ig-post-caption"&gt;
+      &lt;strong&gt;ernest.devops&lt;/strong&gt; Morning run around Makerere campus...
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;!-- Post 2: DevOps Engineering Journey --&gt;
+  &lt;!-- Post 3: Evening Gaming Sessions --&gt;
+&lt;/div&gt;</code></pre>
   <p><strong>How to explain this to the lecturer:</strong></p>
   <ul>
-    <li>Showcases an automated delivery pipeline with clear visual progression from linting to container build, testing, and cluster rollout.</li>
-    <li>Technical dispatches include real Kubernetes terminal commands (<code>kubectl get pods</code>) and athletic cooldown protocols (swimming and running).</li>
+    <li>Rather than a plain text blog, Ernest's thoughts are formatted as real Instagram posts with user badge, action icons (Heart, Comment, Share), and captions.</li>
   </ul>
 
-  <h3>Section E: Deployment Notes & Guestbook</h3>
-  <pre><code>&lt;section class="ops-card ops-deploy-logs-card"&gt;
+  <h3>Section E: Instagram Comments Box</h3>
+  <pre><code>&lt;section class="ig-comments-card"&gt;
   &lt;h2&gt;&lt;i class="fa-solid fa-comments"&gt;&lt;/i&gt; Leave a Comment for Ernest&lt;/h2&gt;
   &lt;form id="comment-form" class="ig-comment-form"&gt;
     &lt;input type="text" id="comment-author" placeholder="Add your username or name..." required&gt;
@@ -311,7 +322,7 @@ likeBtn.addEventListener('click', () => {
     </tr>
     <tr>
       <td>"Why do the pages look so completely different?"</td>
-      <td>"Each member of Group 7 designed their page around their authentic passion and craft: Ernest built a CloudOps & DevOps engineering console, Daniella built an Author's literary gazette for novel writing, Ibrahim built an athletic club scorecard for golf and football, Ntwari built a football matchday playmaker playbook, Grace built a Cyber Security threat intelligence lab, and Matthew built a chess & basketball arena layout. We then united them using a clean shared navigation bar."</td>
+      <td>"Each member of Group 7 picked a distinct real-world UI design archetype. Ernest used an Instagram profile and feed, Daniella used a Notion digital workspace, Ibrahim used LinkedIn, Ntwari used an ESPN match-center card, Grace used a software developer portfolio, and Matthew used a chess/basketball court layout. We then united them using a shared navigation bar."</td>
     </tr>
     <tr>
       <td>"Where are your icons coming from?"</td>
